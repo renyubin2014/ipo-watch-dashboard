@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>A股 IPO Watch · 微信版</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero__top">
+          <span class="brand-dot"></span>
+          <span>A股 IPO Watch</span>
+          <a href="../dashboard/index.html">电脑看板</a>
+        </div>
+        <p class="eyebrow">微信阅读版</p>
+        <h1>待上市企业池</h1>
+        <p class="lead">只放注册生效或发行中的高确定性项目。先看企业卡片，再点“快速看懂”进入单家公司概览。</p>
+        <div class="stats" aria-label="看板概况">
+          <div><strong id="totalCount">--</strong><span>企业</span></div>
+          <div><strong id="boardCount">--</strong><span>板块</span></div>
+          <div><strong id="sourceDate">--</strong><span>更新</span></div>
+        </div>
+      </header>
+
+      <nav class="board-nav" id="boardNav" aria-label="板块导航"></nav>
+
+      <main>
+        <section class="reading-note">
+          <strong>怎么读</strong>
+          <span>先扫行业和预计上市时间；想快速判断点“快速看懂”，要完整材料点“完整调研”。</span>
+        </section>
+        <div id="companyList" class="company-list"></div>
+      </main>
+    </div>
+
+    <script src="../dashboard/data.js"></script>
+    <script src="../dashboard/reports.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
