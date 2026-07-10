@@ -98,8 +98,8 @@
     const actions = document.createElement("div");
     actions.className = "report-actions";
     const report = reports[item.id] || reports[item.name] || {};
-    actions.append(createReportLink("概览", report.overviewUrl, `${item.name} 概览报告`));
-    actions.append(createReportLink("详细报告", report.researchUrl, `${item.name} 详细调研报告`));
+    actions.append(createReportLink("快速看懂", report.overviewUrl, `${item.name} 概览报告`));
+    actions.append(createReportLink("完整调研", report.researchUrl, `${item.name} 详细调研报告`));
 
     card.append(top, title, industry, facts, actions);
     return card;
