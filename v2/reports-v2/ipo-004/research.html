@@ -23,6 +23,7 @@ a:hover{text-decoration:underline}
 .section{margin:18px auto}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
 .grid{display:grid;gap:14px}
+.grid>*{min-width:0}
 .metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
@@ -49,7 +50,7 @@ th{background:#f8fafc;font-size:13px;color:#3c5068}
 .toc a{display:block;padding:6px 0;color:var(--muted)}
 .evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
 .evidence-list li,.bullet-list li{margin:4px 0}
-.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;max-width:100%;overflow-wrap:anywhere;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
 .kpi{font-size:13px;color:var(--muted)}
 .divider{height:1px;background:var(--line);margin:18px 0}
 img,canvas{max-width:100%;height:auto}
@@ -57,6 +58,7 @@ img,canvas{max-width:100%;height:auto}
   .page{padding:12px}
   .panel{padding:16px;border-radius:14px}
   .metric-grid{grid-template-columns:1fr}
+  .two-col{grid-template-columns:minmax(0,1fr)}
   .hero{padding:36px 14px 28px}
   .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
 }
@@ -71,7 +73,7 @@ img,canvas{max-width:100%;height:auto}
     </div>
   </header>
   <main class="page page-wrap grid two-col" style="align-items:start">
-    
+
     <nav class="panel toc">
       <a href="#scope">0. 口径</a>
       <a href="#facts">1. 关键事实</a>
@@ -83,12 +85,12 @@ img,canvas{max-width:100%;height:auto}
       <a href="#sources">7. 来源表</a>
       <a href="#terms">8. 术语</a>
     </nav>
-    
+
     <div>
-      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>宇树已使人形机器人成为第一收入来源，证明其产品能从展示走向规模销售。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002178_20260602_SU4G.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>人形机器人放量若依赖降价且毛利率承压，平台化叙事会停留在硬件销量而非可持续能力。</p><p><strong>风险触发条件：</strong>人形机器人单价继续快速下探，且毛利率或利润随收入增长回落。</p><p><strong>后续跟踪指标：</strong>人形机器人销量、平均售价、毛利率及模型或生态相关收入占比。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002178_20260602_SU4G.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article></div></section>
+      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>宇树已使人形机器人成为第一收入来源，证明其产品能从展示走向规模销售。</p><p><strong>证据摘要：</strong></p><ul class="evidence-list"><li>2023-2025 年收入复合增速为 226.78%，2026Q1 收入同比增长 68.49%。</li><li>2025 年人形机器人收入占主营业务收入 51.78%。</li></ul><span class="tag">可信度：中</span><div><a class="source-chip" href="https://pdf.dfcfw.com/pdf/H2_AN202606021823164465_1.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>人形机器人放量若依赖降价且毛利率承压，平台化叙事会停留在硬件销量而非可持续能力。</p><p><strong>证据摘要：</strong></p><ul class="evidence-list"><li>2025 年人形机器人单价降至 16.64 万元/台，毛利率回落至 63.18%。</li><li>2026Q1 扣非归母净利润同比下降 52.55%，经营现金流同比下降 85.65%。</li></ul><p><strong>风险触发条件：</strong>人形机器人单价继续快速下探，且毛利率或利润随收入增长回落。</p><p><strong>后续跟踪指标：</strong>人形机器人销量、平均售价、毛利率及模型或生态相关收入占比。</p><span class="tag">可信度：中</span><div><a class="source-chip" href="https://pdf.dfcfw.com/pdf/H2_AN202606021823164465_1.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</a></div></article></div></section>
       <section id="scope" class="section panel">
         <h2>0. 口径说明</h2>
-        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T21:11:46+08:00。</p>
+        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T23:02:59+08:00。</p>
         <p>若 `confidence = 待验证`，表示当前证据足以提出研究命题，但不足以把它写成确定事实；不会把缺失项补成伪精确结论。</p>
       </section>
       <section id="facts" class="section panel">
@@ -111,14 +113,14 @@ img,canvas{max-width:100%;height:auto}
               <span class="tag">本报告推断</span></div>
               <h3>如果人形机器人销量继续上升但单价和毛利率守住，宇树的平台化故事才有财务抓手。</h3>
               <p class="muted">证据来源</p>
-              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002178_20260602_SU4G.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
               <ul class="evidence-list"><li>2023-2025 CAGR 226.78%；2026Q1 收入同比 +68.49%</li><li>2025 扣非后归母净利润 59,075.28 万元；2026Q1 扣非同比 -52.55%</li><li>旧版概览与详尽报告都提示：2025 年人形机器人收入占主营 51.78%，但单价已下降到 16.64 万元/台。</li></ul>
               <div class="divider"></div>
               <p><strong>反证信号</strong></p>
               <ul class="evidence-list"><li>后续披露显示单价继续快速下探而毛利率守不住</li><li>人形收入增长但利润同步回落</li></ul>
               <p><strong>下一验证节点</strong>：2026H1 财务更新、发行前最新经营数据、上市后首份年报</p>
             </article>
-            
+
             <article class="hypothesis">
               <div><span class="tag tag-company">命题 2</span>
               <span class="tag">公司披露</span></div>
@@ -131,7 +133,7 @@ img,canvas{max-width:100%;height:auto}
               <ul class="evidence-list"><li>国际主要玩家新一轮产品与价格战明显压缩宇树优势</li><li>后续披露中宇树盈利能力不再领先样本</li></ul>
               <p><strong>下一验证节点</strong>：新版招股书、上市后同行公开数据、宇树下一次产品与订单披露</p>
             </article>
-            
+
             <article class="hypothesis">
               <div><span class="tag tag-pending">命题 3</span>
               <span class="tag">待验证</span></div>
@@ -148,17 +150,17 @@ img,canvas{max-width:100%;height:auto}
       </section>
       <section id="comparability" class="section panel">
         <h2>4. 可比边界</h2>
-        
+
     <div class="grid two-col">
       <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>优必选、越疆、云深处、乐聚等已在旧版报告列示的机器人样本</li></ul></div>
       <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>未披露同口径财务数据的全球机器人玩家</li><li>纯软件大模型平台</li></ul></div>
     </div>
     <p class="lead">宇树当前最扎实的可比口径仍是已披露 2025 年收入/利润/毛利率的样本，而全球人形机器人赛道的口径并不统一。</p>
-    
+
       </section>
       <section id="valuation" class="section panel">
         <h2>5. 估值语言</h2>
-        
+
     <div class="grid two-col">
       <div class="subcard">
         <h3>估值锚</h3>
@@ -170,7 +172,7 @@ img,canvas{max-width:100%;height:auto}
         <p><strong>是否给目标价：</strong>否</p>
       </div>
     </div>
-    
+
       </section>
       <section id="tracking" class="section panel">
         <h2>6. 后续跟踪清单</h2>
@@ -183,7 +185,7 @@ img,canvas{max-width:100%;height:auto}
       </section>
       <section id="sources" class="section panel">
         <h2>7. 来源表</h2>
-        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核披露目录 GP_GPZCZ_SHXXPL</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2178' target='_blank' rel='noreferrer'>上交所发行上市审核披露目录 GP_GPZCZ_SHXXPL</a></td><td>打开 | 核对注册批复、注册稿招股书、审计报告、问询回复目录和文件大小 | 官方目录；静态 PDF 直连在当前环境 404，正文采用同文件公告镜像</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002178_20260602_SU4G.pdf' target='_blank' rel='noreferrer'>招股书：宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-02）；问询回复：8-1 发行人及中介机构关于审核中心意见落实函的回复（公告/更新日期 2026-05-25）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002178_20260525_V4H0.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>关于同意宇树科技股份有限公司首次公开发行股票注册的批复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202607061826748666_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-07-02-关于同意宇树科技股份有限公司首次公开发行股票注册的批复-eastmoney.pdf</a></td><td>打开 | 确认注册生效事实 | 上交所目录 filePath=/disclosure/announcement/c/202607/002178_20260702_TIY7.pdf；fileSize=769,562；镜像 PDF 已校验 | verified_mirror | 2026-07-02</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606021823164465_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf</a></td><td>打开 | 业务、财务、产品结构、客户供应商、募投和风险因素主来源 | 上交所披露目录确认文件名、公告日期、filePath/fileId/fileSize；正文由东方财富公告 PDF 镜像取得并校验 %PDF- 文件头 | 待官方目录复核 | 2026-06-02</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>容诚会计师事务所关于宇树科技首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202605251822861780_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-05-25-容诚会计师事务所(特殊普通合伙)关于宇树科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告(上会稿)(宇树科技股份有限公司)-eastmoney.pdf</a></td><td>打开 | 交叉核对财务数据和审计口径 | 上交所目录显示 2026-06-02 注册稿审计报告同为 12,461,024 字节；本文件为已下载真 PDF | 待官方目录复核 | 2026-05-25</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>8-1 发行人及中介机构关于审核中心意见落实函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202605251822861711_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-05-25-8-1发行人及中介机构关于审核中心意见落实函的回复(宇树科技股份有限公司)-eastmoney.pdf</a></td><td>打开 | 监管关注点：增速放缓、竞争加剧、研发投入、同行对比和业绩波动 | 真 PDF；用于补充风险和可比公司口径 | 待官方目录复核 | 2026-05-25</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>首轮/第二轮预先审阅问询函回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202603201820669961_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-03-20-8-1-1发行人及中介机构关于首轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf</a></td><td>打开 | 后续深挖收入确认、产品和客户问题的备查材料 | 本版主要使用落实函回复；两轮预先审阅回复已下载备查 | 待官方目录复核 | 2026-03-20</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>东方财富 IPO 审核信息 / 巨潮资讯新股资料（AkShare）</td><td>data/raw/ipo_review_match_2026-07-10.json</td><td>项目内文件 | 辅助核对临时代码 A26029，未发现巨潮新股发行/上市日期 | 不作为财务来源；发行/上市日期最终以交易所、巨潮正式公告为准 | verified | 2026-07-10</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成机器人报告主视觉</td><td>companies/宇树科技/assets/2026-07-10-yushu-robotics-hero-gpt-img2.png</td><td>项目内文件 | 报告视觉资产 | 无文字、无 Logo、无事实含义，不作为数据来源 | verified | 2026-07-10</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/宇树科技/reports/2026-07-10-overview-v3.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/宇树科技/reports/2026-07-10-research-v3.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-03-20-宇树科技股份有限公司科创板首次公开发行股票招股说明书(申报稿)-eastmoney.pdf</td><td>companies/宇树科技/sources/2026-03-20-宇树科技股份有限公司科创板首次公开发行股票招股说明书(申报稿)-eastmoney.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-25-宇树科技股份有限公司科创板首次公开发行股票招股说明书(上会稿)-eastmoney.pdf</td><td>companies/宇树科技/sources/2026-05-25-宇树科技股份有限公司科创板首次公开发行股票招股说明书(上会稿)-eastmoney.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-02-宇树科技-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/宇树科技/sources/2026-06-02-宇树科技-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf</td><td>companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核披露目录 GP_GPZCZ_SHXXPL</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2178' target='_blank' rel='noreferrer'>上交所发行上市审核披露目录 GP_GPZCZ_SHXXPL</a></td><td>打开 | 核对注册批复、注册稿招股书、审计报告、问询回复目录和文件大小 | 官方目录；静态 PDF 直连在当前环境 404，正文采用同文件公告镜像</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1' target='_blank' rel='noreferrer'>招股书：宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-02）；问询回复：8-1 发行人及中介机构关于审核中心意见落实函的回复（公告/更新日期 2026-05-25）</a></td><td>旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202606/002178_20260602_SU4G.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2178&amp;issueMarketType=1' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202605/002178_20260525_V4H0.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>关于同意宇树科技股份有限公司首次公开发行股票注册的批复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202607061826748666_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-07-02-关于同意宇树科技股份有限公司首次公开发行股票注册的批复-eastmoney.pdf</a></td><td>打开 | 确认注册生效事实 | 上交所目录 filePath=disclosure/announcement/c/202607/002178_20260702_TIY7.pdf；fileSize=769,562；镜像 PDF 已校验 | verified_mirror | 2026-07-02</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606021823164465_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf</a></td><td>打开 | 业务、财务、产品结构、客户供应商、募投和风险因素主来源 | 上交所披露目录确认文件名、公告日期、filePath/fileId/fileSize；正文由东方财富公告 PDF 镜像取得并校验 %PDF- 文件头 | 待官方目录复核 | 2026-06-02</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>容诚会计师事务所关于宇树科技首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202605251822861780_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-05-25-容诚会计师事务所(特殊普通合伙)关于宇树科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告(上会稿)(宇树科技股份有限公司)-eastmoney.pdf</a></td><td>打开 | 交叉核对财务数据和审计口径 | 上交所目录显示 2026-06-02 注册稿审计报告同为 12,461,024 字节；本文件为已下载真 PDF | 待官方目录复核 | 2026-05-25</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>8-1 发行人及中介机构关于审核中心意见落实函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202605251822861711_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-05-25-8-1发行人及中介机构关于审核中心意见落实函的回复(宇树科技股份有限公司)-eastmoney.pdf</a></td><td>打开 | 监管关注点：增速放缓、竞争加剧、研发投入、同行对比和业绩波动 | 真 PDF；用于补充风险和可比公司口径 | 待官方目录复核 | 2026-05-25</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>首轮/第二轮预先审阅问询函回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202603201820669961_1.pdf' target='_blank' rel='noreferrer'>companies/宇树科技/sources/2026-03-20-8-1-1发行人及中介机构关于首轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf</a></td><td>打开 | 后续深挖收入确认、产品和客户问题的备查材料 | 本版主要使用落实函回复；两轮预先审阅回复已下载备查 | 待官方目录复核 | 2026-03-20</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>东方财富 IPO 审核信息 / 巨潮资讯新股资料（AkShare）</td><td>data/raw/ipo_review_match_2026-07-10.json</td><td>项目内文件 | 辅助核对临时代码 A26029，未发现巨潮新股发行/上市日期 | 不作为财务来源；发行/上市日期最终以交易所、巨潮正式公告为准 | verified | 2026-07-10</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成机器人报告主视觉</td><td>companies/宇树科技/assets/2026-07-10-yushu-robotics-hero-gpt-img2.png</td><td>项目内文件 | 报告视觉资产 | 无文字、无 Logo、无事实含义，不作为数据来源 | verified | 2026-07-10</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/宇树科技/reports/2026-07-10-overview-v3.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/宇树科技/reports/2026-07-10-research-v3.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-03-20-宇树科技股份有限公司科创板首次公开发行股票招股说明书(申报稿)-eastmoney.pdf</td><td>companies/宇树科技/sources/2026-03-20-宇树科技股份有限公司科创板首次公开发行股票招股说明书(申报稿)-eastmoney.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-25-宇树科技股份有限公司科创板首次公开发行股票招股说明书(上会稿)-eastmoney.pdf</td><td>companies/宇树科技/sources/2026-05-25-宇树科技股份有限公司科创板首次公开发行股票招股说明书(上会稿)-eastmoney.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-02-宇树科技-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/宇树科技/sources/2026-06-02-宇树科技-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf</td><td>companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
       </section>
       <section id="terms" class="section panel">
         <h2>8. 术语与使用限制</h2>

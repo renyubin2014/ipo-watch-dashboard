@@ -23,6 +23,7 @@ a:hover{text-decoration:underline}
 .section{margin:18px auto}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
 .grid{display:grid;gap:14px}
+.grid>*{min-width:0}
 .metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
@@ -49,7 +50,7 @@ th{background:#f8fafc;font-size:13px;color:#3c5068}
 .toc a{display:block;padding:6px 0;color:var(--muted)}
 .evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
 .evidence-list li,.bullet-list li{margin:4px 0}
-.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;max-width:100%;overflow-wrap:anywhere;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
 .kpi{font-size:13px;color:var(--muted)}
 .divider{height:1px;background:var(--line);margin:18px 0}
 img,canvas{max-width:100%;height:auto}
@@ -57,6 +58,7 @@ img,canvas{max-width:100%;height:auto}
   .page{padding:12px}
   .panel{padding:16px;border-radius:14px}
   .metric-grid{grid-template-columns:1fr}
+  .two-col{grid-template-columns:minmax(0,1fr)}
   .hero{padding:36px 14px 28px}
   .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
 }
@@ -68,11 +70,11 @@ img,canvas{max-width:100%;height:auto}
       <div class="eyebrow"><span class="tag tag-official">IPO Research Workbench V2</span><span class="tag">ipo-001</span><span class="tag">注册生效</span></div>
       <h1>燧原科技：燧原已证明国产 AI 加速卡可以放量出货，但还没证明自己拥有可持续定价权。</h1>
       <p>腾讯及指定客户链条下的高集中度，使燧原当前更像“有订单但定价权未稳”的高波动国产算力标的。</p>
-      <p class="muted">更新口径：2026-07-10T21:11:46+08:00；主状态来源：上交所发行上市审核项目动态接口 SH_XM_LB</p>
+      <p class="muted">更新口径：2026-07-10T23:02:59+08:00；主状态来源：上交所发行上市审核项目动态接口 SH_XM_LB</p>
     </div>
   </header>
   <main class="page page-wrap">
-    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>燧原已经证明国产 AI 加速卡可以在头部互联网客户中实现规模化出货。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>客户高度集中且毛利率尚未证明持续修复，可能使收入增长无法转化为稳定定价权。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article></div></section>
+    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>燧原已经证明国产 AI 加速卡可以在头部互联网客户中实现规模化出货。</p><span class="tag">可信度：中</span><div><a class="source-chip" href="https://pdf.dfcfw.com/pdf/H2_AN202606181823668427_1.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>客户高度集中且毛利率尚未证明持续修复，可能使收入增长无法转化为稳定定价权。</p><span class="tag">可信度：中</span><div><a class="source-chip" href="https://pdf.dfcfw.com/pdf/H2_AN202606181823668427_1.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</a></div></article></div></section>
     <section class="section panel">
       <h2>关键事实卡</h2>
       <div class="grid metric-grid"><div class='metric'><div class='kpi'>状态</div><strong>科创板 / 注册生效</strong><div class='muted'>注册生效；项目更新日期 2026-07-09</div></div><div class='metric'><div class='kpi'>研究主线</div><strong>燧原已证明国产 AI 加速卡可以放量出货，但还没证明自己拥有可持续定价权。</strong><div class='muted'>腾讯及指定客户链条下的高集中度，使燧原当前更像“有订单但定价权未稳”的高波动国产算力标的。</div></div><div class='metric'><div class='kpi'>收入线索</div><strong>2025/2024/2023 营业收入：99,016.00, 72,238.74, 30,118.74 万元；三年复合增速 81.32%</strong><div class='muted'>旧看板当前口径</div></div><div class='metric'><div class='kpi'>客户/交易约束</div><strong>2025 前五大客户占比：96.89%</strong><div class='muted'>注册生效但发行价、流通盘和上市公告书待披露；未盈利和客户集中会放大上市后波动</div></div></div>
@@ -89,27 +91,27 @@ img,canvas{max-width:100%;height:auto}
               <span class="tag">本报告推断</span></div>
               <h3>如果 2026H2 非腾讯客户占比上升且 AI 加速卡毛利率修复，燧原才算开始从“有出货”迈向“有定价权”。</h3>
               <p class="muted">证据来源</p>
-              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB</a><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB</a><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
               <ul class="evidence-list"><li>2025/2024/2023 营业收入：99,016.00, 72,238.74, 30,118.74 万元；三年复合增速 81.32%</li><li>主营业务毛利率：31.78%, 30.59%, 22.60%</li><li>2025 前五大客户占比：96.89%</li><li>旧版详尽报告强调 2025 年公司主营毛利率低于可比均值，且第一大客户直接占营业收入 74.90%。</li></ul>
               <div class="divider"></div>
               <p><strong>反证信号</strong></p>
               <ul class="evidence-list"><li>2026 年后续披露中第一大客户占比仍维持高位</li><li>AI 加速卡毛利率继续下滑或无法修复</li></ul>
               <p><strong>下一验证节点</strong>：发行前更新文件、上市公告书或 2026 年中期实际经营披露</p>
             </article>
-            
+
             <article class="hypothesis">
               <div><span class="tag tag-company">命题 2</span>
               <span class="tag">公司披露</span></div>
               <h3>2026 年接近平衡的前提不是收入单独冲高，而是收入达成率和中毛利率同时成立。</h3>
               <p class="muted">证据来源</p>
-              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
               <ul class="evidence-list"><li>2025/2024/2023 营业收入：99,016.00, 72,238.74, 30,118.74 万元；三年复合增速 81.32%</li><li>经营现金流：-96,508.71, -179,773.78, -120,900.41 万元</li><li>旧版详尽报告引用招股书：中性收入达成率和中毛利率情形下，公司 2026 年可基本盈亏平衡。</li></ul>
               <div class="divider"></div>
               <p><strong>反证信号</strong></p>
               <ul class="evidence-list"><li>收入兑现但亏损不收敛</li><li>经营现金流继续显著恶化</li></ul>
               <p><strong>下一验证节点</strong>：2026H1/2026 年三季报口径更新或发行前最新财务数据</p>
             </article>
-            
+
             <article class="hypothesis">
               <div><span class="tag tag-pending">命题 3</span>
               <span class="tag">待验证</span></div>
@@ -126,14 +128,14 @@ img,canvas{max-width:100%;height:auto}
     </section>
     <section class="section panel">
       <h2>可比边界与估值语言</h2>
-      
+
     <div class="grid two-col">
       <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>国产 AI 加速卡/智算系统供应商</li><li>高研发强度的 Fabless 算力芯片公司</li></ul></div>
       <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>拥有全球训练生态和高端训练卡定价权的海外龙头</li></ul></div>
     </div>
     <p class="lead">燧原处在国产推理卡和定制智算系统放量阶段，收入结构、客户集中度和软件生态深度都与全球龙头不同。</p>
-    
-      
+
+
     <div class="grid two-col">
       <div class="subcard">
         <h3>估值锚</h3>
@@ -145,12 +147,12 @@ img,canvas{max-width:100%;height:auto}
         <p><strong>是否给目标价：</strong>否</p>
       </div>
     </div>
-    
+
     </section>
     <section class="section panel">
       <h2>来源列表</h2>
       <p class="lead">外部来源可点击；本地来源仅展示项目内路径。旧版概览/详尽报告仍作为当前复核入口保留。</p>
-      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB</a></td><td>核对公司全称、科创板、行业、注册生效、申报时间、保荐机构、披露文件目录和文件大小 | 打开 | 官方事实；当前环境无法直连 listing.sse.com.cn 页面正文，但 query.sse.com.cn 接口可访问</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf' target='_blank' rel='noreferrer'>招股书：上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-18）；问询回复：8-1 发行人及中介机构关于审核中心意见落实函的回复（公告/更新日期 2026-06-08）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260608_XL17.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606181823668427_1.pdf' target='_blank' rel='noreferrer'>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</a></td><td>主营业务、行业定位、收入、利润、毛利率、现金流、客户集中度、募投、风险因素 | 打开 | 上交所披露目录确认的注册稿；正文由东方财富公告 PDF 镜像取得，文件大小 6,954,402 字节，与上交所目录一致 | external_only | 2026-06-18</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>毕马威华振会计师事务所关于上海燧原科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606081823360435_1.pdf' target='_blank' rel='noreferrer'>毕马威华振会计师事务所关于上海燧原科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</a></td><td>交叉核对 2023-2025 年审计收入、收入确认关键审计事项、存货跌价事项 | 打开 | 东方财富未收录 2026-06-18 审计报告镜像；本文件为 2026-06-08 上会稿审计报告。上交所目录显示 2026-06-18 审计报告文件大小与该上会稿相同，仍按需复核正式下载件 | external_only | 2026-06-08</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>8-1 发行人及中介机构关于审核中心意见落实函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606081823360421_1.pdf' target='_blank' rel='noreferrer'>8-1 发行人及中介机构关于审核中心意见落实函的回复</a></td><td>后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF | external_only | 2026-06-08</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>8-1 发行人及中介机构关于第二轮审核问询函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606021823162336_1.pdf' target='_blank' rel='noreferrer'>8-1 发行人及中介机构关于第二轮审核问询函的回复</a></td><td>后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF | external_only | 2026-06-02</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>燧原科技官网产品与公司介绍</td><td><a href='https://www.enflame-tech.com/' target='_blank' rel='noreferrer'>燧原科技官网产品与公司介绍</a></td><td>辅助核对产品命名、S60、云燧智算集群、驭算 TopsRider 等产品描述 | 打开 | 公司自述，关键商业与财务判断以招股书为准 | external_only | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/燧原科技/reports/2026-07-10-overview-v8.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/燧原科技/reports/2026-07-10-research-v8.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿-eastmoney-mirror.pdf</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿-eastmoney-mirror.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿.blocked.html.gz</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿.blocked.html.gz</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿.pdf</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-07-09-注册批复-eastmoney-mirror.not-pdf.html</td><td>companies/燧原科技/sources/2026-07-09-注册批复-eastmoney-mirror.not-pdf.html</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB</a></td><td>核对公司全称、科创板、行业、注册生效、申报时间、保荐机构、披露文件目录和文件大小 | 打开 | 官方事实；当前环境无法直连 listing.sse.com.cn 页面正文，但 query.sse.com.cn 接口可访问</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1' target='_blank' rel='noreferrer'>招股书：上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-18）；问询回复：8-1 发行人及中介机构关于审核中心意见落实函的回复（公告/更新日期 2026-06-08）</a></td><td>旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202606/002175_20260618_55YX.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202606/002175_20260608_XL17.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606181823668427_1.pdf' target='_blank' rel='noreferrer'>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</a></td><td>主营业务、行业定位、收入、利润、毛利率、现金流、客户集中度、募投、风险因素 | 打开 | 上交所披露目录确认的注册稿；正文由东方财富公告 PDF 镜像取得，文件大小 6,954,402 字节，与上交所目录一致 | external_only | 2026-06-18</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>毕马威华振会计师事务所关于上海燧原科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606081823360435_1.pdf' target='_blank' rel='noreferrer'>毕马威华振会计师事务所关于上海燧原科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</a></td><td>交叉核对 2023-2025 年审计收入、收入确认关键审计事项、存货跌价事项 | 打开 | 东方财富未收录 2026-06-18 审计报告镜像；本文件为 2026-06-08 上会稿审计报告。上交所目录显示 2026-06-18 审计报告文件大小与该上会稿相同，仍按需复核正式下载件 | external_only | 2026-06-08</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>8-1 发行人及中介机构关于审核中心意见落实函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606081823360421_1.pdf' target='_blank' rel='noreferrer'>8-1 发行人及中介机构关于审核中心意见落实函的回复</a></td><td>后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF | external_only | 2026-06-08</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>8-1 发行人及中介机构关于第二轮审核问询函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606021823162336_1.pdf' target='_blank' rel='noreferrer'>8-1 发行人及中介机构关于第二轮审核问询函的回复</a></td><td>后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF | external_only | 2026-06-02</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>燧原科技官网产品与公司介绍</td><td><a href='https://www.enflame-tech.com/' target='_blank' rel='noreferrer'>燧原科技官网产品与公司介绍</a></td><td>辅助核对产品命名、S60、云燧智算集群、驭算 TopsRider 等产品描述 | 打开 | 公司自述，关键商业与财务判断以招股书为准 | external_only | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/燧原科技/reports/2026-07-10-overview-v8.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/燧原科技/reports/2026-07-10-research-v8.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿-eastmoney-mirror.pdf</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿-eastmoney-mirror.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿.blocked.html.gz</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿.blocked.html.gz</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿.pdf</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-07-09-注册批复-eastmoney-mirror.not-pdf.html</td><td>companies/燧原科技/sources/2026-07-09-注册批复-eastmoney-mirror.not-pdf.html</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
     </section>
   </main>
 </body>

@@ -362,14 +362,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-001/overview.html",
-      "researchUrl": "/reports-v2/ipo-001/research.html",
-      "legacyOverviewUrl": "/companies/燧原科技/reports/2026-07-10-overview-v8.html",
-      "legacyResearchUrl": "/companies/燧原科技/reports/2026-07-10-research-v8.html",
       "reportVersion": "2026-07-10-v8",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-001/overview.html",
-        "researchUrl": "/reports-v2/ipo-001/research.html",
         "reportVersion": "2026-07-10-v8"
       },
       "sourceRefs": [
@@ -569,8 +563,6 @@
       },
       "legacyDashboard": {
         "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
-        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf",
-        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260608_XL17.pdf",
         "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175",
         "scoreNote": "已接入燧原专用数据版：财务、客户集中度、募投和风险来自注册稿招股书、审计报告和问询回复。"
       }
@@ -596,14 +588,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-002/overview.html",
-      "researchUrl": "/reports-v2/ipo-002/research.html",
-      "legacyOverviewUrl": "/companies/天博智能/reports/2026-07-10-overview-v14.html",
-      "legacyResearchUrl": "/companies/天博智能/reports/2026-07-10-research-v14.html",
       "reportVersion": "2026-07-10-v14",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-002/overview.html",
-        "researchUrl": "/reports-v2/ipo-002/research.html",
         "reportVersion": "2026-07-10-v14"
       },
       "sourceRefs": [
@@ -729,8 +715,6 @@
       },
       "legacyDashboard": {
         "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）",
-        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260618_XRL0.pdf",
-        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260602_JN2T.pdf",
         "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160",
         "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
       }
@@ -758,14 +742,8 @@
         "metrics.revenueGrowth",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-003/overview.html",
-      "researchUrl": "/reports-v2/ipo-003/research.html",
-      "legacyOverviewUrl": "/companies/长鑫科技/reports/2026-07-09-overview-v2.html",
-      "legacyResearchUrl": "/companies/长鑫科技/reports/2026-07-09-research-v2.html",
       "reportVersion": "2026-07-09-v2",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-003/overview.html",
-        "researchUrl": "/reports-v2/ipo-003/research.html",
         "reportVersion": "2026-07-09-v2"
       },
       "sourceRefs": [
@@ -1085,8 +1063,6 @@
       },
       "legacyDashboard": {
         "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
-        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260527_23QQ.pdf",
-        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260520_QVFW.pdf",
         "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2170",
         "scoreNote": "DRAM/存储芯片国产替代属性强，行业景气度按官方行业、公司名称和招股意向书发行阶段初筛为高；需后续用招股书财务和产能数据复核"
       }
@@ -1110,14 +1086,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-004/overview.html",
-      "researchUrl": "/reports-v2/ipo-004/research.html",
-      "legacyOverviewUrl": "/companies/宇树科技/reports/2026-07-10-overview-v3.html",
-      "legacyResearchUrl": "/companies/宇树科技/reports/2026-07-10-research-v3.html",
       "reportVersion": "2026-07-10-v3",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-004/overview.html",
-        "researchUrl": "/reports-v2/ipo-004/research.html",
         "reportVersion": "2026-07-10-v3"
       },
       "sourceRefs": [
@@ -1151,7 +1121,7 @@
           "fileSize": 769562,
           "sha256": "ea2d4299dae47a563014228019c0a293e32c7355d592846a0de760684b97beec",
           "verificationStatus": "verified_mirror",
-          "note": "打开 | 确认注册生效事实 | 上交所目录 filePath=/disclosure/announcement/c/202607/002178_20260702_TIY7.pdf；fileSize=769,562；镜像 PDF 已校验"
+          "note": "本机路径已移除"
         },
         {
           "id": "S3",
@@ -1353,8 +1323,6 @@
       },
       "legacyDashboard": {
         "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
-        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002178_20260602_SU4G.pdf",
-        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002178_20260525_V4H0.pdf",
         "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2178",
         "scoreNote": "已用注册稿招股书、审计报告、注册批复和落实函回复重跑；重点跟踪发行价、2026H1 利润回落和人形机器人单价/毛利率"
       }
@@ -1379,14 +1347,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-005/overview.html",
-      "researchUrl": "/reports-v2/ipo-005/research.html",
-      "legacyOverviewUrl": "/companies/中塑股份/reports/2026-07-10-overview-v14.html",
-      "legacyResearchUrl": "/companies/中塑股份/reports/2026-07-10-research-v14.html",
       "reportVersion": "2026-07-10-v14",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-005/overview.html",
-        "researchUrl": "/reports-v2/ipo-005/research.html",
         "reportVersion": "2026-07-10-v14"
       },
       "sourceRefs": [
@@ -1539,14 +1501,8 @@
         "metrics.profitQuality",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-006/overview.html",
-      "researchUrl": "/reports-v2/ipo-006/research.html",
-      "legacyOverviewUrl": "/companies/绿控传动/reports/2026-07-10-overview-v16.html",
-      "legacyResearchUrl": "/companies/绿控传动/reports/2026-07-10-research-v16.html",
       "reportVersion": "2026-07-10-v16",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-006/overview.html",
-        "researchUrl": "/reports-v2/ipo-006/research.html",
         "reportVersion": "2026-07-10-v16"
       },
       "sourceRefs": [
@@ -1700,14 +1656,8 @@
         "metrics.profitQuality",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-007/overview.html",
-      "researchUrl": "/reports-v2/ipo-007/research.html",
-      "legacyOverviewUrl": "/companies/洛轴股份/reports/2026-07-10-overview-v14.html",
-      "legacyResearchUrl": "/companies/洛轴股份/reports/2026-07-10-research-v14.html",
       "reportVersion": "2026-07-10-v14",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-007/overview.html",
-        "researchUrl": "/reports-v2/ipo-007/research.html",
         "reportVersion": "2026-07-10-v14"
       },
       "sourceRefs": [
@@ -1859,14 +1809,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-008/overview.html",
-      "researchUrl": "/reports-v2/ipo-008/research.html",
-      "legacyOverviewUrl": "/companies/频准激光/reports/2026-07-10-overview-v14.html",
-      "legacyResearchUrl": "/companies/频准激光/reports/2026-07-10-research-v14.html",
       "reportVersion": "2026-07-10-v14",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-008/overview.html",
-        "researchUrl": "/reports-v2/ipo-008/research.html",
         "reportVersion": "2026-07-10-v14"
       },
       "sourceRefs": [
@@ -1992,8 +1936,6 @@
       },
       "legacyDashboard": {
         "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
-        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260522_Y2OP.pdf",
-        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260512_E79K.pdf",
         "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134",
         "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
       }
@@ -2020,14 +1962,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-009/overview.html",
-      "researchUrl": "/reports-v2/ipo-009/research.html",
-      "legacyOverviewUrl": "/companies/嘉立创/reports/2026-07-10-overview-v16.html",
-      "legacyResearchUrl": "/companies/嘉立创/reports/2026-07-10-research-v16.html",
       "reportVersion": "2026-07-10-v16",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-009/overview.html",
-        "researchUrl": "/reports-v2/ipo-009/research.html",
         "reportVersion": "2026-07-10-v16"
       },
       "sourceRefs": [
@@ -2182,14 +2118,8 @@
         "metrics.profitQuality",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-010/overview.html",
-      "researchUrl": "/reports-v2/ipo-010/research.html",
-      "legacyOverviewUrl": "/companies/江苏展芯/reports/2026-07-10-overview-v15.html",
-      "legacyResearchUrl": "/companies/江苏展芯/reports/2026-07-10-research-v15.html",
       "reportVersion": "2026-07-10-v15",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-010/overview.html",
-        "researchUrl": "/reports-v2/ipo-010/research.html",
         "reportVersion": "2026-07-10-v15"
       },
       "sourceRefs": [
@@ -2342,14 +2272,8 @@
         "metrics.profitQuality",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-011/overview.html",
-      "researchUrl": "/reports-v2/ipo-011/research.html",
-      "legacyOverviewUrl": "/companies/贝特利/reports/2026-07-10-overview-v13.html",
-      "legacyResearchUrl": "/companies/贝特利/reports/2026-07-10-research-v13.html",
       "reportVersion": "2026-07-10-v13",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-011/overview.html",
-        "researchUrl": "/reports-v2/ipo-011/research.html",
         "reportVersion": "2026-07-10-v13"
       },
       "sourceRefs": [
@@ -2501,14 +2425,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-012/overview.html",
-      "researchUrl": "/reports-v2/ipo-012/research.html",
-      "legacyOverviewUrl": "/companies/超纯股份/reports/2026-07-10-overview-v14.html",
-      "legacyResearchUrl": "/companies/超纯股份/reports/2026-07-10-research-v14.html",
       "reportVersion": "2026-07-10-v14",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-012/overview.html",
-        "researchUrl": "/reports-v2/ipo-012/research.html",
         "reportVersion": "2026-07-10-v14"
       },
       "sourceRefs": [
@@ -2660,14 +2578,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-013/overview.html",
-      "researchUrl": "/reports-v2/ipo-013/research.html",
-      "legacyOverviewUrl": "/companies/马矿股份/reports/2026-07-10-overview-v14.html",
-      "legacyResearchUrl": "/companies/马矿股份/reports/2026-07-10-research-v14.html",
       "reportVersion": "2026-07-10-v14",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-013/overview.html",
-        "researchUrl": "/reports-v2/ipo-013/research.html",
         "reportVersion": "2026-07-10-v14"
       },
       "sourceRefs": [
@@ -2793,8 +2705,6 @@
       },
       "legacyDashboard": {
         "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）",
-        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2 | filePath=/disclosure/announcement/c/202605/002132_20260529_ZFLM.pdf",
-        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2 | filePath=/disclosure/announcement/c/202603/002132_20260324_YLWC.pdf",
         "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2132",
         "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
       }
@@ -2821,14 +2731,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-014/overview.html",
-      "researchUrl": "/reports-v2/ipo-014/research.html",
-      "legacyOverviewUrl": "/companies/思仪科技/reports/2026-07-10-overview-v14.html",
-      "legacyResearchUrl": "/companies/思仪科技/reports/2026-07-10-research-v14.html",
       "reportVersion": "2026-07-10-v14",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-014/overview.html",
-        "researchUrl": "/reports-v2/ipo-014/research.html",
         "reportVersion": "2026-07-10-v14"
       },
       "sourceRefs": [
@@ -2981,14 +2885,8 @@
         "metrics.peerValuation",
         "metrics.tradingRisk"
       ],
-      "overviewUrl": "/reports-v2/ipo-015/overview.html",
-      "researchUrl": "/reports-v2/ipo-015/research.html",
-      "legacyOverviewUrl": "/companies/国仪量子/reports/2026-07-10-overview-v13.html",
-      "legacyResearchUrl": "/companies/国仪量子/reports/2026-07-10-research-v13.html",
       "reportVersion": "2026-07-10-v13",
       "reports": {
-        "overviewUrl": "/reports-v2/ipo-015/overview.html",
-        "researchUrl": "/reports-v2/ipo-015/research.html",
         "reportVersion": "2026-07-10-v13"
       },
       "sourceRefs": [
@@ -3114,8 +3012,6 @@
       },
       "legacyDashboard": {
         "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
-        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002112_20260512_0M7N.pdf",
-        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1 | filePath=/disclosure/announcement/c/202604/002112_20260427_ZG7K.pdf",
         "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112",
         "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
       }

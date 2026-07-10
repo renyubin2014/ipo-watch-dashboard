@@ -22,7 +22,11 @@ export function filterCompanies(companies, {
       company.industry,
       company.board,
       company.status,
+      company.latestProgress,
       company.analysis?.oneLineThesis,
+      company.analysis?.maximumAdvantage?.summary,
+      company.analysis?.maximumRisk?.summary,
+      company.analysis?.keyConstraint,
     ].filter(Boolean).join(" ").toLowerCase();
     return (!normalizedQuery || searchable.includes(normalizedQuery))
       && (!status || company.status === status)

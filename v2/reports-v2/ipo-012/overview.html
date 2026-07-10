@@ -23,6 +23,7 @@ a:hover{text-decoration:underline}
 .section{margin:18px auto}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
 .grid{display:grid;gap:14px}
+.grid>*{min-width:0}
 .metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
@@ -49,7 +50,7 @@ th{background:#f8fafc;font-size:13px;color:#3c5068}
 .toc a{display:block;padding:6px 0;color:var(--muted)}
 .evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
 .evidence-list li,.bullet-list li{margin:4px 0}
-.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;max-width:100%;overflow-wrap:anywhere;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
 .kpi{font-size:13px;color:var(--muted)}
 .divider{height:1px;background:var(--line);margin:18px 0}
 img,canvas{max-width:100%;height:auto}
@@ -57,6 +58,7 @@ img,canvas{max-width:100%;height:auto}
   .page{padding:12px}
   .panel{padding:16px;border-radius:14px}
   .metric-grid{grid-template-columns:1fr}
+  .two-col{grid-template-columns:minmax(0,1fr)}
   .hero{padding:36px 14px 28px}
   .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
 }
@@ -68,11 +70,11 @@ img,canvas{max-width:100%;height:auto}
       <div class="eyebrow"><span class="tag tag-official">IPO Research Workbench V2</span><span class="tag">ipo-012</span><span class="tag">注册生效</span></div>
       <h1>超纯股份：超纯已经在国产半导体设备特殊涂层零部件里排到前列，但离形成真正的行业定价权还很远，更像“小而尖”的验证样本。</h1>
       <p>份额领先只成立在国产本土企业里，整体市场地位仍小，客户验证和设备资本开支波动会放大业绩。</p>
-      <p class="muted">更新口径：2026-07-10T21:11:46+08:00；主状态来源：深交所发行上市审核项目动态接口 projectrends/query</p>
+      <p class="muted">更新口径：2026-07-10T23:02:59+08:00；主状态来源：深交所发行上市审核项目动态接口 projectrends/query</p>
     </div>
   </header>
   <main class="page page-wrap">
-    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>超纯已在国产半导体设备特殊涂层零部件中位居前列，并具备进入重点客户验证链条的能力。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>整体市场份额仍小且客户验证深度有限，设备资本开支或单一重点客户波动会放大业绩不连续性。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div></article></div></section>
+    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>现有本地招股书缓存显示，超纯在国产半导体设备特殊涂层零部件中具备重点客户验证基础。</p><span class="tag">可信度：待验证</span><div><span class="source-chip"><span class="tag tag-company">公司披露</span>超纯股份-1-1-招股说明书.pdf</span></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>整体市场份额仍小且客户验证深度有限，设备资本开支或单一重点客户波动会放大业绩不连续性。</p><span class="tag">可信度：待验证</span><div><span class="source-chip"><span class="tag tag-company">公司披露</span>超纯股份-1-1-招股说明书.pdf</span></div></article></div></section>
     <section class="section panel">
       <h2>关键事实卡</h2>
       <div class="grid metric-grid"><div class='metric'><div class='kpi'>状态</div><strong>创业板 / 注册生效</strong><div class='muted'>注册生效；项目更新日期 2026-05-25</div></div><div class='metric'><div class='kpi'>研究主线</div><strong>超纯已经在国产半导体设备特殊涂层零部件里排到前列，但离形成真正的行业定价权还很远，更像“小而尖”的验证样本。</strong><div class='muted'>份额领先只成立在国产本土企业里，整体市场地位仍小，客户验证和设备资本开支波动会放大业绩。</div></div><div class='metric'><div class='kpi'>收入线索</div><strong>2025/2024/2023 营业收入：49,573.87, 25,687.80, 16,905.00 万元；三年复合增速 71.25%</strong><div class='muted'>旧看板当前口径</div></div><div class='metric'><div class='kpi'>客户/交易约束</div><strong>2025 前五大客户占比：89.65%</strong><div class='muted'>注册生效但发行价、流通盘和上市公告书待披露</div></div></div>
@@ -96,7 +98,7 @@ img,canvas{max-width:100%;height:auto}
               <ul class="evidence-list"><li>重点客户收入波动大</li><li>国产设备资本开支放缓导致订单不连续</li></ul>
               <p><strong>下一验证节点</strong>：上市后客户结构和半导体设备景气更新</p>
             </article>
-            
+
             <article class="hypothesis">
               <div><span class="tag tag-pending">命题 2</span>
               <span class="tag">待验证</span></div>
@@ -113,14 +115,14 @@ img,canvas{max-width:100%;height:auto}
     </section>
     <section class="section panel">
       <h2>可比边界与估值语言</h2>
-      
+
     <div class="grid two-col">
       <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>半导体设备上游特殊零部件与工艺材料企业</li></ul></div>
       <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>拥有全球寡头份额的成熟设备零部件龙头</li></ul></div>
     </div>
     <p class="lead">超纯当前更像国产设备供应链中的细分验证样本，规模和份额均与全球成熟龙头不同。</p>
-    
-      
+
+
     <div class="grid two-col">
       <div class="subcard">
         <h3>估值锚</h3>
@@ -132,12 +134,12 @@ img,canvas{max-width:100%;height:auto}
         <p><strong>是否给目标价：</strong>否</p>
       </div>
     </div>
-    
+
     </section>
     <section class="section panel">
       <h2>来源列表</h2>
       <p class="lead">外部来源可点击；本地来源仅展示项目内路径。旧版概览/详尽报告仍作为当前复核入口保留。</p>
-      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>深交所发行上市审核项目动态接口 projectrends/query</td><td><a href='https://listing.szse.cn/projectdynamic/ipo/index.html' target='_blank' rel='noreferrer'>深交所发行上市审核项目动态接口 projectrends/query</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td>待补充</td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td>问询回复</td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>超纯股份-1-1-招股说明书.pdf</td><td>companies/超纯股份/sources/2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | verified | 2026-05-06</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/超纯股份/reports/2026-07-10-overview-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/超纯股份/reports/2026-07-10-research-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf</td><td>companies/超纯股份/sources/2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>深交所发行上市审核项目动态接口 projectrends/query</td><td><a href='https://listing.szse.cn/projectdynamic/ipo/index.html' target='_blank' rel='noreferrer'>深交所发行上市审核项目动态接口 projectrends/query</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>超纯股份-1-1-招股说明书.pdf</td><td>companies/超纯股份/sources/2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | verified | 2026-05-06</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/超纯股份/reports/2026-07-10-overview-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/超纯股份/reports/2026-07-10-research-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf</td><td>companies/超纯股份/sources/2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
     </section>
   </main>
 </body>

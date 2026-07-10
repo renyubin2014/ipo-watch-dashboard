@@ -23,6 +23,7 @@ a:hover{text-decoration:underline}
 .section{margin:18px auto}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
 .grid{display:grid;gap:14px}
+.grid>*{min-width:0}
 .metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
@@ -49,7 +50,7 @@ th{background:#f8fafc;font-size:13px;color:#3c5068}
 .toc a{display:block;padding:6px 0;color:var(--muted)}
 .evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
 .evidence-list li,.bullet-list li{margin:4px 0}
-.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;max-width:100%;overflow-wrap:anywhere;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
 .kpi{font-size:13px;color:var(--muted)}
 .divider{height:1px;background:var(--line);margin:18px 0}
 img,canvas{max-width:100%;height:auto}
@@ -57,6 +58,7 @@ img,canvas{max-width:100%;height:auto}
   .page{padding:12px}
   .panel{padding:16px;border-radius:14px}
   .metric-grid{grid-template-columns:1fr}
+  .two-col{grid-template-columns:minmax(0,1fr)}
   .hero{padding:36px 14px 28px}
   .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
 }
@@ -68,11 +70,11 @@ img,canvas{max-width:100%;height:auto}
       <div class="eyebrow"><span class="tag tag-official">IPO Research Workbench V2</span><span class="tag">ipo-015</span><span class="tag">注册生效</span></div>
       <h1>国仪量子：国仪量子更像“多细分仪器的国产替代组合”，关键不是讲整体市占率故事，而是证明不同产品线都能持续放量并改善盈利。</h1>
       <p>公司已经显示出客户分散和供应链相对可控，但整体份额没有精确公开口径，盈利拐点仍需继续验证。</p>
-      <p class="muted">更新口径：2026-07-10T21:11:46+08:00；主状态来源：上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</p>
+      <p class="muted">更新口径：2026-07-10T23:02:59+08:00；主状态来源：上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</p>
     </div>
   </header>
   <main class="page page-wrap">
-    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>国仪量子以多个高端科学仪器细分产品共同切入国产替代，客户分散度为多线放量提供基础。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>多产品线能否同步放量并收敛亏损尚未证实，盈利拐点若延后会限制组合式国产替代的估值。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div></article></div></section>
+    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>国仪量子以多个高端科学仪器细分产品共同切入国产替代，客户分散度为多线放量提供基础。</p><span class="tag">可信度：中</span><div><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>多产品线能否同步放量并收敛亏损尚未证实，盈利拐点若延后会限制组合式国产替代的估值。</p><span class="tag">可信度：中</span><div><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article></div></section>
     <section class="section panel">
       <h2>关键事实卡</h2>
       <div class="grid metric-grid"><div class='metric'><div class='kpi'>状态</div><strong>科创板 / 注册生效</strong><div class='muted'>注册生效；项目更新日期 2026-06-15</div></div><div class='metric'><div class='kpi'>研究主线</div><strong>国仪量子更像“多细分仪器的国产替代组合”，关键不是讲整体市占率故事，而是证明不同产品线都能持续放量并改善盈利。</strong><div class='muted'>公司已经显示出客户分散和供应链相对可控，但整体份额没有精确公开口径，盈利拐点仍需继续验证。</div></div><div class='metric'><div class='kpi'>收入线索</div><strong>2025/2024/2023 营业收入：66,619.18, 50,147.22, 39,962.01 万元；三年复合增速 29.11%</strong><div class='muted'>旧看板当前口径</div></div><div class='metric'><div class='kpi'>客户/交易约束</div><strong>2025 前五大客户占比：16.07%</strong><div class='muted'>注册生效但发行价、流通盘和上市公告书待披露</div></div></div>
@@ -96,7 +98,7 @@ img,canvas{max-width:100%;height:auto}
               <ul class="evidence-list"><li>收入仍高度依赖少数产品线</li><li>多产品扩张没有带来持续收入增长</li></ul>
               <p><strong>下一验证节点</strong>：后续招股书/年报中的产品线收入结构</p>
             </article>
-            
+
             <article class="hypothesis">
               <div><span class="tag tag-company">命题 2</span>
               <span class="tag">公司披露</span></div>
@@ -113,14 +115,14 @@ img,canvas{max-width:100%;height:auto}
     </section>
     <section class="section panel">
       <h2>可比边界与估值语言</h2>
-      
+
     <div class="grid two-col">
       <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>高端科学仪器与量子传感细分国产替代企业</li></ul></div>
       <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>已经形成广谱平台和全球份额的国际仪器巨头</li></ul></div>
     </div>
     <p class="lead">国仪当前更适合按多细分利基组合来理解，而不是按全球综合仪器平台去直接比较。</p>
-    
-      
+
+
     <div class="grid two-col">
       <div class="subcard">
         <h3>估值锚</h3>
@@ -132,12 +134,12 @@ img,canvas{max-width:100%;height:auto}
         <p><strong>是否给目标价：</strong>否</p>
       </div>
     </div>
-    
+
     </section>
     <section class="section panel">
       <h2>来源列表</h2>
       <p class="lead">外部来源可点击；本地来源仅展示项目内路径。旧版概览/详尽报告仍作为当前复核入口保留。</p>
-      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002112_20260512_0M7N.pdf' target='_blank' rel='noreferrer'>招股书：国仪量子技术（合肥）股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-12）；问询回复：8-1 发行人及中介机构关于第二轮审核问询函的回复（公告/更新日期 2026-04-27）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202604/002112_20260427_ZG7K.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)</td><td>companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | 待官方目录复核 | 2026-05-12</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/国仪量子/reports/2026-07-10-overview-v13.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/国仪量子/reports/2026-07-10-research-v13.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1' target='_blank' rel='noreferrer'>招股书：国仪量子技术（合肥）股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-12）；问询回复：8-1 发行人及中介机构关于第二轮审核问询函的回复（公告/更新日期 2026-04-27）</a></td><td>旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202605/002112_20260512_0M7N.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202604/002112_20260427_ZG7K.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)</td><td>companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | 待官方目录复核 | 2026-05-12</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/国仪量子/reports/2026-07-10-overview-v13.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/国仪量子/reports/2026-07-10-research-v13.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
     </section>
   </main>
 </body>

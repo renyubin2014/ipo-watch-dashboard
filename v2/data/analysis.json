@@ -1,7 +1,7 @@
 {
   "meta": {
     "schemaVersion": "2.0",
-    "generatedAt": "2026-07-10T21:11:46+08:00",
+    "generatedAt": "2026-07-10T23:02:59+08:00",
     "sourceMode": "companies.json_or_publish_fallback",
     "sourceSnapshot": [
       {
@@ -50,8 +50,11 @@
       "maximumAdvantage": {
         "summary": "燧原已经证明国产 AI 加速卡可以在头部互联网客户中实现规模化出货。",
         "evidenceRefs": [
-          "legacy_research",
-          "prospectus_link"
+          "S2"
+        ],
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 99,016.00、72,238.74、30,118.74 万元，三年复合增速 81.32%。",
+          "现有正式披露来源为燧原科技招股说明书（注册稿）。"
         ],
         "confidence": "中"
       },
@@ -60,8 +63,11 @@
         "trigger": "后续披露中第一大客户占比仍维持高位，或 AI 加速卡毛利率继续下滑。",
         "trackingMetric": "非腾讯客户收入占比与 AI 加速卡毛利率。",
         "evidenceRefs": [
-          "legacy_research",
-          "prospectus_link"
+          "S2"
+        ],
+        "evidenceSummary": [
+          "2025 年前五大客户占比为 96.89%。",
+          "主营业务毛利率为 31.78%、30.59%、22.60%，客户结构与毛利率需同步跟踪。"
         ],
         "confidence": "中"
       },
@@ -169,17 +175,17 @@
           "id": "prospectus_link",
           "type": "company",
           "label": "招股书/披露目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1",
           "displayPath": "招股书：上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-18）；问询回复：8-1 发行人及中介机构关于审核中心意见落实函的回复（公告/更新日期 2026-06-08）",
-          "note": "旧看板记录的核心披露入口。"
+          "note": "旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202606/002175_20260618_55YX.pdf。"
         },
         {
           "id": "inquiry_link",
           "type": "company",
           "label": "问询回复目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260608_XL17.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1",
           "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
+          "note": "用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202606/002175_20260608_XL17.pdf。"
         },
         {
           "id": "S2",
@@ -215,7 +221,7 @@
         },
         {
           "id": "S6",
-          "type": "research",
+          "type": "company",
           "label": "燧原科技官网产品与公司介绍",
           "href": "https://www.enflame-tech.com/",
           "displayPath": "燧原科技官网产品与公司介绍",
@@ -306,8 +312,11 @@
       "maximumAdvantage": {
         "summary": "天博已在新能源汽车热管理与声学关键细分件中建立排名和客户定点基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 196,109.87、169,287.62、126,963.90 万元，三年复合增速 24.28%。",
+          "现有核心命题记录公司在调温器、水阀、温度传感器和 AVAS 等关键细分件中的位置。"
         ],
         "confidence": "中"
       },
@@ -316,8 +325,11 @@
         "trigger": "新增车型或平台定点放缓，且头部客户平台份额下降。",
         "trackingMetric": "新能源车型定点数量、头部客户平台份额与单车价值量。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "2025 年前五大客户占比为 42.89%。",
+          "关键约束是细分件排名尚未证明能持续转化为更稳的车型平台份额。"
         ],
         "confidence": "中"
       },
@@ -405,17 +417,17 @@
           "id": "prospectus_link",
           "type": "company",
           "label": "招股书/披露目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260618_XRL0.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2",
           "displayPath": "招股书：天博智能科技（山东）股份有限公司主板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-18）；问询回复：8-1-2发行人及中介机构关于第二轮审核问询函的回复意见（公告/更新日期 2026-06-02）",
-          "note": "旧看板记录的核心披露入口。"
+          "note": "旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202606/002160_20260618_XRL0.pdf。"
         },
         {
           "id": "inquiry_link",
           "type": "company",
           "label": "问询回复目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260602_JN2T.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2",
           "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
+          "note": "用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202606/002160_20260602_JN2T.pdf。"
         },
         {
           "id": "S2",
@@ -493,10 +505,14 @@
       },
       "keyConstraint": "长鑫的关键矛盾已从“有没有量”转成“这些量能否卖成高端价格”，也就是产品升级与高端客户验证。",
       "maximumAdvantage": {
-        "summary": "长鑫已具备进入全球 DRAM 供应链的产能与量产基础。",
+        "summary": "长鑫已公开披露 LPDDR5X 量产和 DDR5/LPDDR5X 产品线，为高端产品升级提供产品基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S8",
+          "S5"
+        ],
+        "evidenceSummary": [
+          "公司官网现有来源记录 LPDDR5X 8533/9600Mbps 已量产、10667Mbps 送样。",
+          "公司产品页列示 DDR5、LPDDR5/5X、DDR4 和 LPDDR4X；送样不等于客户量产采购。"
         ],
         "confidence": "中"
       },
@@ -505,10 +521,13 @@
         "trigger": "DDR5、LPDDR5X 等高端产品未形成持续批量采购，收入仍主要由低代际产品贡献。",
         "trackingMetric": "高代际产品收入占比、服务器及高端客户验证进度与 DRAM 毛利率。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "当前结构化指标中的收入、毛利率和现金流仍待补充。",
+          "高端产品售价与客户验证缺少已提取的公开量化证据，因此风险结论仍待验证。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -614,17 +633,17 @@
           "id": "prospectus_link",
           "type": "company",
           "label": "招股书/披露目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260527_23QQ.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1",
           "displayPath": "招股书：长鑫科技集团股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-27）；问询回复：8-1 关于长鑫科技集团股份有限公司首次公开发行股票并在科创板上市申请文件的审核中心意见落实函的回复（公告/更新日期 2026-05-20）；巨潮资讯：长鑫科技首次公开发行股票并在科创板上市发行安排及初步询价公告（公告日期 2026-07-09，公告编号 1225416301）",
-          "note": "旧看板记录的核心披露入口。"
+          "note": "旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202605/002170_20260527_23QQ.pdf。"
         },
         {
           "id": "inquiry_link",
           "type": "company",
           "label": "问询回复目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260520_QVFW.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1",
           "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
+          "note": "用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202605/002170_20260520_QVFW.pdf。"
         },
         {
           "id": "S2",
@@ -802,8 +821,11 @@
       "maximumAdvantage": {
         "summary": "宇树已使人形机器人成为第一收入来源，证明其产品能从展示走向规模销售。",
         "evidenceRefs": [
-          "legacy_research",
-          "prospectus_link"
+          "S3"
+        ],
+        "evidenceSummary": [
+          "2023-2025 年收入复合增速为 226.78%，2026Q1 收入同比增长 68.49%。",
+          "2025 年人形机器人收入占主营业务收入 51.78%。"
         ],
         "confidence": "中"
       },
@@ -812,8 +834,11 @@
         "trigger": "人形机器人单价继续快速下探，且毛利率或利润随收入增长回落。",
         "trackingMetric": "人形机器人销量、平均售价、毛利率及模型或生态相关收入占比。",
         "evidenceRefs": [
-          "legacy_research",
-          "prospectus_link"
+          "S3"
+        ],
+        "evidenceSummary": [
+          "2025 年人形机器人单价降至 16.64 万元/台，毛利率回落至 63.18%。",
+          "2026Q1 扣非归母净利润同比下降 52.55%，经营现金流同比下降 85.65%。"
         ],
         "confidence": "中"
       },
@@ -920,17 +945,17 @@
           "id": "prospectus_link",
           "type": "company",
           "label": "招股书/披露目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002178_20260602_SU4G.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1",
           "displayPath": "招股书：宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-02）；问询回复：8-1 发行人及中介机构关于审核中心意见落实函的回复（公告/更新日期 2026-05-25）",
-          "note": "旧看板记录的核心披露入口。"
+          "note": "旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202606/002178_20260602_SU4G.pdf。"
         },
         {
           "id": "inquiry_link",
           "type": "company",
           "label": "问询回复目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002178_20260525_V4H0.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1",
           "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
+          "note": "用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202605/002178_20260525_V4H0.pdf。"
         },
         {
           "id": "S2",
@@ -938,7 +963,7 @@
           "label": "关于同意宇树科技股份有限公司首次公开发行股票注册的批复",
           "href": "https://pdf.dfcfw.com/pdf/H2_AN202607061826748666_1.pdf",
           "displayPath": "companies/宇树科技/sources/2026-07-02-关于同意宇树科技股份有限公司首次公开发行股票注册的批复-eastmoney.pdf",
-          "note": "打开 | 确认注册生效事实 | 上交所目录 filePath=/disclosure/announcement/c/202607/002178_20260702_TIY7.pdf；fileSize=769,562；镜像 PDF 已校验 | verified_mirror | 2026-07-02"
+          "note": "打开 | 确认注册生效事实 | 上交所目录 filePath=disclosure/announcement/c/202607/002178_20260702_TIY7.pdf；fileSize=769,562；镜像 PDF 已校验 | verified_mirror | 2026-07-02"
         },
         {
           "id": "S3",
@@ -958,7 +983,7 @@
         },
         {
           "id": "S5",
-          "type": "official",
+          "type": "company",
           "label": "8-1 发行人及中介机构关于审核中心意见落实函的回复",
           "href": "https://pdf.dfcfw.com/pdf/H2_AN202605251822861711_1.pdf",
           "displayPath": "companies/宇树科技/sources/2026-05-25-8-1发行人及中介机构关于审核中心意见落实函的回复(宇树科技股份有限公司)-eastmoney.pdf",
@@ -966,7 +991,7 @@
         },
         {
           "id": "S6",
-          "type": "official",
+          "type": "company",
           "label": "首轮/第二轮预先审阅问询函回复",
           "href": "https://pdf.dfcfw.com/pdf/H2_AN202603201820669961_1.pdf",
           "displayPath": "companies/宇树科技/sources/2026-03-20-8-1-1发行人及中介机构关于首轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf",
@@ -1069,10 +1094,13 @@
       },
       "keyConstraint": "招股书没有给出清晰寡头市占表，说明研究重点应放在场景迁移和客户验证，而不是虚构市场份额。",
       "maximumAdvantage": {
-        "summary": "中塑具备将消费电子材料能力延伸至汽车、储能和家电等多场景的产品与客户基础。",
+        "summary": "现有本地招股书缓存显示，中塑具备将消费电子材料能力迁移至更多应用场景的产品基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
+        ],
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 74,947.57、69,995.26、53,677.89 万元，三年复合增速 18.16%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，结论待公开来源复核。"
         ],
         "confidence": "待验证"
       },
@@ -1081,8 +1109,11 @@
         "trigger": "汽车、储能和家电等新场景收入未形成，且消费电子收入占比维持高位。",
         "trackingMetric": "各应用场景收入占比、新场景客户认证与消费电子收入增速。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
+        ],
+        "evidenceSummary": [
+          "现有关键约束指出新应用场景需要继续验证，不能虚构市场份额。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，风险边界待复核。"
         ],
         "confidence": "待验证"
       },
@@ -1166,22 +1197,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "中塑股份-1-1-招股说明书.pdf",
@@ -1257,22 +1272,28 @@
       },
       "keyConstraint": "它已经证明重卡电机配套排名，但客户集中与行业周期决定了盈利弹性会被头部整车厂放大。",
       "maximumAdvantage": {
-        "summary": "绿控已在新能源重卡电驱配套中取得领先位置，并进入头部整车厂供应链。",
+        "summary": "现有本地招股书缓存显示，绿控在新能源重卡电驱配套中已形成头部客户供货基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 315,204.75、116,574.29、67,620.46 万元，三年复合增速 115.90%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，领先位置待公开来源复核。"
+        ],
+        "confidence": "待验证"
       },
       "maximumRisk": {
         "summary": "客户集中和新能源重卡周期会同步放大收入与盈利波动，公司缺少独立穿越整车厂需求波动的能力。",
         "trigger": "头部 OEM 新能源销量回落，或客户集中度继续上行而毛利率未改善。",
         "trackingMetric": "新能源重卡渗透率、头部 OEM 销量、客户集中度与电驱系统毛利率。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025 年前五大客户占比为 59.10%，经营现金流为 -17,492.01 万元。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，风险结论待复核。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -1354,22 +1375,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "绿控传动-1-1-招股说明书.pdf",
@@ -1445,22 +1450,28 @@
       },
       "keyConstraint": "如果高端专用轴承收入占比抬不起来，洛轴仍会被视为传统制造，而不是高端装备零部件升级故事。",
       "maximumAdvantage": {
-        "summary": "洛轴在风电、轨交、航空和新能源车等专用轴承场景拥有向高附加值结构升级的产品基础。",
+        "summary": "现有本地招股书缓存显示，洛轴在多个专用轴承场景具备向高附加值结构升级的产品基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 603,377.30、467,494.68、444,129.30 万元，三年复合增速 16.56%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，产品结构结论待复核。"
+        ],
+        "confidence": "待验证"
       },
       "maximumRisk": {
         "summary": "高端专用轴承占比若不能持续提升，公司仍将被传统轴承周期和低附加值制造属性定价。",
         "trigger": "专用轴承收入占比停滞，或高端场景扩张未带来毛利率改善。",
         "trackingMetric": "专用轴承收入占比、分产品毛利率与风电/轨交等订单进展。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "当前结构化指标中的分产品毛利率仍待补充，高端专用轴承占比是关键验证项。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，风险结论待复核。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -1543,22 +1554,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "洛轴股份-1-1-招股说明书.pdf",
@@ -1636,8 +1631,11 @@
       "maximumAdvantage": {
         "summary": "频准激光已在量子科研激光这一高精度细分领域建立国产领先位置。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 41,791.65、29,185.72、14,772.14 万元，三年复合增速 68.20%。",
+          "毛利率为 69.33%、67.78%、68.53%，现有核心命题将其定位在量子科研激光细分。"
         ],
         "confidence": "中"
       },
@@ -1646,8 +1644,11 @@
         "trigger": "半导体设备激光收入或订单占比未提升，收入仍主要停留在科研端。",
         "trackingMetric": "半导体设备激光收入占比、设备客户验证与新增订单。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "关键约束明确区分量子科研激光领先与半导体设备更大市场的切入阶段。",
+          "半导体设备激光收入占比和设备客户订单仍是后续验证项。"
         ],
         "confidence": "中"
       },
@@ -1735,17 +1736,17 @@
           "id": "prospectus_link",
           "type": "company",
           "label": "招股书/披露目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260522_Y2OP.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1",
           "displayPath": "招股书：上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-22）；问询回复：8-1 发行人及中介机构关于第二轮审核问询函的回复（公告/更新日期 2026-05-12）",
-          "note": "旧看板记录的核心披露入口。"
+          "note": "旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202605/002134_20260522_Y2OP.pdf。"
         },
         {
           "id": "inquiry_link",
           "type": "company",
           "label": "问询回复目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260512_E79K.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1",
           "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
+          "note": "用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202605/002134_20260512_E79K.pdf。"
         },
         {
           "id": "S2",
@@ -1823,22 +1824,28 @@
       },
       "keyConstraint": "长尾模式的护城河在效率和协同，但也意味着估值不能只类比传统 PCB 产能公司。",
       "maximumAdvantage": {
-        "summary": "嘉立创已将 PCB、元器件和 PCBA 服务连接为面向长尾研发与试产客户的高频入口。",
+        "summary": "现有本地招股书缓存显示，嘉立创已形成连接 PCB、元器件和 PCBA 服务的长尾客户入口。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 1,023,170.77、796,888.81、672,611.58 万元，三年复合增速 23.34%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，平台协同结论待复核。"
+        ],
+        "confidence": "待验证"
       },
       "maximumRisk": {
         "summary": "长尾模式需要平台效率持续覆盖复杂履约成本；协同失效时，低集中度客户结构未必能支撑利润质量。",
         "trigger": "交叉销售和客户留存未提升，且利润率或经营现金流明显走弱。",
         "trackingMetric": "PCB、元器件与 PCBA 交叉销售、客户留存、毛利率和经营现金流。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025 年前五大客户占比为 1.16%，但毛利率和经营现金流当前仍待补充。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，履约效率风险待复核。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -1921,22 +1928,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "嘉立创-1-1-招股说明书.pdf",
@@ -2012,22 +2003,28 @@
       },
       "keyConstraint": "门槛保护了位置，但也限制了规模外延；研究重点是订单质量和型号扩张，而不是想象大市场天花板。",
       "maximumAdvantage": {
-        "summary": "展芯在军工电源管理芯片的保密与认证门槛下，已处于民营配套企业的靠前位置。",
+        "summary": "现有本地招股书缓存显示，展芯在军工电源管理芯片的认证门槛下处于民营配套企业前列。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 63,917.99、41,258.83、46,574.61 万元，三年复合增速 17.15%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，行业位置待公开来源复核。"
+        ],
+        "confidence": "待验证"
       },
       "maximumRisk": {
         "summary": "军工利基市场的型号认证和列装节奏决定增长上限，项目推进不及预期会使高门槛无法转化为规模。",
         "trigger": "新增型号认证推进缓慢，或重点型号列装和客户项目扩张停滞。",
         "trackingMetric": "重点型号列装进度、新增认证项目数与分型号收入。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 归母净利润为 22,811.62、9,535.43、17,903.42 万元，盈利存在波动。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，认证与列装节奏风险待复核。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -2109,22 +2106,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "江苏展芯-1-1-招股说明书.pdf",
@@ -2200,22 +2181,28 @@
       },
       "keyConstraint": "如果市场只盯 HJT，而忽略现有高份额细分业务，就容易高估短期弹性、低估技术路线风险。",
       "maximumAdvantage": {
-        "summary": "贝特利在键盘导电浆料、铂金催化剂等既有细分业务中拥有高份额，构成盈利底盘。",
+        "summary": "现有本地招股书缓存显示，贝特利的既有功能材料业务构成当前经营底盘。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 364,620.27、252,140.41、227,286.36 万元，三年复合增速 26.66%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，细分份额结论待复核。"
+        ],
+        "confidence": "待验证"
       },
       "maximumRisk": {
         "summary": "HJT 浆料的上行想象受技术路线渗透率约束，若既有业务走弱，期权叙事无法弥补盈利缺口。",
         "trigger": "既有业务增速或盈利明显走弱，且 HJT 渗透率和公司订单未形成实质提升。",
         "trackingMetric": "既有高份额业务收入与毛利率、HJT 收入占比及下游 HJT 渗透率。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025 年前五大客户占比为 68.86%，毛利率为 10.02%。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，HJT 技术路线风险待复核。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -2297,22 +2284,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "贝特利-1-1-招股说明书.pdf",
@@ -2388,22 +2359,28 @@
       },
       "keyConstraint": "份额领先只成立在国产本土企业里，整体市场地位仍小，客户验证和设备资本开支波动会放大业绩。",
       "maximumAdvantage": {
-        "summary": "超纯已在国产半导体设备特殊涂层零部件中位居前列，并具备进入重点客户验证链条的能力。",
+        "summary": "现有本地招股书缓存显示，超纯在国产半导体设备特殊涂层零部件中具备重点客户验证基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 49,573.87、25,687.80、16,905.00 万元，三年复合增速 71.25%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，本土行业位置待复核。"
+        ],
+        "confidence": "待验证"
       },
       "maximumRisk": {
         "summary": "整体市场份额仍小且客户验证深度有限，设备资本开支或单一重点客户波动会放大业绩不连续性。",
         "trigger": "重点客户收入波动加大，或国产设备资本开支放缓导致订单不连续。",
         "trackingMetric": "重点客户收入占比、客户验证转量产进度与半导体设备资本开支。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025 年前五大客户占比为 89.65%，整体市场地位仍小是现有关键约束。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，客户验证深度风险待复核。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -2485,22 +2462,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "超纯股份-1-1-招股说明书.pdf",
@@ -2578,8 +2539,11 @@
       "maximumAdvantage": {
         "summary": "马矿拥有东南沿海铁精粉稳定供给和伴生钼资源价值，可为周期利润提供区域性韧性。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "2025/2024/2023 扣非归母净利润为 59,453.60、66,456.45、65,325.37 万元。",
+          "同期经营现金流为 96,094.80、94,286.37、99,958.85 万元。"
         ],
         "confidence": "中"
       },
@@ -2588,8 +2552,11 @@
         "trigger": "矿山品位或伴生钼贡献下行，且区域客户需求走弱。",
         "trackingMetric": "铁精粉产销量与品位、伴生钼贡献、铁矿石价格和区域客户需求。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "2025 年前五大客户占比为 82.53%，毛利率由 58.21% 降至 51.91%。",
+          "国际铁矿石周期由海外巨头主导，公司利润仍受品位、钼价和区域需求约束。"
         ],
         "confidence": "中"
       },
@@ -2676,17 +2643,17 @@
           "id": "prospectus_link",
           "type": "company",
           "label": "招股书/披露目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2 | filePath=/disclosure/announcement/c/202605/002132_20260529_ZFLM.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2",
           "displayPath": "招股书：福建马坑矿业股份有限公司主板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-29）；问询回复：8-1 发行人及中介机构关于第二轮审核问询函的回复（公告/更新日期 2026-03-24）",
-          "note": "旧看板记录的核心披露入口。"
+          "note": "旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202605/002132_20260529_ZFLM.pdf。"
         },
         {
           "id": "inquiry_link",
           "type": "company",
           "label": "问询回复目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2 | filePath=/disclosure/announcement/c/202603/002132_20260324_YLWC.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2",
           "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
+          "note": "用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202603/002132_20260324_YLWC.pdf。"
         },
         {
           "id": "S2",
@@ -2764,22 +2731,28 @@
       },
       "keyConstraint": "它已经证明微波/毫米波强项和国内头部位置，但尚未证明这种优势能顺利扩到更完整的平台化产品线。",
       "maximumAdvantage": {
-        "summary": "思仪已在微波和毫米波电子测量仪器中建立国内头部能力，为平台扩张提供技术与客户基础。",
+        "summary": "现有本地招股书缓存显示，思仪在微波和毫米波电子测量仪器中具备向平台化扩张的产品基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 239,837.17、205,188.28、215,292.19 万元，三年复合增速 5.55%。",
+          "实质证据来自项目内招股书缓存，公开可访问直链尚未留存，国内头部位置待复核。"
+        ],
+        "confidence": "待验证"
       },
       "maximumRisk": {
         "summary": "强势细分若不能扩展为完整测试测量平台，库存与客户集中度会使利润兑现慢于平台化预期。",
         "trigger": "平台型新品未形成规模，且库存高位或客户集中度未改善。",
         "trackingMetric": "平台型产品收入占比、存货周转、前五大客户占比与经营现金流。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "S2"
         ],
-        "confidence": "中"
+        "evidenceSummary": [
+          "平台型产品收入占比、存货周转和前五大客户占比仍是待补充验证项。",
+          "项目仅留存本地招股书缓存，公开可访问直链尚未留存，平台化风险待复核。"
+        ],
+        "confidence": "待验证"
       },
       "hypotheses": [
         {
@@ -2881,22 +2854,6 @@
           "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
         },
         {
-          "id": "prospectus_link",
-          "type": "company",
-          "label": "招股书/披露目录",
-          "href": "待补充",
-          "displayPath": "待补充",
-          "note": "旧看板记录的核心披露入口。"
-        },
-        {
-          "id": "inquiry_link",
-          "type": "company",
-          "label": "问询回复目录",
-          "href": "待补充",
-          "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
-        },
-        {
           "id": "S2",
           "type": "company",
           "label": "思仪科技-1-1-招股说明书.pdf",
@@ -2974,8 +2931,11 @@
       "maximumAdvantage": {
         "summary": "国仪量子以多个高端科学仪器细分产品共同切入国产替代，客户分散度为多线放量提供基础。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "2025/2024/2023 营业收入为 66,619.18、50,147.22、39,962.01 万元，三年复合增速 29.11%。",
+          "2025 年前五大客户占比为 16.07%，客户集中度相对较低。"
         ],
         "confidence": "中"
       },
@@ -2984,8 +2944,11 @@
         "trigger": "收入持续依赖少数产品线，或利润改善中断、经营现金流无法支撑研发投入。",
         "trackingMetric": "各产品线收入占比、扣非净利润、经营现金流与研发投入。",
         "evidenceRefs": [
-          "legacy_research",
-          "official_project"
+          "prospectus_link"
+        ],
+        "evidenceSummary": [
+          "2025 年扣非归母净利润为 -1,887.80 万元，仍未转正。",
+          "2025 年经营现金流为 11,834.03 万元，盈利拐点仍需继续验证。"
         ],
         "confidence": "中"
       },
@@ -3072,17 +3035,17 @@
           "id": "prospectus_link",
           "type": "company",
           "label": "招股书/披露目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002112_20260512_0M7N.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1",
           "displayPath": "招股书：国仪量子技术（合肥）股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-12）；问询回复：8-1 发行人及中介机构关于第二轮审核问询函的回复（公告/更新日期 2026-04-27）",
-          "note": "旧看板记录的核心披露入口。"
+          "note": "旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202605/002112_20260512_0M7N.pdf。"
         },
         {
           "id": "inquiry_link",
           "type": "company",
           "label": "问询回复目录",
-          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1 | filePath=/disclosure/announcement/c/202604/002112_20260427_ZG7K.pdf",
+          "href": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1",
           "displayPath": "问询回复",
-          "note": "用于补监管关注点和可比口径。"
+          "note": "用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202604/002112_20260427_ZG7K.pdf。"
         },
         {
           "id": "S2",

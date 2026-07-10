@@ -23,6 +23,7 @@ a:hover{text-decoration:underline}
 .section{margin:18px auto}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
 .grid{display:grid;gap:14px}
+.grid>*{min-width:0}
 .metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
@@ -49,7 +50,7 @@ th{background:#f8fafc;font-size:13px;color:#3c5068}
 .toc a{display:block;padding:6px 0;color:var(--muted)}
 .evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
 .evidence-list li,.bullet-list li{margin:4px 0}
-.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;max-width:100%;overflow-wrap:anywhere;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
 .kpi{font-size:13px;color:var(--muted)}
 .divider{height:1px;background:var(--line);margin:18px 0}
 img,canvas{max-width:100%;height:auto}
@@ -57,6 +58,7 @@ img,canvas{max-width:100%;height:auto}
   .page{padding:12px}
   .panel{padding:16px;border-radius:14px}
   .metric-grid{grid-template-columns:1fr}
+  .two-col{grid-template-columns:minmax(0,1fr)}
   .hero{padding:36px 14px 28px}
   .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
 }
@@ -71,7 +73,7 @@ img,canvas{max-width:100%;height:auto}
     </div>
   </header>
   <main class="page page-wrap grid two-col" style="align-items:start">
-    
+
     <nav class="panel toc">
       <a href="#scope">0. 口径</a>
       <a href="#facts">1. 关键事实</a>
@@ -83,12 +85,12 @@ img,canvas{max-width:100%;height:auto}
       <a href="#sources">7. 来源表</a>
       <a href="#terms">8. 术语</a>
     </nav>
-    
+
     <div>
-      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>天博已在新能源汽车热管理与声学关键细分件中建立排名和客户定点基础。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>细分件优势若不能持续转化为更多车型平台份额，增长会重新受制于单个项目和客户议价。</p><p><strong>风险触发条件：</strong>新增车型或平台定点放缓，且头部客户平台份额下降。</p><p><strong>后续跟踪指标：</strong>新能源车型定点数量、头部客户平台份额与单车价值量。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）</a></div></article></div></section>
+      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>天博已在新能源汽车热管理与声学关键细分件中建立排名和客户定点基础。</p><p><strong>证据摘要：</strong></p><ul class="evidence-list"><li>2025/2024/2023 营业收入为 196,109.87、169,287.62、126,963.90 万元，三年复合增速 24.28%。</li><li>现有核心命题记录公司在调温器、水阀、温度传感器和 AVAS 等关键细分件中的位置。</li></ul><span class="tag">可信度：中</span><div><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2160&amp;issueMarketType=2" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>细分件优势若不能持续转化为更多车型平台份额，增长会重新受制于单个项目和客户议价。</p><p><strong>证据摘要：</strong></p><ul class="evidence-list"><li>2025 年前五大客户占比为 42.89%。</li><li>关键约束是细分件排名尚未证明能持续转化为更稳的车型平台份额。</li></ul><p><strong>风险触发条件：</strong>新增车型或平台定点放缓，且头部客户平台份额下降。</p><p><strong>后续跟踪指标：</strong>新能源车型定点数量、头部客户平台份额与单车价值量。</p><span class="tag">可信度：中</span><div><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2160&amp;issueMarketType=2" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article></div></section>
       <section id="scope" class="section panel">
         <h2>0. 口径说明</h2>
-        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T21:11:46+08:00。</p>
+        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T23:02:59+08:00。</p>
         <p>若 `confidence = 待验证`，表示当前证据足以提出研究命题，但不足以把它写成确定事实；不会把缺失项补成伪精确结论。</p>
       </section>
       <section id="facts" class="section panel">
@@ -118,7 +120,7 @@ img,canvas{max-width:100%;height:auto}
               <ul class="evidence-list"><li>新增车型/平台定点放缓</li><li>收入增速明显回落且客户集中度同步上升</li></ul>
               <p><strong>下一验证节点</strong>：发行前最新财务更新、上市后首份年报中的客户与产品结构</p>
             </article>
-            
+
             <article class="hypothesis">
               <div><span class="tag tag-pending">命题 2</span>
               <span class="tag">待验证</span></div>
@@ -135,17 +137,17 @@ img,canvas{max-width:100%;height:auto}
       </section>
       <section id="comparability" class="section panel">
         <h2>4. 可比边界</h2>
-        
+
     <div class="grid two-col">
       <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>汽车热管理细分部件供应商</li><li>AVAS/传感器等小而关键的零部件厂商</li></ul></div>
       <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>整车热管理总包商或整车厂本体</li></ul></div>
     </div>
     <p class="lead">天博的真实位置是多个关键细分件组合，不宜把它简单放进整车热管理系统总包商估值框架。</p>
-    
+
       </section>
       <section id="valuation" class="section panel">
         <h2>5. 估值语言</h2>
-        
+
     <div class="grid two-col">
       <div class="subcard">
         <h3>估值锚</h3>
@@ -157,7 +159,7 @@ img,canvas{max-width:100%;height:auto}
         <p><strong>是否给目标价：</strong>否</p>
       </div>
     </div>
-    
+
       </section>
       <section id="tracking" class="section panel">
         <h2>6. 后续跟踪清单</h2>
@@ -170,7 +172,7 @@ img,canvas{max-width:100%;height:auto}
       </section>
       <section id="sources" class="section panel">
         <h2>7. 来源表</h2>
-        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2160&amp;issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260618_XRL0.pdf' target='_blank' rel='noreferrer'>招股书：天博智能科技（山东）股份有限公司主板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-18）；问询回复：8-1-2发行人及中介机构关于第二轮审核问询函的回复意见（公告/更新日期 2026-06-02）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2160&amp;issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260602_JN2T.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)</td><td>companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | 待官方目录复核 | 2026-06-18</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/天博智能/reports/2026-07-10-overview-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/天博智能/reports/2026-07-10-research-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2160&amp;issueMarketType=2' target='_blank' rel='noreferrer'>招股书：天博智能科技（山东）股份有限公司主板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-18）；问询回复：8-1-2发行人及中介机构关于第二轮审核问询函的回复意见（公告/更新日期 2026-06-02）</a></td><td>旧看板记录的核心披露入口。；披露目录 filePath=disclosure/announcement/c/202606/002160_20260618_XRL0.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2160&amp;issueMarketType=2' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。；披露目录 filePath=disclosure/announcement/c/202606/002160_20260602_JN2T.pdf。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)</td><td>companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | 待官方目录复核 | 2026-06-18</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/天博智能/reports/2026-07-10-overview-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/天博智能/reports/2026-07-10-research-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
       </section>
       <section id="terms" class="section panel">
         <h2>8. 术语与使用限制</h2>
