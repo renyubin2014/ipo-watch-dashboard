@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>江苏展芯 V2 详尽研究</title>
+  <style>
+:root{
+  --bg:#f5f7fb;--card:#ffffff;--ink:#142033;--muted:#63748a;--line:#d8e1ee;
+  --blue:#0b6bcb;--green:#108a5d;--amber:#9a6700;--red:#b42318;--risk-card:#c9828a;--tag:#eef4ff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif}
+body{line-height:1.7}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{padding:56px 18px 40px;background:linear-gradient(135deg,#10233c,#17395e 58%,#0f6dbd);color:#fff}
+.hero-wrap,.page-wrap{max-width:1180px;margin:0 auto}
+.hero h1{margin:10px 0 12px;font-size:clamp(1.8rem,9vw,3.4rem);line-height:1.12}
+.hero p{margin:0;max-width:960px;color:#d9e6f6}
+.eyebrow{display:inline-flex;gap:8px;flex-wrap:wrap}
+.page{padding:18px}
+.section{margin:18px auto}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
+.grid{display:grid;gap:14px}
+.metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.metric,.subcard,.hypothesis,.risk-card,.verdict-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.verdict-card.advantage{border-top:4px solid var(--green)}
+.verdict-card.risk{border-top:4px solid var(--risk-card);background:#fff7f7}
+.metric strong{display:block;font-size:1.15rem;margin:6px 0}
+.tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:var(--tag);font-size:12px;font-weight:700;color:#244b84;margin-right:6px;margin-bottom:6px}
+.tag-official{background:#e9f6ef;color:#176c42}
+.tag-company{background:#eef4ff;color:#244b84}
+.tag-research{background:#fff4e5;color:#9a6700}
+.tag-local{background:#f3f0ff;color:#5a37b8}
+.tag-infer{background:#fff0f2;color:#b42318}
+.tag-pending{background:#f4f5f7;color:#475467}
+.lead{font-size:1.05rem;color:#2e4057}
+.muted{color:var(--muted)}
+.callout{background:#10233c;color:#fff}
+.callout p,.callout li{color:#dce8f6}
+.table-scroll{max-width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f8fafc;font-size:13px;color:#3c5068}
+.toc{position:sticky;top:12px}
+.toc a{display:block;padding:6px 0;color:var(--muted)}
+.evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
+.evidence-list li,.bullet-list li{margin:4px 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.kpi{font-size:13px;color:var(--muted)}
+.divider{height:1px;background:var(--line);margin:18px 0}
+img,canvas{max-width:100%;height:auto}
+@media (max-width:640px){
+  .page{padding:12px}
+  .panel{padding:16px;border-radius:14px}
+  .metric-grid{grid-template-columns:1fr}
+  .hero{padding:36px 14px 28px}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-wrap">
+      <div class="eyebrow"><span class="tag tag-official">Detailed Research V2</span><span class="tag">ipo-010</span><span class="tag">创业板</span></div>
+      <h1>江苏展芯：利润机制与可证伪命题工作台</h1>
+      <p>江苏展芯的 4.36% 看起来不高，但在保密和认证门槛很重的军工电源管理芯片里，已经是民营配套企业里靠前的位置。</p>
+    </div>
+  </header>
+  <main class="page page-wrap grid two-col" style="align-items:start">
+
+    <nav class="panel toc">
+      <a href="#scope">0. 口径</a>
+      <a href="#facts">1. 关键事实</a>
+      <a href="#mechanism">2. 利润机制</a>
+      <a href="#hypotheses">3. 可证伪命题</a>
+      <a href="#comparability">4. 可比边界</a>
+      <a href="#valuation">5. 估值语言</a>
+      <a href="#tracking">6. 跟踪事项</a>
+      <a href="#sources">7. 来源表</a>
+      <a href="#terms">8. 术语</a>
+    </nav>
+
+    <div>
+      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>展芯在军工电源管理芯片的保密与认证门槛下，已处于民营配套企业的靠前位置。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>军工利基市场的型号认证和列装节奏决定增长上限，项目推进不及预期会使高门槛无法转化为规模。</p><p><strong>风险触发条件：</strong>新增型号认证推进缓慢，或重点型号列装和客户项目扩张停滞。</p><p><strong>后续跟踪指标：</strong>重点型号列装进度、新增认证项目数与分型号收入。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div></article></div></section>
+      <section id="scope" class="section panel">
+        <h2>0. 口径说明</h2>
+        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T21:11:46+08:00。</p>
+        <p>若 `confidence = 待验证`，表示当前证据足以提出研究命题，但不足以把它写成确定事实；不会把缺失项补成伪精确结论。</p>
+      </section>
+      <section id="facts" class="section panel">
+        <h2>1. 关键事实表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody><tr><td>公司</td><td>江苏展芯半导体技术股份有限公司</td></tr><tr><td>中文目录</td><td>江苏展芯</td></tr><tr><td>板块 / 状态</td><td>创业板 / 注册生效</td></tr><tr><td>行业</td><td>计算机、通信和其他电子设备制造业</td></tr><tr><td>最新进展</td><td>注册生效；项目更新日期 2026-06-02</td></tr><tr><td>预期发行/上市</td><td>待补充（关注发行/上市公告）</td></tr><tr><td>保荐机构</td><td>华泰联合证券有限责任公司</td></tr><tr><td>旧版概览</td><td>companies/江苏展芯/reports/2026-07-10-overview-v15.html</td></tr><tr><td>旧版详尽</td><td>companies/江苏展芯/reports/2026-07-10-research-v15.html</td></tr><tr><td>指标：revenueGrowth</td><td>2025/2024/2023 营业收入：63,917.99, 41,258.83, 46,574.61 万元；三年复合增速 17.15%</td></tr><tr><td>指标：profitQuality</td><td>2025/2024/2023 归母净利润：22,811.62, 9,535.43, 17,903.42 万元</td></tr><tr><td>指标：grossMarginTrend</td><td>毛利率：待补充, 待补充, 待补充</td></tr><tr><td>指标：cashFlow</td><td>经营现金流：231.94, 9,619.81, -5,810.09 万元</td></tr><tr><td>指标：customerConcentration</td><td>2025 前五大客户占比：待补充</td></tr><tr><td>指标：fundraisingFit</td><td>募投合计：待补充</td></tr><tr><td>指标：peerValuation</td><td>发行价/发行市值待补充</td></tr><tr><td>指标：tradingRisk</td><td>注册生效但发行价、流通盘和上市公告书待披露</td></tr></tbody></table></div>
+      </section>
+      <section id="mechanism" class="section panel">
+        <h2>2. 利润形成机制</h2>
+        <div class="grid cards-3"><div class='subcard'><h3>收入驱动</h3><ul class='bullet-list'><li>军规级电源管理芯片项目配套</li><li>认证后持续供货</li><li>重点型号放量</li></ul></div><div class='subcard'><h3>成本驱动</h3><ul class='bullet-list'><li>研发和流片验证成本</li><li>军工认证周期</li><li>小批量高可靠交付成本</li></ul></div><div class='subcard'><h3>周期变量</h3><ul class='bullet-list'><li>军工电子采购节奏</li><li>型号列装进度</li><li>认证壁垒延续性</li></ul></div><div class='subcard'><h3>利润读法</h3><p>展芯的利润逻辑不是大众消费电子那种放量，而是高门槛、小市场、项目制供货的认证壁垒。</p></div></div>
+        <div class="subcard" style="margin-top:14px">
+          <h3>当前最关键约束</h3>
+          <p>门槛保护了位置，但也限制了规模外延；研究重点是订单质量和型号扩张，而不是想象大市场天花板。</p>
+        </div>
+      </section>
+      <section id="hypotheses" class="section panel">
+        <h2>3. 可证伪命题卡</h2>
+        <div class="grid cards-3">
+            <article class="hypothesis">
+              <div><span class="tag tag-infer">命题 1</span>
+              <span class="tag">本报告推断</span></div>
+              <h3>如果重点型号持续列装且新增项目认证通过，展芯的收入质量会优于看上去不高的市场份额数字。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div>
+              <ul class="evidence-list"><li>2025/2024/2023 营业收入：63,917.99, 41,258.83, 46,574.61 万元；三年复合增速 17.15%</li><li>2025/2024/2023 归母净利润：22,811.62, 9,535.43, 17,903.42 万元</li><li>旧版行业位置卡强调：4.36% 份额放在军工电子认证壁垒下，已经是民营配套前列。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>新增型号认证推进缓慢</li><li>收入增长停滞且客户项目扩张不及预期</li></ul>
+              <p><strong>下一验证节点</strong>：后续招股书/年报中的型号与客户项目进展</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-pending">命题 2</span>
+              <span class="tag">待验证</span></div>
+              <h3>在更清晰的现金流和客户结构披露前，展芯应先按高壁垒利基军工器件看待，而不是按大众芯片成长股看待。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span></div>
+              <ul class="evidence-list"><li>2025 前五大客户占比：待补充</li><li>注册生效但发行价、流通盘和上市公告书待披露</li><li>旧版详尽报告仍有客户/供应商字段待补充，说明信息完整度本身就是估值约束。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>客户结构、现金流和型号放量证据补齐</li><li>市场对项目型供货稳定性给予更明确验证</li></ul>
+              <p><strong>下一验证节点</strong>：发行前更新、上市后首份年报</p>
+            </article>
+            </div>
+      </section>
+      <section id="comparability" class="section panel">
+        <h2>4. 可比边界</h2>
+
+    <div class="grid two-col">
+      <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>军规级电源管理芯片与军工模拟器件供应商</li></ul></div>
+      <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>大众消费电子 PMIC 龙头</li></ul></div>
+    </div>
+    <p class="lead">军工电子的认证、保密和项目节奏决定了商业模式与大众 PMIC 公司显著不同。</p>
+
+      </section>
+      <section id="valuation" class="section panel">
+        <h2>5. 估值语言</h2>
+
+    <div class="grid two-col">
+      <div class="subcard">
+        <h3>估值锚</h3>
+        <p>先看认证壁垒、型号扩张和项目持续供货能力，再谈成长溢价。</p>
+      </div>
+      <div class="subcard">
+        <h3>当前不能下结论的变量</h3>
+        <ul class="bullet-list"><li>发行价/市值</li><li>客户结构补充</li><li>现金流与项目转换效率</li></ul>
+        <p><strong>是否给目标价：</strong>否</p>
+      </div>
+    </div>
+
+      </section>
+      <section id="tracking" class="section panel">
+        <h2>6. 后续跟踪清单</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>对象</th><th>当前命题</th><th>下一验证节点</th><th>反证信号</th></tr></thead>
+            <tbody><tr><td>命题 1</td><td>如果重点型号持续列装且新增项目认证通过，展芯的收入质量会优于看上去不高的市场份额数字。</td><td>后续招股书/年报中的型号与客户项目进展</td><td>新增型号认证推进缓慢；收入增长停滞且客户项目扩张不及预期</td></tr><tr><td>命题 2</td><td>在更清晰的现金流和客户结构披露前，展芯应先按高壁垒利基军工器件看待，而不是按大众芯片成长股看待。</td><td>发行前更新、上市后首份年报</td><td>客户结构、现金流和型号放量证据补齐；市场对项目型供货稳定性给予更明确验证</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="sources" class="section panel">
+        <h2>7. 来源表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>深交所发行上市审核项目动态接口 projectrends/query</td><td><a href='https://listing.szse.cn/projectdynamic/ipo/index.html' target='_blank' rel='noreferrer'>深交所发行上市审核项目动态接口 projectrends/query</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td>待补充</td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td>问询回复</td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>江苏展芯-1-1-招股说明书.pdf</td><td>companies/江苏展芯/sources/2026-05-15-江苏展芯-1-1-招股说明书.pdf-深交所.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | verified | 2026-05-15</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/江苏展芯/reports/2026-07-10-overview-v15.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/江苏展芯/reports/2026-07-10-research-v15.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-15-江苏展芯-1-1-招股说明书.pdf-深交所.pdf</td><td>companies/江苏展芯/sources/2026-05-15-江苏展芯-1-1-招股说明书.pdf-深交所.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+      </section>
+      <section id="terms" class="section panel">
+        <h2>8. 术语与使用限制</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>术语</th><th>解释</th><th>使用限制</th></tr></thead>
+            <tbody>
+              <tr><td>可证伪命题</td><td>允许被未来证据推翻的研究判断。</td><td>若没有明确反证信号，就不算合格命题。</td></tr>
+              <tr><td>利润机制</td><td>把收入驱动、成本驱动和周期驱动放在一起看利润。</td><td>不能只凭单季收入或单一毛利率下结论。</td></tr>
+              <tr><td>待验证</td><td>当前证据可支持提出命题，但不能写成确定事实。</td><td>必须保留来源、反证和下一验证节点。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

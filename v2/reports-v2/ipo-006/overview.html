@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>绿控传动 V2 概览</title>
+  <style>
+:root{
+  --bg:#f5f7fb;--card:#ffffff;--ink:#142033;--muted:#63748a;--line:#d8e1ee;
+  --blue:#0b6bcb;--green:#108a5d;--amber:#9a6700;--red:#b42318;--risk-card:#c9828a;--tag:#eef4ff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif}
+body{line-height:1.7}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{padding:56px 18px 40px;background:linear-gradient(135deg,#10233c,#17395e 58%,#0f6dbd);color:#fff}
+.hero-wrap,.page-wrap{max-width:1180px;margin:0 auto}
+.hero h1{margin:10px 0 12px;font-size:clamp(1.8rem,9vw,3.4rem);line-height:1.12}
+.hero p{margin:0;max-width:960px;color:#d9e6f6}
+.eyebrow{display:inline-flex;gap:8px;flex-wrap:wrap}
+.page{padding:18px}
+.section{margin:18px auto}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
+.grid{display:grid;gap:14px}
+.metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.metric,.subcard,.hypothesis,.risk-card,.verdict-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.verdict-card.advantage{border-top:4px solid var(--green)}
+.verdict-card.risk{border-top:4px solid var(--risk-card);background:#fff7f7}
+.metric strong{display:block;font-size:1.15rem;margin:6px 0}
+.tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:var(--tag);font-size:12px;font-weight:700;color:#244b84;margin-right:6px;margin-bottom:6px}
+.tag-official{background:#e9f6ef;color:#176c42}
+.tag-company{background:#eef4ff;color:#244b84}
+.tag-research{background:#fff4e5;color:#9a6700}
+.tag-local{background:#f3f0ff;color:#5a37b8}
+.tag-infer{background:#fff0f2;color:#b42318}
+.tag-pending{background:#f4f5f7;color:#475467}
+.lead{font-size:1.05rem;color:#2e4057}
+.muted{color:var(--muted)}
+.callout{background:#10233c;color:#fff}
+.callout p,.callout li{color:#dce8f6}
+.table-scroll{max-width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f8fafc;font-size:13px;color:#3c5068}
+.toc{position:sticky;top:12px}
+.toc a{display:block;padding:6px 0;color:var(--muted)}
+.evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
+.evidence-list li,.bullet-list li{margin:4px 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.kpi{font-size:13px;color:var(--muted)}
+.divider{height:1px;background:var(--line);margin:18px 0}
+img,canvas{max-width:100%;height:auto}
+@media (max-width:640px){
+  .page{padding:12px}
+  .panel{padding:16px;border-radius:14px}
+  .metric-grid{grid-template-columns:1fr}
+  .hero{padding:36px 14px 28px}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-wrap">
+      <div class="eyebrow"><span class="tag tag-official">IPO Research Workbench V2</span><span class="tag">ipo-006</span><span class="tag">注册生效</span></div>
+      <h1>绿控传动：绿控的核心价值在新能源商用车动力链卡位，但需求弹性高度绑定头部重卡厂的新能源化进度。</h1>
+      <p>它已经证明重卡电机配套排名，但客户集中与行业周期决定了盈利弹性会被头部整车厂放大。</p>
+      <p class="muted">更新口径：2026-07-10T21:11:46+08:00；主状态来源：深交所发行上市审核项目动态接口 projectrends/query</p>
+    </div>
+  </header>
+  <main class="page page-wrap">
+    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>绿控已在新能源重卡电驱配套中取得领先位置，并进入头部整车厂供应链。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>客户集中和新能源重卡周期会同步放大收入与盈利波动，公司缺少独立穿越整车厂需求波动的能力。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div></article></div></section>
+    <section class="section panel">
+      <h2>关键事实卡</h2>
+      <div class="grid metric-grid"><div class='metric'><div class='kpi'>状态</div><strong>创业板 / 注册生效</strong><div class='muted'>注册生效；项目更新日期 2026-06-29</div></div><div class='metric'><div class='kpi'>研究主线</div><strong>绿控的核心价值在新能源商用车动力链卡位，但需求弹性高度绑定头部重卡厂的新能源化进度。</strong><div class='muted'>它已经证明重卡电机配套排名，但客户集中与行业周期决定了盈利弹性会被头部整车厂放大。</div></div><div class='metric'><div class='kpi'>收入线索</div><strong>2025/2024/2023 营业收入：315,204.75, 116,574.29, 67,620.46 万元；三年复合增速 115.90%</strong><div class='muted'>旧看板当前口径</div></div><div class='metric'><div class='kpi'>客户/交易约束</div><strong>2025 前五大客户占比：59.10%</strong><div class='muted'>注册生效但发行价、流通盘和上市公告书待披露</div></div></div>
+    </section>
+    <section class="section panel callout">
+      <h2>利润形成机制</h2>
+      <div class="grid cards-3"><div class='subcard'><h3>收入驱动</h3><ul class='bullet-list'><li>新能源重卡/商用车电驱系统配套量</li><li>头部整车厂份额</li><li>动力链关键部件单车价值量</li></ul></div><div class='subcard'><h3>成本驱动</h3><ul class='bullet-list'><li>电机与电控相关部件成本</li><li>研发和验证费用</li><li>客户定制化交付成本</li></ul></div><div class='subcard'><h3>周期变量</h3><ul class='bullet-list'><li>新能源重卡渗透率</li><li>头部 OEM 车型销量</li><li>商用车资本开支周期</li></ul></div><div class='subcard'><h3>利润读法</h3><p>绿控的利润更像跟着新能源商用车上险和头部 OEM 新能源销量走，而不是独立穿越周期。</p></div></div>
+    </section>
+    <section class="section panel">
+      <h2>可证伪分析卡</h2>
+      <div class="grid cards-3">
+            <article class="hypothesis">
+              <div><span class="tag tag-infer">命题 1</span>
+              <span class="tag">本报告推断</span></div>
+              <h3>如果新能源重卡渗透率继续上升且徐工、三一等头部客户保持强势，绿控的收入和毛利更容易同步抬升。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.szse.cn/projectdynamic/ipo/index.html" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>深交所发行上市审核项目动态接口 projectrends/query</a></div>
+              <ul class="evidence-list"><li>2025/2024/2023 营业收入：315,204.75, 116,574.29, 67,620.46 万元；三年复合增速 115.90%</li><li>2025 前五大客户占比：59.10%</li><li>旧版行业位置卡强调公司在新能源重卡电机配套连续第一，但需求弹性跟着头部整车厂走。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>头部 OEM 新能源销量回落</li><li>收入增长但客户集中度进一步上行且毛利未改善</li></ul>
+              <p><strong>下一验证节点</strong>：后续招股书/上市后年报中的客户结构和行业销量</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-pending">命题 2</span>
+              <span class="tag">待验证</span></div>
+              <h3>在客户更分散或新场景放量前，绿控更适合按商用车周期部件来理解，而不是平台型电驱龙头。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span></div>
+              <ul class="evidence-list"><li>毛利率：16.06%, 19.78%, 16.77%</li><li>注册生效但发行价、流通盘和上市公告书待披露</li><li>旧版报告把发行价/市值和客户集中变化列为后续高优先级跟踪项。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>出现新的头部客户或非重卡场景放量</li><li>客户分散与产品结构升级同时发生</li></ul>
+              <p><strong>下一验证节点</strong>：上市后首份年报或重大客户公告</p>
+            </article>
+            </div>
+    </section>
+    <section class="section panel">
+      <h2>可比边界与估值语言</h2>
+
+    <div class="grid two-col">
+      <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>新能源商用车电驱系统关键部件供应商</li></ul></div>
+      <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>乘用车主驱总成平台型龙头</li></ul></div>
+    </div>
+    <p class="lead">绿控的应用场景和订单驱动更偏新能源重卡，估值不宜简单类比乘用车总成平台公司。</p>
+
+
+    <div class="grid two-col">
+      <div class="subcard">
+        <h3>估值锚</h3>
+        <p>先看新能源重卡销量和头部客户份额，再看毛利率与客户集中度是否同步优化。</p>
+      </div>
+      <div class="subcard">
+        <h3>当前不能下结论的变量</h3>
+        <ul class="bullet-list"><li>发行价/市值</li><li>新客户/新场景扩张</li><li>新能源重卡景气延续性</li></ul>
+        <p><strong>是否给目标价：</strong>否</p>
+      </div>
+    </div>
+
+    </section>
+    <section class="section panel">
+      <h2>来源列表</h2>
+      <p class="lead">外部来源可点击；本地来源仅展示项目内路径。旧版概览/详尽报告仍作为当前复核入口保留。</p>
+      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>深交所发行上市审核项目动态接口 projectrends/query</td><td><a href='https://listing.szse.cn/projectdynamic/ipo/index.html' target='_blank' rel='noreferrer'>深交所发行上市审核项目动态接口 projectrends/query</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td>待补充</td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td>问询回复</td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>绿控传动-1-1-招股说明书.pdf</td><td>companies/绿控传动/sources/2026-05-20-绿控传动-1-1-招股说明书.pdf-深交所.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | verified | 2026-05-20</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/绿控传动/reports/2026-07-10-overview-v16.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/绿控传动/reports/2026-07-10-research-v16.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-20-绿控传动-1-1-招股说明书.pdf-深交所.pdf</td><td>companies/绿控传动/sources/2026-05-20-绿控传动-1-1-招股说明书.pdf-深交所.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

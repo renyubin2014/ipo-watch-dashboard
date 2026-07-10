@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A 股待上市企业研究工作台">
+    <link rel="icon" href="data:,">
+    <title>A 股待上市企业研究工作台</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">IPO RESEARCH WORKBENCH · V2</p>
+        <h1>A 股待上市企业研究工作台</h1>
+        <p class="hero-copy">聚焦注册生效或发行阶段的未上市企业。结论是研究分析，不构成投资建议。</p>
+        <p id="snapshot" class="snapshot" aria-live="polite">正在载入研究池…</p>
+      </header>
+
+      <section class="filter-panel" aria-label="筛选研究企业">
+        <label class="search-field" for="search">
+          <span>搜索</span>
+          <input id="search" type="search" placeholder="公司、行业或研究判断" autocomplete="off">
+        </label>
+        <label for="status-filter">
+          <span>状态</span>
+          <select id="status-filter"><option value="">全部状态</option></select>
+        </label>
+        <label for="board-filter">
+          <span>板块</span>
+          <select id="board-filter"><option value="">全部板块</option></select>
+        </label>
+        <label for="completeness-filter">
+          <span>完整度</span>
+          <select id="completeness-filter"><option value="">全部完整度</option></select>
+        </label>
+        <label for="freshness-filter">
+          <span>数据新鲜度</span>
+          <select id="freshness-filter"><option value="">全部日期</option></select>
+        </label>
+      </section>
+
+      <section aria-label="企业研究卡片">
+        <div class="results-heading">
+          <h2>研究企业</h2>
+          <p id="result-count" aria-live="polite"></p>
+        </div>
+        <div id="company-cards" class="company-grid" aria-live="polite"></div>
+      </section>
+    </main>
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

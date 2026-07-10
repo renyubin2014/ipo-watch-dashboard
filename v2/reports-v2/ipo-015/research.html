@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>国仪量子 V2 详尽研究</title>
+  <style>
+:root{
+  --bg:#f5f7fb;--card:#ffffff;--ink:#142033;--muted:#63748a;--line:#d8e1ee;
+  --blue:#0b6bcb;--green:#108a5d;--amber:#9a6700;--red:#b42318;--risk-card:#c9828a;--tag:#eef4ff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif}
+body{line-height:1.7}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{padding:56px 18px 40px;background:linear-gradient(135deg,#10233c,#17395e 58%,#0f6dbd);color:#fff}
+.hero-wrap,.page-wrap{max-width:1180px;margin:0 auto}
+.hero h1{margin:10px 0 12px;font-size:clamp(1.8rem,9vw,3.4rem);line-height:1.12}
+.hero p{margin:0;max-width:960px;color:#d9e6f6}
+.eyebrow{display:inline-flex;gap:8px;flex-wrap:wrap}
+.page{padding:18px}
+.section{margin:18px auto}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
+.grid{display:grid;gap:14px}
+.metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.metric,.subcard,.hypothesis,.risk-card,.verdict-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.verdict-card.advantage{border-top:4px solid var(--green)}
+.verdict-card.risk{border-top:4px solid var(--risk-card);background:#fff7f7}
+.metric strong{display:block;font-size:1.15rem;margin:6px 0}
+.tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:var(--tag);font-size:12px;font-weight:700;color:#244b84;margin-right:6px;margin-bottom:6px}
+.tag-official{background:#e9f6ef;color:#176c42}
+.tag-company{background:#eef4ff;color:#244b84}
+.tag-research{background:#fff4e5;color:#9a6700}
+.tag-local{background:#f3f0ff;color:#5a37b8}
+.tag-infer{background:#fff0f2;color:#b42318}
+.tag-pending{background:#f4f5f7;color:#475467}
+.lead{font-size:1.05rem;color:#2e4057}
+.muted{color:var(--muted)}
+.callout{background:#10233c;color:#fff}
+.callout p,.callout li{color:#dce8f6}
+.table-scroll{max-width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f8fafc;font-size:13px;color:#3c5068}
+.toc{position:sticky;top:12px}
+.toc a{display:block;padding:6px 0;color:var(--muted)}
+.evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
+.evidence-list li,.bullet-list li{margin:4px 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.kpi{font-size:13px;color:var(--muted)}
+.divider{height:1px;background:var(--line);margin:18px 0}
+img,canvas{max-width:100%;height:auto}
+@media (max-width:640px){
+  .page{padding:12px}
+  .panel{padding:16px;border-radius:14px}
+  .metric-grid{grid-template-columns:1fr}
+  .hero{padding:36px 14px 28px}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-wrap">
+      <div class="eyebrow"><span class="tag tag-official">Detailed Research V2</span><span class="tag">ipo-015</span><span class="tag">科创板</span></div>
+      <h1>国仪量子：利润机制与可证伪命题工作台</h1>
+      <p>国仪量子更像“多细分仪器的国产替代组合”，关键不是讲整体市占率故事，而是证明不同产品线都能持续放量并改善盈利。</p>
+    </div>
+  </header>
+  <main class="page page-wrap grid two-col" style="align-items:start">
+
+    <nav class="panel toc">
+      <a href="#scope">0. 口径</a>
+      <a href="#facts">1. 关键事实</a>
+      <a href="#mechanism">2. 利润机制</a>
+      <a href="#hypotheses">3. 可证伪命题</a>
+      <a href="#comparability">4. 可比边界</a>
+      <a href="#valuation">5. 估值语言</a>
+      <a href="#tracking">6. 跟踪事项</a>
+      <a href="#sources">7. 来源表</a>
+      <a href="#terms">8. 术语</a>
+    </nav>
+
+    <div>
+      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>国仪量子以多个高端科学仪器细分产品共同切入国产替代，客户分散度为多线放量提供基础。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>多产品线能否同步放量并收敛亏损尚未证实，盈利拐点若延后会限制组合式国产替代的估值。</p><p><strong>风险触发条件：</strong>收入持续依赖少数产品线，或利润改善中断、经营现金流无法支撑研发投入。</p><p><strong>后续跟踪指标：</strong>各产品线收入占比、扣非净利润、经营现金流与研发投入。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div></article></div></section>
+      <section id="scope" class="section panel">
+        <h2>0. 口径说明</h2>
+        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T21:11:46+08:00。</p>
+        <p>若 `confidence = 待验证`，表示当前证据足以提出研究命题，但不足以把它写成确定事实；不会把缺失项补成伪精确结论。</p>
+      </section>
+      <section id="facts" class="section panel">
+        <h2>1. 关键事实表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody><tr><td>公司</td><td>国仪量子技术（合肥）股份有限公司</td></tr><tr><td>中文目录</td><td>国仪量子</td></tr><tr><td>板块 / 状态</td><td>科创板 / 注册生效</td></tr><tr><td>行业</td><td>仪器仪表制造业</td></tr><tr><td>最新进展</td><td>注册生效；项目更新日期 2026-06-15</td></tr><tr><td>预期发行/上市</td><td>待补充（关注发行/上市公告）</td></tr><tr><td>保荐机构</td><td>华泰联合证券有限责任公司</td></tr><tr><td>旧版概览</td><td>companies/国仪量子/reports/2026-07-10-overview-v13.html</td></tr><tr><td>旧版详尽</td><td>companies/国仪量子/reports/2026-07-10-research-v13.html</td></tr><tr><td>指标：revenueGrowth</td><td>2025/2024/2023 营业收入：66,619.18, 50,147.22, 39,962.01 万元；三年复合增速 29.11%</td></tr><tr><td>指标：profitQuality</td><td>2025/2024/2023 扣非归母净利润：-1,887.80, -10,423.63, -16,932.20 万元</td></tr><tr><td>指标：grossMarginTrend</td><td>毛利率：待补充, 待补充, 待补充</td></tr><tr><td>指标：cashFlow</td><td>经营现金流：11,834.03, -5,023.76, -13,359.34 万元</td></tr><tr><td>指标：customerConcentration</td><td>2025 前五大客户占比：16.07%</td></tr><tr><td>指标：fundraisingFit</td><td>募投合计：待补充</td></tr><tr><td>指标：peerValuation</td><td>发行价/发行市值待补充</td></tr><tr><td>指标：tradingRisk</td><td>注册生效但发行价、流通盘和上市公告书待披露</td></tr></tbody></table></div>
+      </section>
+      <section id="mechanism" class="section panel">
+        <h2>2. 利润形成机制</h2>
+        <div class="grid cards-3"><div class='subcard'><h3>收入驱动</h3><ul class='bullet-list'><li>高端科学仪器国产替代</li><li>电子顺磁共振/NV 探针等细分突破</li><li>科研院所与企业客户扩展</li></ul></div><div class='subcard'><h3>成本驱动</h3><ul class='bullet-list'><li>高研发投入</li><li>核心器件与服务成本</li><li>新品推广与验证成本</li></ul></div><div class='subcard'><h3>周期变量</h3><ul class='bullet-list'><li>科研预算周期</li><li>国产科学仪器采购替代</li><li>多产品线放量节奏</li></ul></div><div class='subcard'><h3>利润读法</h3><p>国仪的利润不靠单一产品大份额，而要看多个细分仪器是否共同爬坡、并把亏损逐步收敛成稳定盈利。</p></div></div>
+        <div class="subcard" style="margin-top:14px">
+          <h3>当前最关键约束</h3>
+          <p>公司已经显示出客户分散和供应链相对可控，但整体份额没有精确公开口径，盈利拐点仍需继续验证。</p>
+        </div>
+      </section>
+      <section id="hypotheses" class="section panel">
+        <h2>3. 可证伪命题卡</h2>
+        <div class="grid cards-3">
+            <article class="hypothesis">
+              <div><span class="tag tag-infer">命题 1</span>
+              <span class="tag">本报告推断</span></div>
+              <h3>如果多个细分仪器线都能持续放量，国仪的国产替代逻辑会比单一仪器市占故事更稳。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div>
+              <ul class="evidence-list"><li>2025/2024/2023 营业收入：66,619.18, 50,147.22, 39,962.01 万元；三年复合增速 29.11%</li><li>2025 前五大客户占比：16.07%</li><li>旧版行业位置卡明确把公司定义为“多细分仪器的国产替代组合”，并刻意不伪造整体份额。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>收入仍高度依赖少数产品线</li><li>多产品扩张没有带来持续收入增长</li></ul>
+              <p><strong>下一验证节点</strong>：后续招股书/年报中的产品线收入结构</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-company">命题 2</span>
+              <span class="tag">公司披露</span></div>
+              <h3>2025 年经营现金流转正是积极信号，但如果利润端不能继续改善，市场仍会把它当“尚未完全证明盈利模型”的科研装备公司。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span></div>
+              <ul class="evidence-list"><li>2025/2024/2023 扣非归母净利润：-1,887.80, -10,423.63, -16,932.20 万元</li><li>经营现金流：11,834.03, -5,023.76, -13,359.34 万元</li><li>旧版详尽报告显示 2025 年扣非归母净利润仍为负，但经营现金流已转正。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>后续利润改善中断或重新大幅恶化</li><li>现金流无法继续支撑研发投入</li></ul>
+              <p><strong>下一验证节点</strong>：2026H1 更新、上市后首份年报</p>
+            </article>
+            </div>
+      </section>
+      <section id="comparability" class="section panel">
+        <h2>4. 可比边界</h2>
+
+    <div class="grid two-col">
+      <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>高端科学仪器与量子传感细分国产替代企业</li></ul></div>
+      <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>已经形成广谱平台和全球份额的国际仪器巨头</li></ul></div>
+    </div>
+    <p class="lead">国仪当前更适合按多细分利基组合来理解，而不是按全球综合仪器平台去直接比较。</p>
+
+      </section>
+      <section id="valuation" class="section panel">
+        <h2>5. 估值语言</h2>
+
+    <div class="grid two-col">
+      <div class="subcard">
+        <h3>估值锚</h3>
+        <p>先看多产品线放量和亏损收敛，再决定给科研装备成长溢价还是谨慎制造估值语言。</p>
+      </div>
+      <div class="subcard">
+        <h3>当前不能下结论的变量</h3>
+        <ul class="bullet-list"><li>发行价/市值</li><li>各产品线份额原文补充</li><li>盈利拐点持续性</li></ul>
+        <p><strong>是否给目标价：</strong>否</p>
+      </div>
+    </div>
+
+      </section>
+      <section id="tracking" class="section panel">
+        <h2>6. 后续跟踪清单</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>对象</th><th>当前命题</th><th>下一验证节点</th><th>反证信号</th></tr></thead>
+            <tbody><tr><td>命题 1</td><td>如果多个细分仪器线都能持续放量，国仪的国产替代逻辑会比单一仪器市占故事更稳。</td><td>后续招股书/年报中的产品线收入结构</td><td>收入仍高度依赖少数产品线；多产品扩张没有带来持续收入增长</td></tr><tr><td>命题 2</td><td>2025 年经营现金流转正是积极信号，但如果利润端不能继续改善，市场仍会把它当“尚未完全证明盈利模型”的科研装备公司。</td><td>2026H1 更新、上市后首份年报</td><td>后续利润改善中断或重新大幅恶化；现金流无法继续支撑研发投入</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="sources" class="section panel">
+        <h2>7. 来源表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002112_20260512_0M7N.pdf' target='_blank' rel='noreferrer'>招股书：国仪量子技术（合肥）股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-12）；问询回复：8-1 发行人及中介机构关于第二轮审核问询函的回复（公告/更新日期 2026-04-27）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2112&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202604/002112_20260427_ZG7K.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)</td><td>companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | 待官方目录复核 | 2026-05-12</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/国仪量子/reports/2026-07-10-overview-v13.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/国仪量子/reports/2026-07-10-research-v13.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+      </section>
+      <section id="terms" class="section panel">
+        <h2>8. 术语与使用限制</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>术语</th><th>解释</th><th>使用限制</th></tr></thead>
+            <tbody>
+              <tr><td>可证伪命题</td><td>允许被未来证据推翻的研究判断。</td><td>若没有明确反证信号，就不算合格命题。</td></tr>
+              <tr><td>利润机制</td><td>把收入驱动、成本驱动和周期驱动放在一起看利润。</td><td>不能只凭单季收入或单一毛利率下结论。</td></tr>
+              <tr><td>待验证</td><td>当前证据可支持提出命题，但不能写成确定事实。</td><td>必须保留来源、反证和下一验证节点。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

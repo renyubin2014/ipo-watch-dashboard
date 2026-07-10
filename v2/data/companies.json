@@ -1,0 +1,3124 @@
+{
+  "meta": {
+    "schemaVersion": "2.0",
+    "generatedAt": "2026-07-10T19:54:50+08:00",
+    "scope": "registration_effective_or_issuing_unlisted_only",
+    "itemCount": 15,
+    "fullWatchlistCount": 196,
+    "sourceSnapshot": [
+      {
+        "path": "companies/中塑股份/reports/2026-07-10-overview-v14.html",
+        "bytes": 14538,
+        "modifiedAt": "2026-07-10T11:35:26+08:00",
+        "sha256": "71bd51e3212e9037ca42d836ff66594051e43c167e0996d5b9fa0a0e9d146aaf"
+      },
+      {
+        "path": "companies/中塑股份/reports/2026-07-10-research-v14.html",
+        "bytes": 20055,
+        "modifiedAt": "2026-07-10T11:35:26+08:00",
+        "sha256": "777c887f0774f7d75a6e94b7a787dadf420096b15e9c5bcb39adb8e5187aa98a"
+      },
+      {
+        "path": "companies/中塑股份/sources/2026-06-05-中塑股份-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 8024450,
+        "modifiedAt": "2026-07-10T07:12:06+08:00",
+        "sha256": "bce4c432e6a8bf123be920c041c4d8954c564be3e40ada9cf82e495eba2eef29"
+      },
+      {
+        "path": "companies/嘉立创/reports/2026-07-10-overview-v16.html",
+        "bytes": 14324,
+        "modifiedAt": "2026-07-10T11:36:19+08:00",
+        "sha256": "3fce85d0c470abf26128b5131dc9fe843b6ea34d03b64b87fe0b807a541216c6"
+      },
+      {
+        "path": "companies/嘉立创/reports/2026-07-10-research-v16.html",
+        "bytes": 19679,
+        "modifiedAt": "2026-07-10T11:36:19+08:00",
+        "sha256": "27fff11c4b55f9688ea5aa6f6eebe1db9e70a87208f2035ef270c79816e898e5"
+      },
+      {
+        "path": "companies/嘉立创/sources/2026-05-12-嘉立创-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 15117213,
+        "modifiedAt": "2026-07-10T07:13:04+08:00",
+        "sha256": "e4caafef1183cbf015b1ac02f99a669c74a6bdea25b4c10eb8b1adf9ae9501b5"
+      },
+      {
+        "path": "companies/国仪量子/reports/2026-07-10-overview-v13.html",
+        "bytes": 17361,
+        "modifiedAt": "2026-07-10T11:37:24+08:00",
+        "sha256": "03525e02dcc592d42a9e96ff14fc497a3b034ab34146b13db6ac43eff9548e0c"
+      },
+      {
+        "path": "companies/国仪量子/reports/2026-07-10-research-v13.html",
+        "bytes": 22133,
+        "modifiedAt": "2026-07-10T11:37:24+08:00",
+        "sha256": "3e0a3dc0cfd175487eb5502c29aab0b8003fa594880a1320134b5630002159f9"
+      },
+      {
+        "path": "companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+        "bytes": 8924576,
+        "modifiedAt": "2026-07-10T07:18:34+08:00",
+        "sha256": "f146d5d82546a63c1fda2f6b14d592ad2a8af210abae59e552999c807b4e0d86"
+      },
+      {
+        "path": "companies/天博智能/reports/2026-07-10-overview-v14.html",
+        "bytes": 16397,
+        "modifiedAt": "2026-07-10T11:35:10+08:00",
+        "sha256": "5a0bd15a741b06cf62533dd997055a253564cbb965751aecda863f48bf81f677"
+      },
+      {
+        "path": "companies/天博智能/reports/2026-07-10-research-v14.html",
+        "bytes": 21780,
+        "modifiedAt": "2026-07-10T11:35:10+08:00",
+        "sha256": "71adab96d5affee98f04a294d434d1d160785c2d5e8f9a280196bc84ef9f5470"
+      },
+      {
+        "path": "companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+        "bytes": 5853986,
+        "modifiedAt": "2026-07-10T07:17:49+08:00",
+        "sha256": "5e1950ca2cf461cd1e5dab7f089c9d9619d4fb1710a6c2951951aa84fc61123f"
+      },
+      {
+        "path": "companies/宇树科技/assets/2026-07-10-yushu-robotics-hero-gpt-img2.png",
+        "bytes": 1490853,
+        "modifiedAt": "2026-07-10T07:47:11+08:00",
+        "sha256": "829d97583a98ff0553f18c4a6ccff491ad335ed56240df76e4fb9502b1089257"
+      },
+      {
+        "path": "companies/宇树科技/reports/2026-07-10-overview-v3.html",
+        "bytes": 18413,
+        "modifiedAt": "2026-07-10T11:50:41+08:00",
+        "sha256": "d748017a1675a5c61549af492182db625ad42427e0275af808923c3416abc500"
+      },
+      {
+        "path": "companies/宇树科技/reports/2026-07-10-research-v3.html",
+        "bytes": 28132,
+        "modifiedAt": "2026-07-10T11:54:29+08:00",
+        "sha256": "f3281ae7dd0ae4ff4c2f9ad26571b05b664fd34af3075bd9640d3ea0bb6dd3f8"
+      },
+      {
+        "path": "companies/宇树科技/sources/2026-03-20-8-1-1发行人及中介机构关于首轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+        "bytes": 3205674,
+        "modifiedAt": "2026-07-10T07:46:10+08:00",
+        "sha256": "7b5ec287561c7b09aba1e182545739d478a0556517dac9f0c9ca22c6cece515c"
+      },
+      {
+        "path": "companies/宇树科技/sources/2026-03-20-8-1-2发行人及中介机构关于第二轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+        "bytes": 1560295,
+        "modifiedAt": "2026-07-10T07:46:05+08:00",
+        "sha256": "3a481485e2b49f5112ebe6a5739e0476548fcb0ff23769e9960ea85788b1f550"
+      },
+      {
+        "path": "companies/宇树科技/sources/2026-05-25-8-1发行人及中介机构关于审核中心意见落实函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+        "bytes": 1032848,
+        "modifiedAt": "2026-07-10T07:46:05+08:00",
+        "sha256": "9b7dec34cae11705fdeb7e981c5ff6f8a421cfed16bbc804257123284f30d838"
+      },
+      {
+        "path": "companies/宇树科技/sources/2026-05-25-容诚会计师事务所(特殊普通合伙)关于宇树科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告(上会稿)(宇树科技股份有限公司)-eastmoney.pdf",
+        "bytes": 12461024,
+        "modifiedAt": "2026-07-10T07:45:46+08:00",
+        "sha256": "dd77dabd85bd13ac34e1c21a5a9dde44940ac9936122274d245a9acc1a60dc0e"
+      },
+      {
+        "path": "companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf",
+        "bytes": 6517574,
+        "modifiedAt": "2026-07-10T07:45:43+08:00",
+        "sha256": "f6360614e8d3b000affa5e3b07dad450b509f4d3223f7a15e67fb425b1b8dc5b"
+      },
+      {
+        "path": "companies/宇树科技/sources/2026-07-02-关于同意宇树科技股份有限公司首次公开发行股票注册的批复-eastmoney.pdf",
+        "bytes": 769562,
+        "modifiedAt": "2026-07-10T07:45:40+08:00",
+        "sha256": "ea2d4299dae47a563014228019c0a293e32c7355d592846a0de760684b97beec"
+      },
+      {
+        "path": "companies/思仪科技/reports/2026-07-10-overview-v14.html",
+        "bytes": 14494,
+        "modifiedAt": "2026-07-10T11:37:12+08:00",
+        "sha256": "5cabe65fcf11ff6648cce4949e0c48ac84e3ddbfc38ff2cd062d3a3b17399b7f"
+      },
+      {
+        "path": "companies/思仪科技/reports/2026-07-10-research-v14.html",
+        "bytes": 20423,
+        "modifiedAt": "2026-07-10T11:37:12+08:00",
+        "sha256": "d6af9daa0dc3ac49f494fbec79ed8d3ed2cfd06af55195ec80de5254075e1ab7"
+      },
+      {
+        "path": "companies/思仪科技/sources/2026-04-29-思仪科技-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 7776394,
+        "modifiedAt": "2026-07-10T07:16:11+08:00",
+        "sha256": "b5783c6bdb66c6890ba125a40a98eb9dda19143a3f8cf49c8aaa8f12383db8c0"
+      },
+      {
+        "path": "companies/江苏展芯/reports/2026-07-10-overview-v15.html",
+        "bytes": 14612,
+        "modifiedAt": "2026-07-10T11:36:30+08:00",
+        "sha256": "4101755408e7aaba563711a04d2705548183f871b997c582c3a6d9c0c52812a4"
+      },
+      {
+        "path": "companies/江苏展芯/reports/2026-07-10-research-v15.html",
+        "bytes": 19542,
+        "modifiedAt": "2026-07-10T11:36:30+08:00",
+        "sha256": "144b46dfc9206d5031504b7debc28ce4371143d08f5ead32edf9d33df5784f8d"
+      },
+      {
+        "path": "companies/江苏展芯/sources/2026-05-15-江苏展芯-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 8371034,
+        "modifiedAt": "2026-07-10T07:14:07+08:00",
+        "sha256": "a511a777db657f31da37daa2a0faa824a787aa88332957ebbcb85ed15ad7ca21"
+      },
+      {
+        "path": "companies/洛轴股份/reports/2026-07-10-overview-v14.html",
+        "bytes": 14577,
+        "modifiedAt": "2026-07-10T11:35:50+08:00",
+        "sha256": "87c2dc5397c6cc34efb03769a320530bd581798e06f7034ef4171f8342134c59"
+      },
+      {
+        "path": "companies/洛轴股份/reports/2026-07-10-research-v14.html",
+        "bytes": 19993,
+        "modifiedAt": "2026-07-10T11:35:50+08:00",
+        "sha256": "662d8e35bd074271381d31d4bdf7ee061f0e35747811f2c05f541a7488fe830d"
+      },
+      {
+        "path": "companies/洛轴股份/sources/2026-05-20-洛轴股份-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 12908288,
+        "modifiedAt": "2026-07-10T07:12:31+08:00",
+        "sha256": "3642af350584b197c897e61ba5b86e20208fcbf1e85c7f926469171a1bb6ae8f"
+      },
+      {
+        "path": "companies/燧原科技/reports/2026-07-10-overview-v8.html",
+        "bytes": 14310,
+        "modifiedAt": "2026-07-10T11:57:04+08:00",
+        "sha256": "e3ebeff9b579879e30da48b7faa0b78f71fd46955a3ec9b7ae80cfa43d810c66"
+      },
+      {
+        "path": "companies/燧原科技/reports/2026-07-10-research-v8.html",
+        "bytes": 26887,
+        "modifiedAt": "2026-07-10T11:57:04+08:00",
+        "sha256": "83814624ec366e85e0403e5111b6fbe7132c6318d1a2b6c5b5618c074abc3534"
+      },
+      {
+        "path": "companies/绿控传动/reports/2026-07-10-overview-v16.html",
+        "bytes": 14947,
+        "modifiedAt": "2026-07-10T11:35:36+08:00",
+        "sha256": "90df0b74e0d546f9916741ab190eb0b01e99de9406a298a4d73da5bfa3284103"
+      },
+      {
+        "path": "companies/绿控传动/reports/2026-07-10-research-v16.html",
+        "bytes": 19786,
+        "modifiedAt": "2026-07-10T11:35:36+08:00",
+        "sha256": "aebecc687efc5c79362bec2c9ed3ab4658fb29920e23a20c40a8fc8ca99b3102"
+      },
+      {
+        "path": "companies/绿控传动/sources/2026-05-20-绿控传动-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 5701638,
+        "modifiedAt": "2026-07-10T07:12:14+08:00",
+        "sha256": "8839d850cf59747bc44ae16be51c648db9a2b5e42e0afd2811c8f4b75a3b1356"
+      },
+      {
+        "path": "companies/贝特利/reports/2026-07-10-overview-v13.html",
+        "bytes": 15233,
+        "modifiedAt": "2026-07-10T11:36:43+08:00",
+        "sha256": "12da6adda7a9350cafe6c68280e8ec4c720b31de2e0a8a48f9d177234ab70275"
+      },
+      {
+        "path": "companies/贝特利/reports/2026-07-10-research-v13.html",
+        "bytes": 20845,
+        "modifiedAt": "2026-07-10T11:36:43+08:00",
+        "sha256": "0c6fab50ead06eb42e46509ddeadb7421a8d9187164ef4bcdd40e8a3c5a496c7"
+      },
+      {
+        "path": "companies/贝特利/sources/2026-05-13-贝特利-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 6900453,
+        "modifiedAt": "2026-07-10T07:15:21+08:00",
+        "sha256": "0b3567a6c48fc18bf4025a10cbbdd021e7815fc3d679d92ba9e28ddf9913ca35"
+      },
+      {
+        "path": "companies/超纯股份/reports/2026-07-10-overview-v14.html",
+        "bytes": 15120,
+        "modifiedAt": "2026-07-10T11:36:50+08:00",
+        "sha256": "d8db66451efaf12da40494ddce4c7496a7aae9d4e5e5af47e07f4034f6ca4137"
+      },
+      {
+        "path": "companies/超纯股份/reports/2026-07-10-research-v14.html",
+        "bytes": 20107,
+        "modifiedAt": "2026-07-10T11:36:50+08:00",
+        "sha256": "2965047f2815bd33aa5aee95185165ce45461009879766c9a338c3323725a8a1"
+      },
+      {
+        "path": "companies/超纯股份/sources/2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf",
+        "bytes": 6245047,
+        "modifiedAt": "2026-07-10T07:15:38+08:00",
+        "sha256": "7e7ef5f6745df42daff2c7933e94783e40e86c6e7a30881cb8b6cef53612abc0"
+      },
+      {
+        "path": "companies/长鑫科技/reports/2026-07-09-overview-v2.html",
+        "bytes": 26863,
+        "modifiedAt": "2026-07-10T11:02:52+08:00",
+        "sha256": "6da841936f1d1716282dd465bb3d0dedee3dd34238b5bc8e9d11ab0a5322cd79"
+      },
+      {
+        "path": "companies/长鑫科技/reports/2026-07-09-research-v2.html",
+        "bytes": 51635,
+        "modifiedAt": "2026-07-10T11:04:12+08:00",
+        "sha256": "a38296a1ae5baea26199b89d398bce012cf8b39b9559f974f3839bdf97d1aa58"
+      },
+      {
+        "path": "companies/频准激光/reports/2026-07-10-overview-v14.html",
+        "bytes": 16454,
+        "modifiedAt": "2026-07-10T11:36:03+08:00",
+        "sha256": "59ca991519453988e9ee7078a8fe0a44d54d6e5a83103142ffd21a86ad47639d"
+      },
+      {
+        "path": "companies/频准激光/reports/2026-07-10-research-v14.html",
+        "bytes": 22238,
+        "modifiedAt": "2026-07-10T11:36:03+08:00",
+        "sha256": "0c89c206cbc7f0160779fdc55339c22e29593e1a7eed5474653999dd50a9eb4e"
+      },
+      {
+        "path": "companies/频准激光/sources/2026-05-22-频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+        "bytes": 7052251,
+        "modifiedAt": "2026-07-10T07:18:08+08:00",
+        "sha256": "8bec6a2fcae282bb8bba6b3a40e9123601a1142745622be918ed9c5cfecf891e"
+      },
+      {
+        "path": "companies/马矿股份/reports/2026-07-10-overview-v14.html",
+        "bytes": 16733,
+        "modifiedAt": "2026-07-10T11:37:01+08:00",
+        "sha256": "b5f5ac2c4f9dfd42210d42894e6751b2768c2e650d622a4d6a064cf2c82796d8"
+      },
+      {
+        "path": "companies/马矿股份/reports/2026-07-10-research-v14.html",
+        "bytes": 21109,
+        "modifiedAt": "2026-07-10T11:37:01+08:00",
+        "sha256": "d16e8e78d59f46e48861c6f93ff86a0256a408d76213863ca996fc20409f4da9"
+      },
+      {
+        "path": "companies/马矿股份/sources/2026-05-29-马矿股份-福建马坑矿业股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+        "bytes": 6479416,
+        "modifiedAt": "2026-07-10T07:18:24+08:00",
+        "sha256": "98aa9fdb5836e3168c46462290b4216729deaca14e25ae02fac76e71b9ae3b71"
+      },
+      {
+        "path": "dashboard/assets/ipo-hero.png",
+        "bytes": 1689099,
+        "modifiedAt": "2026-07-09T22:16:59+08:00",
+        "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb"
+      },
+      {
+        "path": "data/ipo_watchlist.csv",
+        "bytes": 206896,
+        "modifiedAt": "2026-07-10T16:32:34+08:00",
+        "sha256": "ea42e5aec8691d6f5673ca3a7fa6fa814fa4a946ba21d5d975ab5e198f57ae7d"
+      },
+      {
+        "path": "data/raw/ipo_review_match_2026-07-10.json",
+        "bytes": 14206,
+        "modifiedAt": "2026-07-10T07:04:42+08:00",
+        "sha256": "aa5030fb1f7dbdc5fe016c04991e453aa1ed17502e0f6b00f97714c8af1ca2b2"
+      },
+      {
+        "path": "publish/ipo-watch-dashboard/dashboard/data.js",
+        "bytes": 33408,
+        "modifiedAt": "2026-07-10T12:02:17+08:00",
+        "sha256": "5dca6af178adca1b150725a549f912108350a5ba24c3d89f1e51a0d5b4456e24"
+      },
+      {
+        "path": "publish/ipo-watch-dashboard/dashboard/reports.js",
+        "bytes": 8968,
+        "modifiedAt": "2026-07-10T12:02:17+08:00",
+        "sha256": "11f5505b917fb0dea3d1c59129a27bc64255702b400e25001cb253849feec383"
+      }
+    ]
+  },
+  "statusCounts": {
+    "注册生效": 18,
+    "发行中": 1,
+    "提交注册": 7,
+    "上市委会议通过": 4,
+    "已问询": 98,
+    "上市委会议": 1,
+    "已受理": 60,
+    "中止": 7
+  },
+  "items": [
+    {
+      "id": "ipo-001",
+      "companyId": "ipo-001",
+      "name": "上海燧原科技股份有限公司",
+      "companyDir": "燧原科技",
+      "board": "科创板",
+      "industry": "软件和信息技术服务业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-07-09",
+      "sourceDate": "2026-07-09",
+      "sponsor": "中信证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "数据版报告已接入",
+      "scoreCompleteness": "专用数据版",
+      "missingFields": [
+        "expectedListing",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-001/overview.html",
+      "researchUrl": "/reports-v2/ipo-001/research.html",
+      "legacyOverviewUrl": "/companies/燧原科技/reports/2026-07-10-overview-v8.html",
+      "legacyResearchUrl": "/companies/燧原科技/reports/2026-07-10-research-v8.html",
+      "reportVersion": "2026-07-10-v8",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-001/overview.html",
+        "researchUrl": "/reports-v2/ipo-001/research.html",
+        "reportVersion": "2026-07-10-v8"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方监管/交易所",
+          "title": "上交所发行上市审核项目动态接口 SH_XM_LB",
+          "date": "2026-07-09",
+          "url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司全称、科创板、行业、注册生效、申报时间、保荐机构、披露文件目录和文件大小 | 打开 | 官方事实；当前环境无法直连 listing.sse.com.cn 页面正文，但 query.sse.com.cn 接口可访问"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）",
+          "date": "2026-06-18",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202606181823668427_1.pdf",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": "487269",
+          "fileSize": 6954402,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "主营业务、行业定位、收入、利润、毛利率、现金流、客户集中度、募投、风险因素 | 打开 | 上交所披露目录确认的注册稿；正文由东方财富公告 PDF 镜像取得，文件大小 6,954,402 字节，与上交所目录一致"
+        },
+        {
+          "id": "S3",
+          "level": "官方披露文件",
+          "title": "毕马威华振会计师事务所关于上海燧原科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）",
+          "date": "2026-06-08",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202606081823360435_1.pdf",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": "484751",
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "交叉核对 2023-2025 年审计收入、收入确认关键审计事项、存货跌价事项 | 打开 | 东方财富未收录 2026-06-18 审计报告镜像；本文件为 2026-06-08 上会稿审计报告。上交所目录显示 2026-06-18 审计报告文件大小与该上会稿相同，仍按需复核正式下载件"
+        },
+        {
+          "id": "S4",
+          "level": "官方披露文件",
+          "title": "8-1 发行人及中介机构关于审核中心意见落实函的回复",
+          "date": "2026-06-08",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202606081823360421_1.pdf",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF"
+        },
+        {
+          "id": "S5",
+          "level": "官方披露文件",
+          "title": "8-1 发行人及中介机构关于第二轮审核问询函的回复",
+          "date": "2026-06-02",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202606021823162336_1.pdf",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF"
+        },
+        {
+          "id": "S6",
+          "level": "公司资料",
+          "title": "燧原科技官网产品与公司介绍",
+          "date": "2026-07-09",
+          "url": "https://www.enflame-tech.com/",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "辅助核对产品命名、S60、云燧智算集群、驭算 TopsRider 等产品描述 | 打开 | 公司自述，关键商业与财务判断以招股书为准"
+        },
+        {
+          "id": "S7",
+          "level": "生成资产",
+          "title": "GPT img2 生成报告主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "报告视觉资产，不作为事实来源 | 项目内资产 | 由 GPT img2 生成，无公司 Logo、无文字、无财务含义"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：99,016.00, 72,238.74, 30,118.74 万元；三年复合增速 81.32%",
+          "value": 99016.0,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：-119,726.11, -150,269.38, -156,668.54 万元",
+          "value": -119726.11,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "主营业务毛利率：31.78%, 30.59%, 22.60%",
+          "value": 31.78,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：-96,508.71, -179,773.78, -120,900.41 万元",
+          "value": -96508.71,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：96.89%",
+          "value": 96.89,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "拟投入募集资金：600,000.00 万元",
+          "value": 600000.0,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露；未盈利和客户集中会放大上市后波动",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
+        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf",
+        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2175&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260608_XL17.pdf",
+        "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175",
+        "scoreNote": "已接入燧原专用数据版：财务、客户集中度、募投和风险来自注册稿招股书、审计报告和问询回复。"
+      }
+    },
+    {
+      "id": "ipo-002",
+      "companyId": "ipo-002",
+      "name": "天博智能科技（山东）股份有限公司",
+      "companyDir": "天博智能",
+      "board": "上交所主板",
+      "industry": "汽车制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-07-09",
+      "sourceDate": "2026-07-09",
+      "sponsor": "中信建投证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "4/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.cashFlow",
+        "metrics.fundraisingFit",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-002/overview.html",
+      "researchUrl": "/reports-v2/ipo-002/research.html",
+      "legacyOverviewUrl": "/companies/天博智能/reports/2026-07-10-overview-v14.html",
+      "legacyResearchUrl": "/companies/天博智能/reports/2026-07-10-research-v14.html",
+      "reportVersion": "2026-07-10-v14",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-002/overview.html",
+        "researchUrl": "/reports-v2/ipo-002/research.html",
+        "reportVersion": "2026-07-10-v14"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）",
+          "date": "2026-07-09",
+          "url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)",
+          "date": "2026-06-18",
+          "url": null,
+          "localPath": "companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+          "localPaths": [
+            "companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "5e1950ca2cf461cd1e5dab7f089c9d9619d4fb1710a6c2951951aa84fc61123f",
+          "verificationStatus": "待官方目录复核",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：196,109.87, 169,287.62, 126,963.90 万元；三年复合增速 24.28%",
+          "value": 196109.87,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 净利润：35,094.76, 28,212.65, 22,228.28 万元",
+          "value": 35094.76,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：28.78%, 27.47%, 27.62%",
+          "value": 28.78,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：待补充, 待补充, 待补充 万元",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：42.89%",
+          "value": 42.89,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）",
+        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260618_XRL0.pdf",
+        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2160&issueMarketType=2 | filePath=/disclosure/announcement/c/202606/002160_20260602_JN2T.pdf",
+        "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2160",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-003",
+      "companyId": "ipo-003",
+      "name": "长鑫科技集团股份有限公司",
+      "companyDir": "长鑫科技",
+      "board": "科创板",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "status": "发行中",
+      "latestProgress": "发行中；项目更新日期 2026-07-09；巨潮资讯披露《长鑫科技首次公开发行股票并在科创板上市发行安排及初步询价公告》，网上/网下申购日为2026-07-16；上市交易日需以上市公告书为准",
+      "sourceDate": "2026-07-09",
+      "sponsor": "中国国际金融股份有限公司",
+      "expectedListing": "发行中：2026-07-16申购；上市日待上市公告书确认",
+      "reportStatus": "沿用“生成长鑫科技调研报告”线程 v2",
+      "scoreCompleteness": "1/9",
+      "missingFields": [
+        "metrics.cashFlow",
+        "metrics.customerConcentration",
+        "metrics.grossMarginTrend",
+        "metrics.peerValuation",
+        "metrics.profitQuality",
+        "metrics.revenueGrowth",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-003/overview.html",
+      "researchUrl": "/reports-v2/ipo-003/research.html",
+      "legacyOverviewUrl": "/companies/长鑫科技/reports/2026-07-09-overview-v2.html",
+      "legacyResearchUrl": "/companies/长鑫科技/reports/2026-07-09-research-v2.html",
+      "reportVersion": "2026-07-09-v2",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-003/overview.html",
+        "researchUrl": "/reports-v2/ipo-003/research.html",
+        "reportVersion": "2026-07-09-v2"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方",
+          "title": "上交所科创板注册项目动态页面",
+          "date": null,
+          "url": "https://www.sse.com.cn/star/renewal/",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "确认科创板发行上市审核项目动态页面为官方入口。 | 状态需结合接口字段和前端脚本解释。"
+        },
+        {
+          "id": "S2",
+          "level": "官方",
+          "title": "上交所项目动态查询接口：长鑫科技 2170",
+          "date": null,
+          "url": "https://query.sse.com.cn/statusStarAction.do?jsonCallBack=jsonpCallback&isPagination=true&sqlId=SH_XM_LB&keyword=%E9%95%BF%E9%91%AB%E7%A7%91%E6%8A%80&pageHelp.pageSize=10&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.endPage=1",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "IPO 状态、拟募资、受理/更新字段、中介机构、董事长/总经理/董秘。 | 拟募资最终仍以发行公告为准。"
+        },
+        {
+          "id": "S3",
+          "level": "官方",
+          "title": "巨潮资讯：长鑫科技首次公开发行股票并在科创板上市发行安排及初步询价公告",
+          "date": null,
+          "url": "https://www.cninfo.com.cn/new/disclosure",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "确认 2026-07-09 发行安排，网上/网下申购日为 2026-07-16。 | 上市日仍待上市公告书；发行价和最终募资以发行结果公告等后续文件为准。"
+        },
+        {
+          "id": "S3b",
+          "level": "官方",
+          "title": "上交所项目动态前端脚本",
+          "date": null,
+          "url": "https://www.sse.com.cn/xhtml/star/js/search/search_zcz_dt.js",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "解释注册生效基础状态字段。 | 发行中状态以上述巨潮发行安排为最新口径。"
+        },
+        {
+          "id": "S4",
+          "level": "官方",
+          "title": "长鑫存储官网：关于我们",
+          "date": null,
+          "url": "https://www.cxmt.com/about.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "公司定位、成立时间、总部、发展历程。 | 经营数据仍需招股书。"
+        },
+        {
+          "id": "S5",
+          "level": "官方",
+          "title": "长鑫存储官网：产品与服务",
+          "date": null,
+          "url": "https://www.cxmt.com/product.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "DDR5、LPDDR5/5X、DDR4、LPDDR4X 产品与指标。 | 部分功耗数据为公司内部测试口径。"
+        },
+        {
+          "id": "S6",
+          "level": "官方",
+          "title": "长鑫存储官网：创新体系",
+          "date": null,
+          "url": "https://www.cxmt.com/innovation.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "研发人员占比、知识产权和授权合作表述。 | 研发人员占比非审计财务口径。"
+        },
+        {
+          "id": "S7",
+          "level": "官方",
+          "title": "长鑫存储 2025-11-23：IC China 展示 DDR5/LPDDR5X",
+          "date": null,
+          "url": "https://www.cxmt.com/news/info_95.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "DDR5 8000Mbps/24Gb、模组类型、LPDDR5X 10667Mbps/16Gb。 | 展示不等于所有型号批量出货。"
+        },
+        {
+          "id": "S8",
+          "level": "官方",
+          "title": "长鑫存储 2025-10-28：LPDDR5X 已量产",
+          "date": null,
+          "url": "https://www.cxmt.com/news/info_94.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "LPDDR5X 8533/9600Mbps 量产、10667Mbps 送样。 | 送样不等于客户量产采购。"
+        },
+        {
+          "id": "S9",
+          "level": "官方",
+          "title": "长鑫存储 2023-11-28：LPDDR5 产品",
+          "date": null,
+          "url": "https://www.cxmt.com/news/info_90.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "LPDDR5 12Gb、12GB/6GB 芯片，小米/传音验证。 | 客户验证范围仍需继续跟踪。"
+        },
+        {
+          "id": "S10",
+          "level": "媒体转述",
+          "title": "Financial Times：Apple interest thrusts China’s CXMT into memory chip spotlight",
+          "date": null,
+          "url": "https://www.ft.com/content/f4ac5c92-03be-4499-b16a-017a7e9ee228",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "招股书转述财务、补贴、股权、产能、HBM、ASML 和 Apple 测试线索。 | 财务和股权必须待官方 PDF 复核；Apple 线索未获官方确认。"
+        },
+        {
+          "id": "S11",
+          "level": "媒体转述",
+          "title": "WSJ：The Chinese Company Taking On the World's Memory-Chip Giants",
+          "date": null,
+          "url": "https://www.wsj.com/tech/the-chinese-company-taking-on-the-worlds-memory-chip-giants-78dfea55",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "招股书转述收入、市场份额、IPO 规模、知识产权/监管风险。 | 收入数据需官方 PDF 复核。"
+        },
+        {
+          "id": "S12",
+          "level": "研究口径",
+          "title": "FT Alphaville：How concentrated is the market behind Micron mania?",
+          "date": null,
+          "url": "https://www.ft.com/content/b3666d16-38e9-47b6-a519-44648377dc8e",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "DRAM 市占、HHI、行业集中度。 | 引用 Counterpoint 口径，非公司披露。"
+        },
+        {
+          "id": "S13",
+          "level": "研究口径",
+          "title": "Barron's：Concerns About China's CXMT Disrupting Memory Supply Likely Overplayed",
+          "date": null,
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-062526/card/concerns-about-china-s-cxmt-disrupting-memory-supply-likely-overplayed-pi57kJKTvjOjuaSC69yu",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "SemiAnalysis 对 CXMT 2028 供应份额、HBM wafer 口径。 | 预测数据，不能当作确定产能。"
+        },
+        {
+          "id": "S14",
+          "level": "媒体转述",
+          "title": "MarketWatch：Why Apple pivoting to China for memory may not solve big tech's microchip crisis",
+          "date": null,
+          "url": "https://www.marketwatch.com/story/why-apple-pivoting-to-china-for-memory-may-not-solve-big-techs-microchip-crisis-51f3438d",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "Apple/CXMT 政治敏感性、LPDDR5X 高端应用可达性、Citi 观点。 | Apple 相关信息未获官方确认。"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S10",
+            "S11",
+            "S13",
+            "S14"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S10",
+            "S11",
+            "S13",
+            "S14"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S10",
+            "S11",
+            "S13",
+            "S14"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S10",
+            "S11",
+            "S13",
+            "S14"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S10",
+            "S11",
+            "S13",
+            "S14"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "295 亿元",
+          "value": 295.0,
+          "unit": "亿元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S1",
+            "S2",
+            "S3",
+            "S3b"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
+        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260527_23QQ.pdf",
+        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2170&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260520_QVFW.pdf",
+        "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2170",
+        "scoreNote": "DRAM/存储芯片国产替代属性强，行业景气度按官方行业、公司名称和招股意向书发行阶段初筛为高；需后续用招股书财务和产能数据复核"
+      }
+    },
+    {
+      "id": "ipo-004",
+      "companyId": "ipo-004",
+      "name": "宇树科技股份有限公司",
+      "companyDir": "宇树科技",
+      "board": "科创板",
+      "industry": "通用设备制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-07-06",
+      "sourceDate": "2026-07-06",
+      "sponsor": "中信证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "数据版 v3 已完成",
+      "scoreCompleteness": "9/9",
+      "missingFields": [
+        "expectedListing",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-004/overview.html",
+      "researchUrl": "/reports-v2/ipo-004/research.html",
+      "legacyOverviewUrl": "/companies/宇树科技/reports/2026-07-10-overview-v3.html",
+      "legacyResearchUrl": "/companies/宇树科技/reports/2026-07-10-research-v3.html",
+      "reportVersion": "2026-07-10-v3",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-004/overview.html",
+        "researchUrl": "/reports-v2/ipo-004/research.html",
+        "reportVersion": "2026-07-10-v3"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "上交所发行上市审核披露目录 GP_GPZCZ_SHXXPL",
+          "date": "2026-07-10",
+          "url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2178",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "打开 | 核对注册批复、注册稿招股书、审计报告、问询回复目录和文件大小 | 官方目录；静态 PDF 直连在当前环境 404，正文采用同文件公告镜像"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "关于同意宇树科技股份有限公司首次公开发行股票注册的批复",
+          "date": "2026-07-02",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202607061826748666_1.pdf",
+          "localPath": "companies/宇树科技/sources/2026-07-02-关于同意宇树科技股份有限公司首次公开发行股票注册的批复-eastmoney.pdf",
+          "localPaths": [
+            "companies/宇树科技/sources/2026-07-02-关于同意宇树科技股份有限公司首次公开发行股票注册的批复-eastmoney.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": 769562,
+          "sha256": "ea2d4299dae47a563014228019c0a293e32c7355d592846a0de760684b97beec",
+          "verificationStatus": "verified_mirror",
+          "note": "打开 | 确认注册生效事实 | 上交所目录 filePath=/disclosure/announcement/c/202607/002178_20260702_TIY7.pdf；fileSize=769,562；镜像 PDF 已校验"
+        },
+        {
+          "id": "S3",
+          "level": "官方披露文件",
+          "title": "宇树科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）",
+          "date": "2026-06-02",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202606021823164465_1.pdf",
+          "localPath": "companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf",
+          "localPaths": [
+            "companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "f6360614e8d3b000affa5e3b07dad450b509f4d3223f7a15e67fb425b1b8dc5b",
+          "verificationStatus": "待官方目录复核",
+          "note": "打开 | 业务、财务、产品结构、客户供应商、募投和风险因素主来源 | 上交所披露目录确认文件名、公告日期、filePath/fileId/fileSize；正文由东方财富公告 PDF 镜像取得并校验 %PDF- 文件头"
+        },
+        {
+          "id": "S4",
+          "level": "官方披露文件",
+          "title": "容诚会计师事务所关于宇树科技首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）",
+          "date": "2026-05-25",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202605251822861780_1.pdf",
+          "localPath": "companies/宇树科技/sources/2026-05-25-容诚会计师事务所(特殊普通合伙)关于宇树科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告(上会稿)(宇树科技股份有限公司)-eastmoney.pdf",
+          "localPaths": [
+            "companies/宇树科技/sources/2026-05-25-容诚会计师事务所(特殊普通合伙)关于宇树科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告(上会稿)(宇树科技股份有限公司)-eastmoney.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "dd77dabd85bd13ac34e1c21a5a9dde44940ac9936122274d245a9acc1a60dc0e",
+          "verificationStatus": "待官方目录复核",
+          "note": "打开 | 交叉核对财务数据和审计口径 | 上交所目录显示 2026-06-02 注册稿审计报告同为 12,461,024 字节；本文件为已下载真 PDF"
+        },
+        {
+          "id": "S5",
+          "level": "官方问询回复",
+          "title": "8-1 发行人及中介机构关于审核中心意见落实函的回复",
+          "date": "2026-05-25",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202605251822861711_1.pdf",
+          "localPath": "companies/宇树科技/sources/2026-05-25-8-1发行人及中介机构关于审核中心意见落实函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+          "localPaths": [
+            "companies/宇树科技/sources/2026-05-25-8-1发行人及中介机构关于审核中心意见落实函的回复(宇树科技股份有限公司)-eastmoney.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "9b7dec34cae11705fdeb7e981c5ff6f8a421cfed16bbc804257123284f30d838",
+          "verificationStatus": "待官方目录复核",
+          "note": "打开 | 监管关注点：增速放缓、竞争加剧、研发投入、同行对比和业绩波动 | 真 PDF；用于补充风险和可比公司口径"
+        },
+        {
+          "id": "S6",
+          "level": "官方问询回复",
+          "title": "首轮/第二轮预先审阅问询函回复",
+          "date": "2026-03-20",
+          "url": "https://pdf.dfcfw.com/pdf/H2_AN202603201820669961_1.pdf",
+          "localPath": "companies/宇树科技/sources/2026-03-20-8-1-1发行人及中介机构关于首轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+          "localPaths": [
+            "companies/宇树科技/sources/2026-03-20-8-1-1发行人及中介机构关于首轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+            "companies/宇树科技/sources/2026-03-20-8-1-2发行人及中介机构关于第二轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "7b5ec287561c7b09aba1e182545739d478a0556517dac9f0c9ca22c6cece515c",
+          "verificationStatus": "待官方目录复核",
+          "note": "打开 | 后续深挖收入确认、产品和客户问题的备查材料 | 本版主要使用落实函回复；两轮预先审阅回复已下载备查"
+        },
+        {
+          "id": "S7",
+          "level": "辅助状态校验",
+          "title": "东方财富 IPO 审核信息 / 巨潮资讯新股资料（AkShare）",
+          "date": "2026-07-10",
+          "url": null,
+          "localPath": "data/raw/ipo_review_match_2026-07-10.json",
+          "localPaths": [
+            "data/raw/ipo_review_match_2026-07-10.json"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "aa5030fb1f7dbdc5fe016c04991e453aa1ed17502e0f6b00f97714c8af1ca2b2",
+          "verificationStatus": "verified",
+          "note": "项目内文件 | 辅助核对临时代码 A26029，未发现巨潮新股发行/上市日期 | 不作为财务来源；发行/上市日期最终以交易所、巨潮正式公告为准"
+        },
+        {
+          "id": "S8",
+          "level": "生成资产",
+          "title": "GPT img2 生成机器人报告主视觉",
+          "date": "2026-07-10",
+          "url": null,
+          "localPath": "companies/宇树科技/assets/2026-07-10-yushu-robotics-hero-gpt-img2.png",
+          "localPaths": [
+            "companies/宇树科技/assets/2026-07-10-yushu-robotics-hero-gpt-img2.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "829d97583a98ff0553f18c4a6ccff491ad335ed56240df76e4fb9502b1089257",
+          "verificationStatus": "verified",
+          "note": "项目内文件 | 报告视觉资产 | 无文字、无 Logo、无事实含义，不作为数据来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2023-2025 CAGR 226.78%；2026Q1 收入同比 +68.49%",
+          "value": 68.49,
+          "unit": "%",
+          "period": "2026Q1同比",
+          "sourceRefIds": [
+            "S1",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025 扣非后归母净利润 59,075.28 万元；2026Q1 扣非同比 -52.55%",
+          "value": 59075.28,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S1",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "主营毛利率 44.22%→56.74%→60.13%；人形机器人毛利率 2025 年回落至 63.18%",
+          "value": 44.22,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S1",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "2025 经营现金流 66,998.18 万元；2026Q1 同比 -85.65%",
+          "value": 66998.18,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S1",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户合计 12.08%",
+          "value": 12.08,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S1",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "拟募资 420,171.12 万元，投向模型、本体、新产品和制造基地",
+          "value": 420171.12,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S1",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/市值待披露；同行对比仅作相对位置",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "明星赛道叠加利润短期回落，上市后波动风险偏高",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
+        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002178_20260602_SU4G.pdf",
+        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2178&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002178_20260525_V4H0.pdf",
+        "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2178",
+        "scoreNote": "已用注册稿招股书、审计报告、注册批复和落实函回复重跑；重点跟踪发行价、2026H1 利润回落和人形机器人单价/毛利率"
+      }
+    },
+    {
+      "id": "ipo-005",
+      "companyId": "ipo-005",
+      "name": "广东中塑新材料股份有限公司",
+      "companyDir": "中塑股份",
+      "board": "创业板",
+      "industry": "橡胶和塑料制品业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-07-03",
+      "sourceDate": "2026-07-03",
+      "sponsor": "国信证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "7/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.fundraisingFit",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-005/overview.html",
+      "researchUrl": "/reports-v2/ipo-005/research.html",
+      "legacyOverviewUrl": "/companies/中塑股份/reports/2026-07-10-overview-v14.html",
+      "legacyResearchUrl": "/companies/中塑股份/reports/2026-07-10-research-v14.html",
+      "reportVersion": "2026-07-10-v14",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-005/overview.html",
+        "researchUrl": "/reports-v2/ipo-005/research.html",
+        "reportVersion": "2026-07-10-v14"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-07-03",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "中塑股份-1-1-招股说明书.pdf",
+          "date": "2026-06-05",
+          "url": null,
+          "localPath": "companies/中塑股份/sources/2026-06-05-中塑股份-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/中塑股份/sources/2026-06-05-中塑股份-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "bce4c432e6a8bf123be920c041c4d8954c564be3e40ada9cf82e495eba2eef29",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：74,947.57, 69,995.26, 53,677.89 万元；三年复合增速 18.16%",
+          "value": 74947.57,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：12,285.37, 9,256.66, 8,084.74 万元",
+          "value": 12285.37,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：33.21%, 30.63%, 31.52%",
+          "value": 33.21,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：9,639.33, 10,312.85, 5,670.45 万元",
+          "value": 9639.33,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：20.16%",
+          "value": 20.16,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-006",
+      "companyId": "ipo-006",
+      "name": "苏州绿控传动科技股份有限公司",
+      "companyDir": "绿控传动",
+      "board": "创业板",
+      "industry": "汽车制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-29",
+      "sourceDate": "2026-06-29",
+      "sponsor": "中国国际金融股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "6/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.fundraisingFit",
+        "metrics.peerValuation",
+        "metrics.profitQuality",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-006/overview.html",
+      "researchUrl": "/reports-v2/ipo-006/research.html",
+      "legacyOverviewUrl": "/companies/绿控传动/reports/2026-07-10-overview-v16.html",
+      "legacyResearchUrl": "/companies/绿控传动/reports/2026-07-10-research-v16.html",
+      "reportVersion": "2026-07-10-v16",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-006/overview.html",
+        "researchUrl": "/reports-v2/ipo-006/research.html",
+        "reportVersion": "2026-07-10-v16"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-06-29",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "绿控传动-1-1-招股说明书.pdf",
+          "date": "2026-05-20",
+          "url": null,
+          "localPath": "companies/绿控传动/sources/2026-05-20-绿控传动-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/绿控传动/sources/2026-05-20-绿控传动-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "8839d850cf59747bc44ae16be51c648db9a2b5e42e0afd2811c8f4b75a3b1356",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：315,204.75, 116,574.29, 67,620.46 万元；三年复合增速 115.90%",
+          "value": 315204.75,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 归母净利润：15,316.17, 4,804.27, -1,233.38 万元",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：16.06%, 19.78%, 16.77%",
+          "value": 16.06,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：-17,492.01, -18,457.18, 519.91 万元",
+          "value": -17492.01,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：59.10%",
+          "value": 59.1,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-007",
+      "companyId": "ipo-007",
+      "name": "洛阳轴承集团股份有限公司",
+      "companyDir": "洛轴股份",
+      "board": "创业板",
+      "industry": "通用设备制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-23",
+      "sourceDate": "2026-06-23",
+      "sponsor": "中信建投证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "4/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.fundraisingFit",
+        "metrics.grossMarginTrend",
+        "metrics.peerValuation",
+        "metrics.profitQuality",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-007/overview.html",
+      "researchUrl": "/reports-v2/ipo-007/research.html",
+      "legacyOverviewUrl": "/companies/洛轴股份/reports/2026-07-10-overview-v14.html",
+      "legacyResearchUrl": "/companies/洛轴股份/reports/2026-07-10-research-v14.html",
+      "reportVersion": "2026-07-10-v14",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-007/overview.html",
+        "researchUrl": "/reports-v2/ipo-007/research.html",
+        "reportVersion": "2026-07-10-v14"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-06-23",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "洛轴股份-1-1-招股说明书.pdf",
+          "date": "2026-05-20",
+          "url": null,
+          "localPath": "companies/洛轴股份/sources/2026-05-20-洛轴股份-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/洛轴股份/sources/2026-05-20-洛轴股份-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "3642af350584b197c897e61ba5b86e20208fcbf1e85c7f926469171a1bb6ae8f",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：603,377.30, 467,494.68, 444,129.30 万元；三年复合增速 16.56%",
+          "value": 603377.3,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 归母净利润：52,925.38, 25,094.38, 23,066.37 万元",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：待补充, 待补充, 待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：24,697.12, 48,483.81, -20,035.94 万元",
+          "value": 24697.12,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：37.10%",
+          "value": 37.1,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-008",
+      "companyId": "ipo-008",
+      "name": "上海频准激光科技股份有限公司",
+      "companyDir": "频准激光",
+      "board": "科创板",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-22",
+      "sourceDate": "2026-06-22",
+      "sponsor": "中信建投证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "7/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.fundraisingFit",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-008/overview.html",
+      "researchUrl": "/reports-v2/ipo-008/research.html",
+      "legacyOverviewUrl": "/companies/频准激光/reports/2026-07-10-overview-v14.html",
+      "legacyResearchUrl": "/companies/频准激光/reports/2026-07-10-research-v14.html",
+      "reportVersion": "2026-07-10-v14",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-008/overview.html",
+        "researchUrl": "/reports-v2/ipo-008/research.html",
+        "reportVersion": "2026-07-10-v14"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
+          "date": "2026-06-22",
+          "url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)",
+          "date": "2026-05-22",
+          "url": null,
+          "localPath": "companies/频准激光/sources/2026-05-22-频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+          "localPaths": [
+            "companies/频准激光/sources/2026-05-22-频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "8bec6a2fcae282bb8bba6b3a40e9123601a1142745622be918ed9c5cfecf891e",
+          "verificationStatus": "待官方目录复核",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：41,791.65, 29,185.72, 14,772.14 万元；三年复合增速 68.20%",
+          "value": 41791.65,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：15,124.57, 11,143.08, 5,780.31 万元",
+          "value": 15124.57,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：69.33%, 67.78%, 68.53%",
+          "value": 69.33,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：19,108.03, 11,672.75, 6,009.66 万元",
+          "value": 19108.03,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：36.87%",
+          "value": 36.87,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
+        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260522_Y2OP.pdf",
+        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2134&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260512_E79K.pdf",
+        "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-009",
+      "companyId": "ipo-009",
+      "name": "深圳嘉立创科技集团股份有限公司",
+      "companyDir": "嘉立创",
+      "board": "深交所主板",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-08",
+      "sourceDate": "2026-06-08",
+      "sponsor": "国泰海通证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "4/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.cashFlow",
+        "metrics.fundraisingFit",
+        "metrics.grossMarginTrend",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-009/overview.html",
+      "researchUrl": "/reports-v2/ipo-009/research.html",
+      "legacyOverviewUrl": "/companies/嘉立创/reports/2026-07-10-overview-v16.html",
+      "legacyResearchUrl": "/companies/嘉立创/reports/2026-07-10-research-v16.html",
+      "reportVersion": "2026-07-10-v16",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-009/overview.html",
+        "researchUrl": "/reports-v2/ipo-009/research.html",
+        "reportVersion": "2026-07-10-v16"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-06-08",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "嘉立创-1-1-招股说明书.pdf",
+          "date": "2026-05-12",
+          "url": null,
+          "localPath": "companies/嘉立创/sources/2026-05-12-嘉立创-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/嘉立创/sources/2026-05-12-嘉立创-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "e4caafef1183cbf015b1ac02f99a669c74a6bdea25b4c10eb8b1adf9ae9501b5",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：1,023,170.77, 796,888.81, 672,611.58 万元；三年复合增速 23.34%",
+          "value": 1023170.77,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：122,863.36, 92,468.14, 65,807.47 万元",
+          "value": 122863.36,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：待补充, 待补充, 待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：待补充, 待补充, 待补充 万元",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：1.16%",
+          "value": 1.16,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-010",
+      "companyId": "ipo-010",
+      "name": "江苏展芯半导体技术股份有限公司",
+      "companyDir": "江苏展芯",
+      "board": "创业板",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-02",
+      "sourceDate": "2026-06-02",
+      "sponsor": "华泰联合证券有限责任公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "5/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.customerConcentration",
+        "metrics.fundraisingFit",
+        "metrics.grossMarginTrend",
+        "metrics.peerValuation",
+        "metrics.profitQuality",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-010/overview.html",
+      "researchUrl": "/reports-v2/ipo-010/research.html",
+      "legacyOverviewUrl": "/companies/江苏展芯/reports/2026-07-10-overview-v15.html",
+      "legacyResearchUrl": "/companies/江苏展芯/reports/2026-07-10-research-v15.html",
+      "reportVersion": "2026-07-10-v15",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-010/overview.html",
+        "researchUrl": "/reports-v2/ipo-010/research.html",
+        "reportVersion": "2026-07-10-v15"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-06-02",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "江苏展芯-1-1-招股说明书.pdf",
+          "date": "2026-05-15",
+          "url": null,
+          "localPath": "companies/江苏展芯/sources/2026-05-15-江苏展芯-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/江苏展芯/sources/2026-05-15-江苏展芯-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "a511a777db657f31da37daa2a0faa824a787aa88332957ebbcb85ed15ad7ca21",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：63,917.99, 41,258.83, 46,574.61 万元；三年复合增速 17.15%",
+          "value": 63917.99,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 归母净利润：22,811.62, 9,535.43, 17,903.42 万元",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：待补充, 待补充, 待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：231.94, 9,619.81, -5,810.09 万元",
+          "value": 231.94,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-011",
+      "companyId": "ipo-011",
+      "name": "苏州市贝特利高分子材料股份有限公司",
+      "companyDir": "贝特利",
+      "board": "创业板",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-02",
+      "sourceDate": "2026-06-02",
+      "sponsor": "国信证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "5/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.cashFlow",
+        "metrics.peerValuation",
+        "metrics.profitQuality",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-011/overview.html",
+      "researchUrl": "/reports-v2/ipo-011/research.html",
+      "legacyOverviewUrl": "/companies/贝特利/reports/2026-07-10-overview-v13.html",
+      "legacyResearchUrl": "/companies/贝特利/reports/2026-07-10-research-v13.html",
+      "reportVersion": "2026-07-10-v13",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-011/overview.html",
+        "researchUrl": "/reports-v2/ipo-011/research.html",
+        "reportVersion": "2026-07-10-v13"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-06-02",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "贝特利-1-1-招股说明书.pdf",
+          "date": "2026-05-13",
+          "url": null,
+          "localPath": "companies/贝特利/sources/2026-05-13-贝特利-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/贝特利/sources/2026-05-13-贝特利-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "0b3567a6c48fc18bf4025a10cbbdd021e7815fc3d679d92ba9e28ddf9913ca35",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：364,620.27, 252,140.41, 227,286.36 万元；三年复合增速 26.66%",
+          "value": 364620.27,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 归母净利润：11,605.41, 9,749.99, 8,562.53 万元",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：10.02%, 10.92%, 10.28%",
+          "value": 10.02,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：待补充, 待补充, 待补充 万元",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：68.86%",
+          "value": 68.86,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：76,265.69 万元",
+          "value": 76265.69,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-012",
+      "companyId": "ipo-012",
+      "name": "成都超纯应用材料股份有限公司",
+      "companyDir": "超纯股份",
+      "board": "创业板",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-05-25",
+      "sourceDate": "2026-05-25",
+      "sponsor": "华泰联合证券有限责任公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "7/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.fundraisingFit",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-012/overview.html",
+      "researchUrl": "/reports-v2/ipo-012/research.html",
+      "legacyOverviewUrl": "/companies/超纯股份/reports/2026-07-10-overview-v14.html",
+      "legacyResearchUrl": "/companies/超纯股份/reports/2026-07-10-research-v14.html",
+      "reportVersion": "2026-07-10-v14",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-012/overview.html",
+        "researchUrl": "/reports-v2/ipo-012/research.html",
+        "reportVersion": "2026-07-10-v14"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-05-25",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "超纯股份-1-1-招股说明书.pdf",
+          "date": "2026-05-06",
+          "url": null,
+          "localPath": "companies/超纯股份/sources/2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/超纯股份/sources/2026-05-06-超纯股份-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "7e7ef5f6745df42daff2c7933e94783e40e86c6e7a30881cb8b6cef53612abc0",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：49,573.87, 25,687.80, 16,905.00 万元；三年复合增速 71.25%",
+          "value": 49573.87,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：20,368.21, 8,551.46, 6,642.45 万元",
+          "value": 20368.21,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：59.26%, 58.09%, 63.13%",
+          "value": 59.26,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：16,542.94, 8,769.32, 6,119.05 万元",
+          "value": 16542.94,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：89.65%",
+          "value": 89.65,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-013",
+      "companyId": "ipo-013",
+      "name": "福建马坑矿业股份有限公司",
+      "companyDir": "马矿股份",
+      "board": "上交所主板",
+      "industry": "黑色金属矿采选业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-07-06",
+      "sourceDate": "2026-07-06",
+      "sponsor": "中信证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "6/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.fundraisingFit",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-013/overview.html",
+      "researchUrl": "/reports-v2/ipo-013/research.html",
+      "legacyOverviewUrl": "/companies/马矿股份/reports/2026-07-10-overview-v14.html",
+      "legacyResearchUrl": "/companies/马矿股份/reports/2026-07-10-research-v14.html",
+      "reportVersion": "2026-07-10-v14",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-013/overview.html",
+        "researchUrl": "/reports-v2/ipo-013/research.html",
+        "reportVersion": "2026-07-10-v14"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）",
+          "date": "2026-07-06",
+          "url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2132",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2132"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "马矿股份-福建马坑矿业股份有限公司主板首次公开发行股票招股说明书(注册稿)",
+          "date": "2026-05-29",
+          "url": null,
+          "localPath": "companies/马矿股份/sources/2026-05-29-马矿股份-福建马坑矿业股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+          "localPaths": [
+            "companies/马矿股份/sources/2026-05-29-马矿股份-福建马坑矿业股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "98aa9fdb5836e3168c46462290b4216729deaca14e25ae02fac76e71b9ae3b71",
+          "verificationStatus": "待官方目录复核",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：199,141.63, 205,003.61, 196,231.08 万元；三年复合增速 0.74%",
+          "value": 199141.63,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：59,453.60, 66,456.45, 65,325.37 万元",
+          "value": 59453.6,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：51.91%, 55.88%, 58.21%",
+          "value": 51.91,
+          "unit": "%",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：96,094.80, 94,286.37, 99,958.85 万元",
+          "value": 96094.8,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：82.53%",
+          "value": 82.53,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=2）",
+        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2 | filePath=/disclosure/announcement/c/202605/002132_20260529_ZFLM.pdf",
+        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2132&issueMarketType=2 | filePath=/disclosure/announcement/c/202603/002132_20260324_YLWC.pdf",
+        "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2132",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-014",
+      "companyId": "ipo-014",
+      "name": "中电科思仪科技股份有限公司",
+      "companyDir": "思仪科技",
+      "board": "创业板",
+      "industry": "仪器仪表制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-15",
+      "sourceDate": "2026-06-15",
+      "sponsor": "国泰海通证券股份有限公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "6/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.customerConcentration",
+        "metrics.fundraisingFit",
+        "metrics.grossMarginTrend",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-014/overview.html",
+      "researchUrl": "/reports-v2/ipo-014/research.html",
+      "legacyOverviewUrl": "/companies/思仪科技/reports/2026-07-10-overview-v14.html",
+      "legacyResearchUrl": "/companies/思仪科技/reports/2026-07-10-research-v14.html",
+      "reportVersion": "2026-07-10-v14",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-014/overview.html",
+        "researchUrl": "/reports-v2/ipo-014/research.html",
+        "reportVersion": "2026-07-10-v14"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "深交所发行上市审核项目动态接口 projectrends/query",
+          "date": "2026-06-15",
+          "url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.szse.cn/projectdynamic/ipo/index.html"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "思仪科技-1-1-招股说明书.pdf",
+          "date": "2026-04-29",
+          "url": null,
+          "localPath": "companies/思仪科技/sources/2026-04-29-思仪科技-1-1-招股说明书.pdf-深交所.pdf",
+          "localPaths": [
+            "companies/思仪科技/sources/2026-04-29-思仪科技-1-1-招股说明书.pdf-深交所.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "b5783c6bdb66c6890ba125a40a98eb9dda19143a3f8cf49c8aaa8f12383db8c0",
+          "verificationStatus": "verified",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：239,837.17, 205,188.28, 215,292.19 万元；三年复合增速 5.55%",
+          "value": 239837.17,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：33,133.01, 25,231.36, 15,534.18 万元",
+          "value": 33133.01,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：待补充, 待补充, 待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：50,499.83, 23,175.29, 11,369.79 万元",
+          "value": 50499.83,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "深交所发行上市审核项目动态接口 projectrends/query",
+        "prospectusLink": "待补充",
+        "inquiryLink": "待补充",
+        "officialLink": "https://listing.szse.cn/projectdynamic/ipo/index.html",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    },
+    {
+      "id": "ipo-015",
+      "companyId": "ipo-015",
+      "name": "国仪量子技术（合肥）股份有限公司",
+      "companyDir": "国仪量子",
+      "board": "科创板",
+      "industry": "仪器仪表制造业",
+      "status": "注册生效",
+      "latestProgress": "注册生效；项目更新日期 2026-06-15",
+      "sourceDate": "2026-06-15",
+      "sponsor": "华泰联合证券有限责任公司",
+      "expectedListing": null,
+      "reportStatus": "结构化数据版已重跑",
+      "scoreCompleteness": "6/7",
+      "missingFields": [
+        "expectedListing",
+        "metrics.fundraisingFit",
+        "metrics.grossMarginTrend",
+        "metrics.peerValuation",
+        "metrics.tradingRisk"
+      ],
+      "overviewUrl": "/reports-v2/ipo-015/overview.html",
+      "researchUrl": "/reports-v2/ipo-015/research.html",
+      "legacyOverviewUrl": "/companies/国仪量子/reports/2026-07-10-overview-v13.html",
+      "legacyResearchUrl": "/companies/国仪量子/reports/2026-07-10-research-v13.html",
+      "reportVersion": "2026-07-10-v13",
+      "reports": {
+        "overviewUrl": "/reports-v2/ipo-015/overview.html",
+        "researchUrl": "/reports-v2/ipo-015/research.html",
+        "reportVersion": "2026-07-10-v13"
+      },
+      "sourceRefs": [
+        {
+          "id": "S1",
+          "level": "官方项目状态",
+          "title": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
+          "date": "2026-06-15",
+          "url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112",
+          "localPath": null,
+          "localPaths": [],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": null,
+          "verificationStatus": "external_only",
+          "note": "核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112"
+        },
+        {
+          "id": "S2",
+          "level": "官方披露文件",
+          "title": "国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)",
+          "date": "2026-05-12",
+          "url": null,
+          "localPath": "companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+          "localPaths": [
+            "companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "f146d5d82546a63c1fda2f6b14d592ad2a8af210abae59e552999c807b4e0d86",
+          "verificationStatus": "待官方目录复核",
+          "note": "财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对"
+        },
+        {
+          "id": "S3",
+          "level": "生成资产",
+          "title": "GPT img2 生成 IPO 研究主视觉",
+          "date": "2026-07-09",
+          "url": null,
+          "localPath": "dashboard/assets/ipo-hero.png",
+          "localPaths": [
+            "dashboard/assets/ipo-hero.png"
+          ],
+          "page": null,
+          "fileId": null,
+          "fileSize": null,
+          "sha256": "2c091d55adbdecbcd84a281618c0e685a5ecbb0502b0f8d6ba445a4d983538eb",
+          "verificationStatus": "verified",
+          "note": "报告视觉资产 | 不作为事实来源"
+        }
+      ],
+      "metrics": {
+        "revenueGrowth": {
+          "rawText": "2025/2024/2023 营业收入：66,619.18, 50,147.22, 39,962.01 万元；三年复合增速 29.11%",
+          "value": 66619.18,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "profitQuality": {
+          "rawText": "2025/2024/2023 扣非归母净利润：-1,887.80, -10,423.63, -16,932.20 万元",
+          "value": -1887.8,
+          "unit": "万元",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "grossMarginTrend": {
+          "rawText": "毛利率：待补充, 待补充, 待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "cashFlow": {
+          "rawText": "经营现金流：11,834.03, -5,023.76, -13,359.34 万元",
+          "value": 11834.03,
+          "unit": "万元",
+          "period": "latest",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "customerConcentration": {
+          "rawText": "2025 前五大客户占比：16.07%",
+          "value": 16.07,
+          "unit": "%",
+          "period": "2025",
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "fundraisingFit": {
+          "rawText": "募投合计：待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": [
+            "S2"
+          ]
+        },
+        "peerValuation": {
+          "rawText": "发行价/发行市值待补充",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        },
+        "tradingRisk": {
+          "rawText": "注册生效但发行价、流通盘和上市公告书待披露",
+          "value": null,
+          "unit": null,
+          "period": null,
+          "sourceRefIds": []
+        }
+      },
+      "legacyDashboard": {
+        "sourceName": "上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）",
+        "prospectusLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002112_20260512_0M7N.pdf",
+        "inquiryLink": "https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&isPagination=false&sqlId=GP_GPZCZ_SHXXPL&stockAuditNum=2112&issueMarketType=1 | filePath=/disclosure/announcement/c/202604/002112_20260427_ZG7K.pdf",
+        "officialLink": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2112",
+        "scoreNote": "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+      }
+    }
+  ]
+}

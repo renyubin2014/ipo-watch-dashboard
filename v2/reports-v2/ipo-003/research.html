@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>长鑫科技 V2 详尽研究</title>
+  <style>
+:root{
+  --bg:#f5f7fb;--card:#ffffff;--ink:#142033;--muted:#63748a;--line:#d8e1ee;
+  --blue:#0b6bcb;--green:#108a5d;--amber:#9a6700;--red:#b42318;--risk-card:#c9828a;--tag:#eef4ff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif}
+body{line-height:1.7}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{padding:56px 18px 40px;background:linear-gradient(135deg,#10233c,#17395e 58%,#0f6dbd);color:#fff}
+.hero-wrap,.page-wrap{max-width:1180px;margin:0 auto}
+.hero h1{margin:10px 0 12px;font-size:clamp(1.8rem,9vw,3.4rem);line-height:1.12}
+.hero p{margin:0;max-width:960px;color:#d9e6f6}
+.eyebrow{display:inline-flex;gap:8px;flex-wrap:wrap}
+.page{padding:18px}
+.section{margin:18px auto}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
+.grid{display:grid;gap:14px}
+.metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.metric,.subcard,.hypothesis,.risk-card,.verdict-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.verdict-card.advantage{border-top:4px solid var(--green)}
+.verdict-card.risk{border-top:4px solid var(--risk-card);background:#fff7f7}
+.metric strong{display:block;font-size:1.15rem;margin:6px 0}
+.tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:var(--tag);font-size:12px;font-weight:700;color:#244b84;margin-right:6px;margin-bottom:6px}
+.tag-official{background:#e9f6ef;color:#176c42}
+.tag-company{background:#eef4ff;color:#244b84}
+.tag-research{background:#fff4e5;color:#9a6700}
+.tag-local{background:#f3f0ff;color:#5a37b8}
+.tag-infer{background:#fff0f2;color:#b42318}
+.tag-pending{background:#f4f5f7;color:#475467}
+.lead{font-size:1.05rem;color:#2e4057}
+.muted{color:var(--muted)}
+.callout{background:#10233c;color:#fff}
+.callout p,.callout li{color:#dce8f6}
+.table-scroll{max-width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f8fafc;font-size:13px;color:#3c5068}
+.toc{position:sticky;top:12px}
+.toc a{display:block;padding:6px 0;color:var(--muted)}
+.evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
+.evidence-list li,.bullet-list li{margin:4px 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.kpi{font-size:13px;color:var(--muted)}
+.divider{height:1px;background:var(--line);margin:18px 0}
+img,canvas{max-width:100%;height:auto}
+@media (max-width:640px){
+  .page{padding:12px}
+  .panel{padding:16px;border-radius:14px}
+  .metric-grid{grid-template-columns:1fr}
+  .hero{padding:36px 14px 28px}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-wrap">
+      <div class="eyebrow"><span class="tag tag-official">Detailed Research V2</span><span class="tag">ipo-003</span><span class="tag">科创板</span></div>
+      <h1>长鑫科技：利润机制与可证伪命题工作台</h1>
+      <p>长鑫已经证明自己坐上了全球 DRAM 牌桌，但真正决定估值上限的仍是高端产品卖价，而不是单纯产能。</p>
+    </div>
+  </header>
+  <main class="page page-wrap grid two-col" style="align-items:start">
+
+    <nav class="panel toc">
+      <a href="#scope">0. 口径</a>
+      <a href="#facts">1. 关键事实</a>
+      <a href="#mechanism">2. 利润机制</a>
+      <a href="#hypotheses">3. 可证伪命题</a>
+      <a href="#comparability">4. 可比边界</a>
+      <a href="#valuation">5. 估值语言</a>
+      <a href="#tracking">6. 跟踪事项</a>
+      <a href="#sources">7. 来源表</a>
+      <a href="#terms">8. 术语</a>
+    </nav>
+
+    <div>
+      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>长鑫已具备进入全球 DRAM 供应链的产能与量产基础。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://www.sse.com.cn/star/renewal/" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所科创板注册项目动态页面</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>高端产品售价和客户验证若无法突破，产能扩张只能放大周期波动，难以形成高质量盈利。</p><p><strong>风险触发条件：</strong>DDR5、LPDDR5X 等高端产品未形成持续批量采购，收入仍主要由低代际产品贡献。</p><p><strong>后续跟踪指标：</strong>高代际产品收入占比、服务器及高端客户验证进度与 DRAM 毛利率。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://www.sse.com.cn/star/renewal/" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所科创板注册项目动态页面</a></div></article></div></section>
+      <section id="scope" class="section panel">
+        <h2>0. 口径说明</h2>
+        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T21:11:46+08:00。</p>
+        <p>若 `confidence = 待验证`，表示当前证据足以提出研究命题，但不足以把它写成确定事实；不会把缺失项补成伪精确结论。</p>
+      </section>
+      <section id="facts" class="section panel">
+        <h2>1. 关键事实表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody><tr><td>公司</td><td>长鑫科技集团股份有限公司</td></tr><tr><td>中文目录</td><td>长鑫科技</td></tr><tr><td>板块 / 状态</td><td>科创板 / 发行中</td></tr><tr><td>行业</td><td>计算机、通信和其他电子设备制造业</td></tr><tr><td>最新进展</td><td>发行中；项目更新日期 2026-07-09；巨潮资讯披露《长鑫科技首次公开发行股票并在科创板上市发行安排及初步询价公告》，网上/网下申购日为2026-07-16；上市交易日需以上市公告书为准</td></tr><tr><td>预期发行/上市</td><td>发行中：2026-07-16申购；上市日待上市公告书确认</td></tr><tr><td>保荐机构</td><td>中国国际金融股份有限公司</td></tr><tr><td>旧版概览</td><td>companies/长鑫科技/reports/2026-07-09-overview-v2.html</td></tr><tr><td>旧版详尽</td><td>companies/长鑫科技/reports/2026-07-09-research-v2.html</td></tr><tr><td>指标：revenueGrowth</td><td>待补充</td></tr><tr><td>指标：profitQuality</td><td>待补充</td></tr><tr><td>指标：grossMarginTrend</td><td>待补充</td></tr><tr><td>指标：cashFlow</td><td>待补充</td></tr><tr><td>指标：customerConcentration</td><td>待补充</td></tr><tr><td>指标：fundraisingFit</td><td>295 亿元</td></tr><tr><td>指标：peerValuation</td><td>待补充</td></tr><tr><td>指标：tradingRisk</td><td>待补充</td></tr></tbody></table></div>
+      </section>
+      <section id="mechanism" class="section panel">
+        <h2>2. 利润形成机制</h2>
+        <div class="grid cards-3"><div class='subcard'><h3>收入驱动</h3><ul class='bullet-list'><li>DDR4/LPDDR4X 基础盘</li><li>LPDDR5/LPDDR5X 放量</li><li>DDR5/服务器客户验证</li></ul></div><div class='subcard'><h3>成本驱动</h3><ul class='bullet-list'><li>固定折旧</li><li>良率与 bit density</li><li>设备/IP/材料投入</li></ul></div><div class='subcard'><h3>周期变量</h3><ul class='bullet-list'><li>DRAM ASP 周期</li><li>稼动率</li><li>高端产品结构升级速度</li></ul></div><div class='subcard'><h3>利润读法</h3><p>长鑫的利润弹性来自‘价格 × 良率 × 稼动率’的重资产杠杆，而不是单一销量扩张。</p></div></div>
+        <div class="subcard" style="margin-top:14px">
+          <h3>当前最关键约束</h3>
+          <p>长鑫的关键矛盾已从“有没有量”转成“这些量能否卖成高端价格”，也就是产品升级与高端客户验证。</p>
+        </div>
+      </section>
+      <section id="hypotheses" class="section panel">
+        <h2>3. 可证伪命题卡</h2>
+        <div class="grid cards-3">
+            <article class="hypothesis">
+              <div><span class="tag tag-infer">命题 1</span>
+              <span class="tag">本报告推断</span></div>
+              <h3>如果 DDR5 服务器客户、LPDDR5X 高端客户和模组产品能形成持续批量采购，长鑫才会从国产替代故事走向高质量 DRAM 供应商。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span><a class="source-chip" href="https://www.sse.com.cn/star/renewal/" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所科创板注册项目动态页面</a></div>
+              <ul class="evidence-list"><li>待补充</li><li>待补充</li><li>旧版概览和详尽报告都强调“产能份额高于收入份额”，研究重点应转向高端价格和客户层级。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>高端客户验证迟迟没有正式披露</li><li>收入增长主要仍由低代际产品贡献</li></ul>
+              <p><strong>下一验证节点</strong>：发行公告、正式招股书 PDF、上市后首份产品结构披露</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-pending">命题 2</span>
+              <span class="tag">待验证</span></div>
+              <h3>2026Q1 的高利润如果没有更高等级客户、结构升级和现金流配合，只能先按景气周期利润理解，不能外推为长期常态。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span></div>
+              <ul class="evidence-list"><li>待补充</li><li>待补充</li><li>旧版详尽报告明确把单季利润、历史亏损和补贴分开处理，并提示不能简单年化。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>后续披露显示利润延续且产品结构同步升级</li><li>高端客户验证正式落地</li></ul>
+              <p><strong>下一验证节点</strong>：2026H1 财务更新、招股书正文、发行后首份定期报告</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-infer">命题 3</span>
+              <span class="tag">本报告推断</span></div>
+              <h3>在 HBM 没有正式披露前，长鑫的 AI 叙事只能当期权项，不能当基准估值情景。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span></div>
+              <ul class="evidence-list"><li>待补充</li><li>待补充</li><li>旧版详尽报告把 HBM 明确放在“期权项，不作基准”位置。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>正式披露 HBM 产品、客户验证或批量出货</li><li>AI 相关高带宽产品收入进入主线披露</li></ul>
+              <p><strong>下一验证节点</strong>：新版招股书、客户侧公告、上市后产品线披露</p>
+            </article>
+            </div>
+      </section>
+      <section id="comparability" class="section panel">
+        <h2>4. 可比边界</h2>
+
+    <div class="grid two-col">
+      <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>DRAM 全球寡头结构参考</li><li>国内存储国产替代映射资产</li></ul></div>
+      <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>单纯逻辑芯片设计公司</li><li>已经形成稳定 HBM 生态的全球龙头</li></ul></div>
+    </div>
+    <p class="lead">长鑫是重资产 DRAM IDM，估值语言要同时处理周期、折旧和高端产品验证，不能套用轻资产芯片设计框架。</p>
+
+      </section>
+      <section id="valuation" class="section panel">
+        <h2>5. 估值语言</h2>
+
+    <div class="grid two-col">
+      <div class="subcard">
+        <h3>估值锚</h3>
+        <p>先看高端产品占比、客户层级、利润持续性和折旧消化，再谈国产替代或 AI 内存溢价。</p>
+      </div>
+      <div class="subcard">
+        <h3>当前不能下结论的变量</h3>
+        <ul class="bullet-list"><li>正式招股书财务口径</li><li>HBM 正式披露</li><li>发行价/市值</li></ul>
+        <p><strong>是否给目标价：</strong>否</p>
+      </div>
+    </div>
+
+      </section>
+      <section id="tracking" class="section panel">
+        <h2>6. 后续跟踪清单</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>对象</th><th>当前命题</th><th>下一验证节点</th><th>反证信号</th></tr></thead>
+            <tbody><tr><td>命题 1</td><td>如果 DDR5 服务器客户、LPDDR5X 高端客户和模组产品能形成持续批量采购，长鑫才会从国产替代故事走向高质量 DRAM 供应商。</td><td>发行公告、正式招股书 PDF、上市后首份产品结构披露</td><td>高端客户验证迟迟没有正式披露；收入增长主要仍由低代际产品贡献</td></tr><tr><td>命题 2</td><td>2026Q1 的高利润如果没有更高等级客户、结构升级和现金流配合，只能先按景气周期利润理解，不能外推为长期常态。</td><td>2026H1 财务更新、招股书正文、发行后首份定期报告</td><td>后续披露显示利润延续且产品结构同步升级；高端客户验证正式落地</td></tr><tr><td>命题 3</td><td>在 HBM 没有正式披露前，长鑫的 AI 叙事只能当期权项，不能当基准估值情景。</td><td>新版招股书、客户侧公告、上市后产品线披露</td><td>正式披露 HBM 产品、客户验证或批量出货；AI 相关高带宽产品收入进入主线披露</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="sources" class="section panel">
+        <h2>7. 来源表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所科创板注册项目动态页面</td><td><a href='https://www.sse.com.cn/star/renewal/' target='_blank' rel='noreferrer'>上交所科创板注册项目动态页面</a></td><td>确认科创板发行上市审核项目动态页面为官方入口。 | 状态需结合接口字段和前端脚本解释。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2170&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260527_23QQ.pdf' target='_blank' rel='noreferrer'>招股书：长鑫科技集团股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-27）；问询回复：8-1 关于长鑫科技集团股份有限公司首次公开发行股票并在科创板上市申请文件的审核中心意见落实函的回复（公告/更新日期 2026-05-20）；巨潮资讯：长鑫科技首次公开发行股票并在科创板上市发行安排及初步询价公告（公告日期 2026-07-09，公告编号 1225416301）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2170&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002170_20260520_QVFW.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>上交所项目动态查询接口：长鑫科技 2170</td><td><a href='https://query.sse.com.cn/statusStarAction.do?jsonCallBack=jsonpCallback&amp;isPagination=true&amp;sqlId=SH_XM_LB&amp;keyword=%E9%95%BF%E9%91%AB%E7%A7%91%E6%8A%80&amp;pageHelp.pageSize=10&amp;pageHelp.pageNo=1&amp;pageHelp.beginPage=1&amp;pageHelp.endPage=1' target='_blank' rel='noreferrer'>上交所项目动态查询接口：长鑫科技 2170</a></td><td>IPO 状态、拟募资、受理/更新字段、中介机构、董事长/总经理/董秘。 | 拟募资最终仍以发行公告为准。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>巨潮资讯：长鑫科技首次公开发行股票并在科创板上市发行安排及初步询价公告</td><td><a href='https://www.cninfo.com.cn/new/disclosure' target='_blank' rel='noreferrer'>巨潮资讯：长鑫科技首次公开发行股票并在科创板上市发行安排及初步询价公告</a></td><td>确认 2026-07-09 发行安排，网上/网下申购日为 2026-07-16。 | 上市日仍待上市公告书；发行价和最终募资以发行结果公告等后续文件为准。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>上交所项目动态前端脚本</td><td><a href='https://www.sse.com.cn/xhtml/star/js/search/search_zcz_dt.js' target='_blank' rel='noreferrer'>上交所项目动态前端脚本</a></td><td>解释注册生效基础状态字段。 | 发行中状态以上述巨潮发行安排为最新口径。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>长鑫存储官网：关于我们</td><td><a href='https://www.cxmt.com/about.html' target='_blank' rel='noreferrer'>长鑫存储官网：关于我们</a></td><td>公司定位、成立时间、总部、发展历程。 | 经营数据仍需招股书。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>长鑫存储官网：产品与服务</td><td><a href='https://www.cxmt.com/product.html' target='_blank' rel='noreferrer'>长鑫存储官网：产品与服务</a></td><td>DDR5、LPDDR5/5X、DDR4、LPDDR4X 产品与指标。 | 部分功耗数据为公司内部测试口径。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>长鑫存储官网：创新体系</td><td><a href='https://www.cxmt.com/innovation.html' target='_blank' rel='noreferrer'>长鑫存储官网：创新体系</a></td><td>研发人员占比、知识产权和授权合作表述。 | 研发人员占比非审计财务口径。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>长鑫存储 2025-11-23：IC China 展示 DDR5/LPDDR5X</td><td><a href='https://www.cxmt.com/news/info_95.html' target='_blank' rel='noreferrer'>长鑫存储 2025-11-23：IC China 展示 DDR5/LPDDR5X</a></td><td>DDR5 8000Mbps/24Gb、模组类型、LPDDR5X 10667Mbps/16Gb。 | 展示不等于所有型号批量出货。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>长鑫存储 2025-10-28：LPDDR5X 已量产</td><td><a href='https://www.cxmt.com/news/info_94.html' target='_blank' rel='noreferrer'>长鑫存储 2025-10-28：LPDDR5X 已量产</a></td><td>LPDDR5X 8533/9600Mbps 量产、10667Mbps 送样。 | 送样不等于客户量产采购。 | external_only</td></tr><tr><td><span class='tag tag-official'>官方</span></td><td>长鑫存储 2023-11-28：LPDDR5 产品</td><td><a href='https://www.cxmt.com/news/info_90.html' target='_blank' rel='noreferrer'>长鑫存储 2023-11-28：LPDDR5 产品</a></td><td>LPDDR5 12Gb、12GB/6GB 芯片，小米/传音验证。 | 客户验证范围仍需继续跟踪。 | external_only</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>Financial Times：Apple interest thrusts China’s CXMT into memory chip spotlight</td><td><a href='https://www.ft.com/content/f4ac5c92-03be-4499-b16a-017a7e9ee228' target='_blank' rel='noreferrer'>Financial Times：Apple interest thrusts China’s CXMT into memory chip spotlight</a></td><td>招股书转述财务、补贴、股权、产能、HBM、ASML 和 Apple 测试线索。 | 财务和股权必须待官方 PDF 复核；Apple 线索未获官方确认。 | external_only</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>WSJ：The Chinese Company Taking On the World&#x27;s Memory-Chip Giants</td><td><a href='https://www.wsj.com/tech/the-chinese-company-taking-on-the-worlds-memory-chip-giants-78dfea55' target='_blank' rel='noreferrer'>WSJ：The Chinese Company Taking On the World&#x27;s Memory-Chip Giants</a></td><td>招股书转述收入、市场份额、IPO 规模、知识产权/监管风险。 | 收入数据需官方 PDF 复核。 | external_only</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>FT Alphaville：How concentrated is the market behind Micron mania?</td><td><a href='https://www.ft.com/content/b3666d16-38e9-47b6-a519-44648377dc8e' target='_blank' rel='noreferrer'>FT Alphaville：How concentrated is the market behind Micron mania?</a></td><td>DRAM 市占、HHI、行业集中度。 | 引用 Counterpoint 口径，非公司披露。 | external_only</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>Barron&#x27;s：Concerns About China&#x27;s CXMT Disrupting Memory Supply Likely Overplayed</td><td><a href='https://www.barrons.com/livecoverage/stock-market-news-today-062526/card/concerns-about-china-s-cxmt-disrupting-memory-supply-likely-overplayed-pi57kJKTvjOjuaSC69yu' target='_blank' rel='noreferrer'>Barron&#x27;s：Concerns About China&#x27;s CXMT Disrupting Memory Supply Likely Overplayed</a></td><td>SemiAnalysis 对 CXMT 2028 供应份额、HBM wafer 口径。 | 预测数据，不能当作确定产能。 | external_only</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>MarketWatch：Why Apple pivoting to China for memory may not solve big tech&#x27;s microchip crisis</td><td><a href='https://www.marketwatch.com/story/why-apple-pivoting-to-china-for-memory-may-not-solve-big-techs-microchip-crisis-51f3438d' target='_blank' rel='noreferrer'>MarketWatch：Why Apple pivoting to China for memory may not solve big tech&#x27;s microchip crisis</a></td><td>Apple/CXMT 政治敏感性、LPDDR5X 高端应用可达性、Citi 观点。 | Apple 相关信息未获官方确认。 | external_only</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/长鑫科技/reports/2026-07-09-overview-v2.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/长鑫科技/reports/2026-07-09-research-v2.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-07-09-source-notes.md</td><td>companies/长鑫科技/sources/2026-07-09-source-notes.md</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+      </section>
+      <section id="terms" class="section panel">
+        <h2>8. 术语与使用限制</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>术语</th><th>解释</th><th>使用限制</th></tr></thead>
+            <tbody>
+              <tr><td>可证伪命题</td><td>允许被未来证据推翻的研究判断。</td><td>若没有明确反证信号，就不算合格命题。</td></tr>
+              <tr><td>利润机制</td><td>把收入驱动、成本驱动和周期驱动放在一起看利润。</td><td>不能只凭单季收入或单一毛利率下结论。</td></tr>
+              <tr><td>待验证</td><td>当前证据可支持提出命题，但不能写成确定事实。</td><td>必须保留来源、反证和下一验证节点。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

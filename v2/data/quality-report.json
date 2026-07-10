@@ -1,0 +1,398 @@
+{
+  "meta": {
+    "schemaVersion": "2.0",
+    "generatedAt": "2026-07-10T19:54:51+08:00",
+    "scope": "registration_effective_or_issuing_unlisted_only"
+  },
+  "summary": {
+    "companyCount": 15,
+    "sourceRefCount": 66,
+    "verifiedCount": 23,
+    "pendingReviewCount": 8,
+    "invalidCount": 0,
+    "errorCount": 4,
+    "warningCount": 13
+  },
+  "errors": [
+    {
+      "severity": "error",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-02-第二轮问询回复.pdf",
+      "code": "orphan_extension_content_mismatch",
+      "expectedType": "pdf",
+      "detectedType": "html",
+      "message": "未引用源文件存在扩展名/内容类型不一致，容易被误当成有效来源"
+    },
+    {
+      "severity": "error",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-08-审核中心意见落实函回复.pdf",
+      "code": "orphan_extension_content_mismatch",
+      "expectedType": "pdf",
+      "detectedType": "html",
+      "message": "未引用源文件存在扩展名/内容类型不一致，容易被误当成有效来源"
+    },
+    {
+      "severity": "error",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-18-审计报告.pdf",
+      "code": "orphan_extension_content_mismatch",
+      "expectedType": "pdf",
+      "detectedType": "html",
+      "message": "未引用源文件存在扩展名/内容类型不一致，容易被误当成有效来源"
+    },
+    {
+      "severity": "error",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-18-招股说明书注册稿.pdf",
+      "code": "orphan_extension_content_mismatch",
+      "expectedType": "pdf",
+      "detectedType": "gzip",
+      "message": "未引用源文件存在扩展名/内容类型不一致，容易被误当成有效来源"
+    }
+  ],
+  "warnings": [
+    {
+      "severity": "warning",
+      "companyId": "ipo-002",
+      "sourceRefId": "S2",
+      "path": "companies/天博智能/sources/2026-06-18-天博智能-天博智能科技(山东)股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-004",
+      "sourceRefId": "S3",
+      "path": "companies/宇树科技/sources/2026-06-02-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-eastmoney.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-004",
+      "sourceRefId": "S4",
+      "path": "companies/宇树科技/sources/2026-05-25-容诚会计师事务所(特殊普通合伙)关于宇树科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告(上会稿)(宇树科技股份有限公司)-eastmoney.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-004",
+      "sourceRefId": "S5",
+      "path": "companies/宇树科技/sources/2026-05-25-8-1发行人及中介机构关于审核中心意见落实函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-004",
+      "sourceRefId": "S6",
+      "path": "companies/宇树科技/sources/2026-03-20-8-1-1发行人及中介机构关于首轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-004",
+      "sourceRefId": "S6",
+      "path": "companies/宇树科技/sources/2026-03-20-8-1-2发行人及中介机构关于第二轮预先审阅问询函的回复(宇树科技股份有限公司)-eastmoney.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-008",
+      "sourceRefId": "S2",
+      "path": "companies/频准激光/sources/2026-05-22-频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-013",
+      "sourceRefId": "S2",
+      "path": "companies/马矿股份/sources/2026-05-29-马矿股份-福建马坑矿业股份有限公司主板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": "ipo-015",
+      "sourceRefId": "S2",
+      "path": "companies/国仪量子/sources/2026-05-12-国仪量子-国仪量子技术(合肥)股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+      "code": "mirror_missing_official_identifier",
+      "message": "第三方镜像缺少 fileId/fileSize，需保留待官方目录复核标记"
+    },
+    {
+      "severity": "warning",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-02-第二轮问询回复.blocked.html.gz",
+      "code": "orphan_blocked_download_artifact",
+      "message": "未引用源文件为 gzip/blocked 抓取产物，应继续隔离为无效来源"
+    },
+    {
+      "severity": "warning",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-08-审核中心意见落实函回复.blocked.html.gz",
+      "code": "orphan_blocked_download_artifact",
+      "message": "未引用源文件为 gzip/blocked 抓取产物，应继续隔离为无效来源"
+    },
+    {
+      "severity": "warning",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-18-审计报告.blocked.html.gz",
+      "code": "orphan_blocked_download_artifact",
+      "message": "未引用源文件为 gzip/blocked 抓取产物，应继续隔离为无效来源"
+    },
+    {
+      "severity": "warning",
+      "companyId": null,
+      "sourceRefId": null,
+      "path": "companies/燧原科技/sources/2026-06-18-招股说明书注册稿.blocked.html.gz",
+      "code": "orphan_blocked_download_artifact",
+      "message": "未引用源文件为 gzip/blocked 抓取产物，应继续隔离为无效来源"
+    }
+  ],
+  "orphanFiles": [
+    {
+      "path": "companies/燧原科技/sources/2026-04-16-首轮问询回复-eastmoney-mirror.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 228,
+      "sha256": "177b7495dd8deb42b0706f3078da3047297c45ed840a05aeebffb1e580629d60",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-02-第二轮问询回复-eastmoney-mirror.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 34,
+      "sha256": "a221e4450327557032ef44fa6e66f03a5f00755f9b9a188b3a9d72c32cc89312",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-02-第二轮问询回复.blocked.html.gz",
+      "expectedType": "gzip",
+      "detectedType": "gzip",
+      "pageCount": 0,
+      "sha256": "01bdd01051ada880bc070da97f2cc6886717055ae9ed2c8f15b4eb24a2fb68d8",
+      "status": "warning"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-02-第二轮问询回复.pdf",
+      "expectedType": "pdf",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "d399ef89dd1b87c7078359dbe59513cbd403e1a71b0788328f122fa5ba438923",
+      "status": "invalid"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-08-审核中心意见落实函回复-eastmoney-mirror.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 10,
+      "sha256": "d8a7bb2e0dfe62d6b12a2c7c8e585dae699754150c72fcda1ae3be65e070e7d8",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-08-审核中心意见落实函回复.blocked.html.gz",
+      "expectedType": "gzip",
+      "detectedType": "gzip",
+      "pageCount": 0,
+      "sha256": "924c200b437c8c26b6e9354fadc5bf672d9a0ea3b6a10709c9de28693f1be944",
+      "status": "warning"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-08-审核中心意见落实函回复.pdf",
+      "expectedType": "pdf",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "ec71ba1f08db0012aea99eb5dbb9a5876fb74a56d9dce8a328373aecad736f02",
+      "status": "invalid"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-08-审计报告上会稿-eastmoney-mirror.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 135,
+      "sha256": "1760f3f3406d9eaf4fb088cbe6fc4ea24fd9f26efe501afbdc1453d86c616ce6",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-18-审计报告.blocked.html.gz",
+      "expectedType": "gzip",
+      "detectedType": "gzip",
+      "pageCount": 0,
+      "sha256": "fbb301a3fde971fd9d3c7034193bb1fa51620807672649f5473f15a2e79deecc",
+      "status": "warning"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-18-审计报告.pdf",
+      "expectedType": "pdf",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "d399ef89dd1b87c7078359dbe59513cbd403e1a71b0788328f122fa5ba438923",
+      "status": "invalid"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-18-招股说明书注册稿-eastmoney-mirror.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 393,
+      "sha256": "15e4b69ef5391832114ab30512a6e5e35b8a4cc5d27ecbd694b25d5717ba8a74",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-18-招股说明书注册稿.blocked.html.gz",
+      "expectedType": "gzip",
+      "detectedType": "gzip",
+      "pageCount": 0,
+      "sha256": "bb86c8e5adfffe95a3ef40ef215b98fe54b5f99c3029256fffc6e6096010375a",
+      "status": "warning"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-06-18-招股说明书注册稿.pdf",
+      "expectedType": "pdf",
+      "detectedType": "gzip",
+      "pageCount": 0,
+      "sha256": "005dd04a57779067211802fd320edd4ccf26d95c95fb63e48fa5bcb581d75c42",
+      "status": "invalid"
+    },
+    {
+      "path": "companies/燧原科技/sources/2026-07-09-注册批复-eastmoney-mirror.not-pdf.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "94d04b7007d1130d94aa94b8453cfe7ed2432ef95e7e40e22653479690ae228b",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/eastmoney_pdf_manifest_2026-07-10.json",
+      "expectedType": null,
+      "detectedType": "unknown",
+      "pageCount": null,
+      "sha256": "e819fa9ed86146192495ad83709e4420d915a7c8f01e3201ad1c0f9f7e38db47",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-aboutus.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "7241cdc5417c49c25de1927e89e5d864d959bb5a6364ced2784730f19505755a",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-agi.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "0f48daffdd2db8eb766ace7964151c2bbc8ae98e514a277646674a982a648e68",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-cloudblazer-matrix.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "a60209fe4800eb20e6a93c97add590213a75509a1bd361fc2c9fb66c4e5fd754",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-datacenter.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "1fda1862b3d4742f1fb324d612eb2dde3470cea373c0ca842a6decc436830133",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-ds-server.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "4c8355bf9e55da026c2cb7d2ef26ff75f4def5ba371bbca1f1cd9c7305a3899a",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-home.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "e229160a0c3e18ba8eb3ba3e5602924eb5474b0d9a2807131b27010a36a762c7",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-s60.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "b11adc55ff36e4a4c183f954abbf97a7f3b9dda00244b67a85d36ebb10302222",
+      "status": "ok"
+    },
+    {
+      "path": "companies/燧原科技/sources/enflame-topsrider.html",
+      "expectedType": "html",
+      "detectedType": "html",
+      "pageCount": null,
+      "sha256": "873f5239938164a043b312f6471cb90f18e3c8f71653e21c50c0bf56223a58f9",
+      "status": "ok"
+    },
+    {
+      "path": "companies/长鑫科技/sources/2026-07-09-source-notes.md",
+      "expectedType": null,
+      "detectedType": "unknown",
+      "pageCount": null,
+      "sha256": "8231ebe67363a54ab2821bf161dcc36c0271cc3b2f16961c5418b6843cb156a8",
+      "status": "ok"
+    },
+    {
+      "path": "companies/宇树科技/sources/2026-03-20-宇树科技股份有限公司科创板首次公开发行股票招股说明书(申报稿)-eastmoney.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 364,
+      "sha256": "bfc09ad6fc98a2d3a76096c3411b90f0990b047d1fec11cee0d10fd9bb76ac5d",
+      "status": "ok"
+    },
+    {
+      "path": "companies/宇树科技/sources/2026-03-20-容诚会计师事务所(特殊普通合伙)关于宇树科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告(申报稿)(宇树科技股份有限公司)-eastmoney.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 220,
+      "sha256": "ae42d83d439bd21305a39f2013be1a6946e2c4c983e74fd03ade142c9b83a597",
+      "status": "ok"
+    },
+    {
+      "path": "companies/宇树科技/sources/2026-05-25-宇树科技股份有限公司科创板首次公开发行股票招股说明书(上会稿)-eastmoney.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 369,
+      "sha256": "d44c035e2d957cd9040edb1770c27f3b58d53293a74e3b36f75f1b54b2b5442b",
+      "status": "ok"
+    },
+    {
+      "path": "companies/宇树科技/sources/2026-06-02-宇树科技-宇树科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf",
+      "expectedType": "pdf",
+      "detectedType": "pdf",
+      "pageCount": 369,
+      "sha256": "f6360614e8d3b000affa5e3b07dad450b509f4d3223f7a15e67fb425b1b8dc5b",
+      "status": "ok"
+    },
+    {
+      "path": "companies/宇树科技/sources/eastmoney_announcements_A26029_2026-07-10.json",
+      "expectedType": null,
+      "detectedType": "unknown",
+      "pageCount": null,
+      "sha256": "b70178833710a9605802f66db960c883afcee9b4400475e9c1a016b51d248f86",
+      "status": "ok"
+    }
+  ]
+}

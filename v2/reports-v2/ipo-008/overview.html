@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>频准激光 V2 概览</title>
+  <style>
+:root{
+  --bg:#f5f7fb;--card:#ffffff;--ink:#142033;--muted:#63748a;--line:#d8e1ee;
+  --blue:#0b6bcb;--green:#108a5d;--amber:#9a6700;--red:#b42318;--risk-card:#c9828a;--tag:#eef4ff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif}
+body{line-height:1.7}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{padding:56px 18px 40px;background:linear-gradient(135deg,#10233c,#17395e 58%,#0f6dbd);color:#fff}
+.hero-wrap,.page-wrap{max-width:1180px;margin:0 auto}
+.hero h1{margin:10px 0 12px;font-size:clamp(1.8rem,9vw,3.4rem);line-height:1.12}
+.hero p{margin:0;max-width:960px;color:#d9e6f6}
+.eyebrow{display:inline-flex;gap:8px;flex-wrap:wrap}
+.page{padding:18px}
+.section{margin:18px auto}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
+.grid{display:grid;gap:14px}
+.metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.metric,.subcard,.hypothesis,.risk-card,.verdict-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.verdict-card.advantage{border-top:4px solid var(--green)}
+.verdict-card.risk{border-top:4px solid var(--risk-card);background:#fff7f7}
+.metric strong{display:block;font-size:1.15rem;margin:6px 0}
+.tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:var(--tag);font-size:12px;font-weight:700;color:#244b84;margin-right:6px;margin-bottom:6px}
+.tag-official{background:#e9f6ef;color:#176c42}
+.tag-company{background:#eef4ff;color:#244b84}
+.tag-research{background:#fff4e5;color:#9a6700}
+.tag-local{background:#f3f0ff;color:#5a37b8}
+.tag-infer{background:#fff0f2;color:#b42318}
+.tag-pending{background:#f4f5f7;color:#475467}
+.lead{font-size:1.05rem;color:#2e4057}
+.muted{color:var(--muted)}
+.callout{background:#10233c;color:#fff}
+.callout p,.callout li{color:#dce8f6}
+.table-scroll{max-width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f8fafc;font-size:13px;color:#3c5068}
+.toc{position:sticky;top:12px}
+.toc a{display:block;padding:6px 0;color:var(--muted)}
+.evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
+.evidence-list li,.bullet-list li{margin:4px 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.kpi{font-size:13px;color:var(--muted)}
+.divider{height:1px;background:var(--line);margin:18px 0}
+img,canvas{max-width:100%;height:auto}
+@media (max-width:640px){
+  .page{padding:12px}
+  .panel{padding:16px;border-radius:14px}
+  .metric-grid{grid-template-columns:1fr}
+  .hero{padding:36px 14px 28px}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-wrap">
+      <div class="eyebrow"><span class="tag tag-official">IPO Research Workbench V2</span><span class="tag">ipo-008</span><span class="tag">注册生效</span></div>
+      <h1>频准激光：频准激光在量子科研激光里是国产领先，但在更大的半导体设备激光市场仍是切入者，不宜把“国产领先”直接等同于“大行业高份额”。</h1>
+      <p>领先地位主要成立在科研级量子激光细分，向半导体设备更大市场扩张仍需额外证据。</p>
+      <p class="muted">更新口径：2026-07-10T21:11:46+08:00；主状态来源：上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</p>
+    </div>
+  </header>
+  <main class="page page-wrap">
+    <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>频准激光已在量子科研激光这一高精度细分领域建立国产领先位置。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>科研细分的领先并不等于半导体设备大市场份额，扩张若无客户订单验证，成长空间会受限。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div></article></div></section>
+    <section class="section panel">
+      <h2>关键事实卡</h2>
+      <div class="grid metric-grid"><div class='metric'><div class='kpi'>状态</div><strong>科创板 / 注册生效</strong><div class='muted'>注册生效；项目更新日期 2026-06-22</div></div><div class='metric'><div class='kpi'>研究主线</div><strong>频准激光在量子科研激光里是国产领先，但在更大的半导体设备激光市场仍是切入者，不宜把“国产领先”直接等同于“大行业高份额”。</strong><div class='muted'>领先地位主要成立在科研级量子激光细分，向半导体设备更大市场扩张仍需额外证据。</div></div><div class='metric'><div class='kpi'>收入线索</div><strong>2025/2024/2023 营业收入：41,791.65, 29,185.72, 14,772.14 万元；三年复合增速 68.20%</strong><div class='muted'>旧看板当前口径</div></div><div class='metric'><div class='kpi'>客户/交易约束</div><strong>2025 前五大客户占比：36.87%</strong><div class='muted'>注册生效但发行价、流通盘和上市公告书待披露</div></div></div>
+    </section>
+    <section class="section panel callout">
+      <h2>利润形成机制</h2>
+      <div class="grid cards-3"><div class='subcard'><h3>收入驱动</h3><ul class='bullet-list'><li>量子科研激光设备需求</li><li>半导体设备激光国产替代</li><li>高精度光源单机价值量</li></ul></div><div class='subcard'><h3>成本驱动</h3><ul class='bullet-list'><li>精密光学器件成本</li><li>高研发与定制化开发投入</li><li>客户验证与售后服务成本</li></ul></div><div class='subcard'><h3>周期变量</h3><ul class='bullet-list'><li>科研预算周期</li><li>半导体设备资本开支</li><li>国产替代进度</li></ul></div><div class='subcard'><h3>利润读法</h3><p>频准的利润不能只看细分领域头部，还要看它能否从科研小市场走向设备端更大市场。</p></div></div>
+    </section>
+    <section class="section panel">
+      <h2>可证伪分析卡</h2>
+      <div class="grid cards-3">
+            <article class="hypothesis">
+              <div><span class="tag tag-infer">命题 1</span>
+              <span class="tag">本报告推断</span></div>
+              <h3>如果半导体设备激光订单占比提升，频准的成长空间会明显大于单纯科研市场。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></div>
+              <ul class="evidence-list"><li>2025/2024/2023 营业收入：41,791.65, 29,185.72, 14,772.14 万元；三年复合增速 68.20%</li><li>毛利率：69.33%, 67.78%, 68.53%</li><li>旧版行业位置卡明确区分“量子科研激光国产头部”和“半导体设备激光仍是切入者”两种读法。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>收入仍主要停留在科研端小市场</li><li>更大市场切入未形成有效订单</li></ul>
+              <p><strong>下一验证节点</strong>：后续招股书/年报中的下游收入结构变化</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-pending">命题 2</span>
+              <span class="tag">待验证</span></div>
+              <h3>在更大设备市场份额和客户验证没披露前，频准更适合按“小而尖”的国产替代样本看待。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span></div>
+              <ul class="evidence-list"><li>注册生效但发行价、流通盘和上市公告书待披露</li><li>发行价/发行市值待补充</li><li>旧版报告明确提示不能把国产领先直接等同于大行业高份额。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>半导体设备客户验证清晰落地</li><li>后续披露出现可复核的大行业份额证据</li></ul>
+              <p><strong>下一验证节点</strong>：上市后首份定期报告或重大客户公告</p>
+            </article>
+            </div>
+    </section>
+    <section class="section panel">
+      <h2>可比边界与估值语言</h2>
+
+    <div class="grid two-col">
+      <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>科研级精密激光器企业</li><li>半导体设备上游光源国产替代供应商</li></ul></div>
+      <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>已在大规模设备市场形成寡头份额的国际光源龙头</li></ul></div>
+    </div>
+    <p class="lead">频准在两个子市场中的位置不同，比较时必须区分科研级与设备级的商业空间和验证难度。</p>
+
+
+    <div class="grid two-col">
+      <div class="subcard">
+        <h3>估值锚</h3>
+        <p>先看半导体设备端订单与客户验证，再看科研级高毛利利基市场能否持续。</p>
+      </div>
+      <div class="subcard">
+        <h3>当前不能下结论的变量</h3>
+        <ul class="bullet-list"><li>发行价/市值</li><li>设备端收入占比</li><li>第三方份额原文补充</li></ul>
+        <p><strong>是否给目标价：</strong>否</p>
+      </div>
+    </div>
+
+    </section>
+    <section class="section panel">
+      <h2>来源列表</h2>
+      <p class="lead">外部来源可点击；本地来源仅展示项目内路径。旧版概览/详尽报告仍作为当前复核入口保留。</p>
+      <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB（issueMarketType=1）</a></td><td>核对公司、板块、状态、申报时间、保荐机构和披露目录 | https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2134&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260522_Y2OP.pdf' target='_blank' rel='noreferrer'>招股书：上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-05-22）；问询回复：8-1 发行人及中介机构关于第二轮审核问询函的回复（公告/更新日期 2026-05-12）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2134&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202605/002134_20260512_E79K.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)</td><td>companies/频准激光/sources/2026-05-22-频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>财务、客户、供应商、募投和业务描述 | 本地 PDF 已校验文件头；若来自第三方镜像，已在原始抓取阶段用交易所目录核对 | 待官方目录复核 | 2026-05-22</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>GPT img2 生成 IPO 研究主视觉</td><td>dashboard/assets/ipo-hero.png</td><td>报告视觉资产 | 不作为事实来源 | verified | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/频准激光/reports/2026-07-10-overview-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/频准激光/reports/2026-07-10-research-v14.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-05-22-频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>companies/频准激光/sources/2026-05-22-频准激光-上海频准激光科技股份有限公司科创板首次公开发行股票招股说明书(注册稿)-东方财富镜像.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>燧原科技 V2 详尽研究</title>
+  <style>
+:root{
+  --bg:#f5f7fb;--card:#ffffff;--ink:#142033;--muted:#63748a;--line:#d8e1ee;
+  --blue:#0b6bcb;--green:#108a5d;--amber:#9a6700;--red:#b42318;--risk-card:#c9828a;--tag:#eef4ff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif}
+body{line-height:1.7}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{padding:56px 18px 40px;background:linear-gradient(135deg,#10233c,#17395e 58%,#0f6dbd);color:#fff}
+.hero-wrap,.page-wrap{max-width:1180px;margin:0 auto}
+.hero h1{margin:10px 0 12px;font-size:clamp(1.8rem,9vw,3.4rem);line-height:1.12}
+.hero p{margin:0;max-width:960px;color:#d9e6f6}
+.eyebrow{display:inline-flex;gap:8px;flex-wrap:wrap}
+.page{padding:18px}
+.section{margin:18px auto}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 42px rgba(16,35,60,.07)}
+.grid{display:grid;gap:14px}
+.metric-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.two-col{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.metric,.subcard,.hypothesis,.risk-card,.verdict-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.verdict-card.advantage{border-top:4px solid var(--green)}
+.verdict-card.risk{border-top:4px solid var(--risk-card);background:#fff7f7}
+.metric strong{display:block;font-size:1.15rem;margin:6px 0}
+.tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:var(--tag);font-size:12px;font-weight:700;color:#244b84;margin-right:6px;margin-bottom:6px}
+.tag-official{background:#e9f6ef;color:#176c42}
+.tag-company{background:#eef4ff;color:#244b84}
+.tag-research{background:#fff4e5;color:#9a6700}
+.tag-local{background:#f3f0ff;color:#5a37b8}
+.tag-infer{background:#fff0f2;color:#b42318}
+.tag-pending{background:#f4f5f7;color:#475467}
+.lead{font-size:1.05rem;color:#2e4057}
+.muted{color:var(--muted)}
+.callout{background:#10233c;color:#fff}
+.callout p,.callout li{color:#dce8f6}
+.table-scroll{max-width:100%;overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:680px}
+th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f8fafc;font-size:13px;color:#3c5068}
+.toc{position:sticky;top:12px}
+.toc a{display:block;padding:6px 0;color:var(--muted)}
+.evidence-list,.bullet-list{margin:8px 0 0 18px;padding:0}
+.evidence-list li,.bullet-list li{margin:4px 0}
+.source-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;background:#f0f4f8;border:1px solid var(--line);font-size:12px;margin:4px 6px 0 0}
+.kpi{font-size:13px;color:var(--muted)}
+.divider{height:1px;background:var(--line);margin:18px 0}
+img,canvas{max-width:100%;height:auto}
+@media (max-width:640px){
+  .page{padding:12px}
+  .panel{padding:16px;border-radius:14px}
+  .metric-grid{grid-template-columns:1fr}
+  .hero{padding:36px 14px 28px}
+  .hero h1{font-size:clamp(1.8rem,9vw,2.6rem)}
+}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-wrap">
+      <div class="eyebrow"><span class="tag tag-official">Detailed Research V2</span><span class="tag">ipo-001</span><span class="tag">科创板</span></div>
+      <h1>燧原科技：利润机制与可证伪命题工作台</h1>
+      <p>燧原已证明国产 AI 加速卡可以放量出货，但还没证明自己拥有可持续定价权。</p>
+    </div>
+  </header>
+  <main class="page page-wrap grid two-col" style="align-items:start">
+
+    <nav class="panel toc">
+      <a href="#scope">0. 口径</a>
+      <a href="#facts">1. 关键事实</a>
+      <a href="#mechanism">2. 利润机制</a>
+      <a href="#hypotheses">3. 可证伪命题</a>
+      <a href="#comparability">4. 可比边界</a>
+      <a href="#valuation">5. 估值语言</a>
+      <a href="#tracking">6. 跟踪事项</a>
+      <a href="#sources">7. 来源表</a>
+      <a href="#terms">8. 术语</a>
+    </nav>
+
+    <div>
+      <section class="section panel verdict-summary"><h2>核心结论：最大优势与最大风险</h2><div class="grid two-col"><article class="verdict-card advantage"><h3>最大优势</h3><p>燧原已经证明国产 AI 加速卡可以在头部互联网客户中实现规模化出货。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article><article class="verdict-card risk"><h3>最大风险</h3><p>客户高度集中且毛利率尚未证明持续修复，可能使收入增长无法转化为稳定定价权。</p><p><strong>风险触发条件：</strong>后续披露中第一大客户占比仍维持高位，或 AI 加速卡毛利率继续下滑。</p><p><strong>后续跟踪指标：</strong>非腾讯客户收入占比与 AI 加速卡毛利率。</p><span class="tag">可信度：中</span><div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div></article></div></section>
+      <section id="scope" class="section panel">
+        <h2>0. 口径说明</h2>
+        <p class="lead">本页只在旧版当前 15 家池、旧版概览/详尽报告和现有可点击来源基础上，重写为“利润形成机制 + 可证伪命题”结构。当前生成时间：2026-07-10T21:11:46+08:00。</p>
+        <p>若 `confidence = 待验证`，表示当前证据足以提出研究命题，但不足以把它写成确定事实；不会把缺失项补成伪精确结论。</p>
+      </section>
+      <section id="facts" class="section panel">
+        <h2>1. 关键事实表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>字段</th><th>内容</th></tr></thead><tbody><tr><td>公司</td><td>上海燧原科技股份有限公司</td></tr><tr><td>中文目录</td><td>燧原科技</td></tr><tr><td>板块 / 状态</td><td>科创板 / 注册生效</td></tr><tr><td>行业</td><td>软件和信息技术服务业</td></tr><tr><td>最新进展</td><td>注册生效；项目更新日期 2026-07-09</td></tr><tr><td>预期发行/上市</td><td>待补充（关注发行/上市公告）</td></tr><tr><td>保荐机构</td><td>中信证券股份有限公司</td></tr><tr><td>旧版概览</td><td>companies/燧原科技/reports/2026-07-10-overview-v8.html</td></tr><tr><td>旧版详尽</td><td>companies/燧原科技/reports/2026-07-10-research-v8.html</td></tr><tr><td>指标：revenueGrowth</td><td>2025/2024/2023 营业收入：99,016.00, 72,238.74, 30,118.74 万元；三年复合增速 81.32%</td></tr><tr><td>指标：profitQuality</td><td>2025/2024/2023 扣非归母净利润：-119,726.11, -150,269.38, -156,668.54 万元</td></tr><tr><td>指标：grossMarginTrend</td><td>主营业务毛利率：31.78%, 30.59%, 22.60%</td></tr><tr><td>指标：cashFlow</td><td>经营现金流：-96,508.71, -179,773.78, -120,900.41 万元</td></tr><tr><td>指标：customerConcentration</td><td>2025 前五大客户占比：96.89%</td></tr><tr><td>指标：fundraisingFit</td><td>拟投入募集资金：600,000.00 万元</td></tr><tr><td>指标：peerValuation</td><td>发行价/发行市值待补充</td></tr><tr><td>指标：tradingRisk</td><td>注册生效但发行价、流通盘和上市公告书待披露；未盈利和客户集中会放大上市后波动</td></tr></tbody></table></div>
+      </section>
+      <section id="mechanism" class="section panel">
+        <h2>2. 利润形成机制</h2>
+        <div class="grid cards-3"><div class='subcard'><h3>收入驱动</h3><ul class='bullet-list'><li>AI 加速卡及模组出货量</li><li>头部互联网客户采购节奏</li><li>智算系统集群订单兑现</li></ul></div><div class='subcard'><h3>成本驱动</h3><ul class='bullet-list'><li>晶圆/封测/存储等供应链成本</li><li>高研发投入</li><li>备货与预付款带来的营运资金占用</li></ul></div><div class='subcard'><h3>周期变量</h3><ul class='bullet-list'><li>国内算力资本开支</li><li>第五/第六代产品落地速度</li><li>毛利率能否随产品结构修复</li></ul></div><div class='subcard'><h3>利润读法</h3><p>燧原的利润不是单看收入放量，而是要同时看客户结构、卡模组毛利率和现金流压力是否一起改善。</p></div></div>
+        <div class="subcard" style="margin-top:14px">
+          <h3>当前最关键约束</h3>
+          <p>腾讯及指定客户链条下的高集中度，使燧原当前更像“有订单但定价权未稳”的高波动国产算力标的。</p>
+        </div>
+      </section>
+      <section id="hypotheses" class="section panel">
+        <h2>3. 可证伪命题卡</h2>
+        <div class="grid cards-3">
+            <article class="hypothesis">
+              <div><span class="tag tag-infer">命题 1</span>
+              <span class="tag">本报告推断</span></div>
+              <h3>如果 2026H2 非腾讯客户占比上升且 AI 加速卡毛利率修复，燧原才算开始从“有出货”迈向“有定价权”。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175" target="_blank" rel="noreferrer"><span class="tag tag-official">官方</span>上交所发行上市审核项目动态接口 SH_XM_LB</a><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
+              <ul class="evidence-list"><li>2025/2024/2023 营业收入：99,016.00, 72,238.74, 30,118.74 万元；三年复合增速 81.32%</li><li>主营业务毛利率：31.78%, 30.59%, 22.60%</li><li>2025 前五大客户占比：96.89%</li><li>旧版详尽报告强调 2025 年公司主营毛利率低于可比均值，且第一大客户直接占营业收入 74.90%。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>2026 年后续披露中第一大客户占比仍维持高位</li><li>AI 加速卡毛利率继续下滑或无法修复</li></ul>
+              <p><strong>下一验证节点</strong>：发行前更新文件、上市公告书或 2026 年中期实际经营披露</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-company">命题 2</span>
+              <span class="tag">公司披露</span></div>
+              <h3>2026 年接近平衡的前提不是收入单独冲高，而是收入达成率和中毛利率同时成立。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><a class="source-chip" href="https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf" target="_blank" rel="noreferrer"><span class="tag tag-company">公司披露</span>招股书/披露目录</a></div>
+              <ul class="evidence-list"><li>2025/2024/2023 营业收入：99,016.00, 72,238.74, 30,118.74 万元；三年复合增速 81.32%</li><li>经营现金流：-96,508.71, -179,773.78, -120,900.41 万元</li><li>旧版详尽报告引用招股书：中性收入达成率和中毛利率情形下，公司 2026 年可基本盈亏平衡。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>收入兑现但亏损不收敛</li><li>经营现金流继续显著恶化</li></ul>
+              <p><strong>下一验证节点</strong>：2026H1/2026 年三季报口径更新或发行前最新财务数据</p>
+            </article>
+
+            <article class="hypothesis">
+              <div><span class="tag tag-pending">命题 3</span>
+              <span class="tag">待验证</span></div>
+              <h3>在训练产品和软件生态没有更强证据前，燧原更应按“国产推理算力硬件”而不是“平台型 AI 基础设施”理解。</h3>
+              <p class="muted">证据来源</p>
+              <div><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版详尽报告</span><span class="source-chip"><span class="tag tag-research">研究口径</span>旧版概览报告</span></div>
+              <ul class="evidence-list"><li>主营业务毛利率：31.78%, 30.59%, 22.60%</li><li>注册生效但发行价、流通盘和上市公告书待披露；未盈利和客户集中会放大上市后波动</li><li>旧版详尽报告指出 2025 年收入 80% 以上为推理产品，训练场景落地仍需验证。</li></ul>
+              <div class="divider"></div>
+              <p><strong>反证信号</strong></p>
+              <ul class="evidence-list"><li>后续正式披露训练产品大规模交付</li><li>软件/系统收入占比显著提升并带动毛利改善</li></ul>
+              <p><strong>下一验证节点</strong>：新版招股书、发行公告或上市后首份定期报告</p>
+            </article>
+            </div>
+      </section>
+      <section id="comparability" class="section panel">
+        <h2>4. 可比边界</h2>
+
+    <div class="grid two-col">
+      <div class="subcard"><h3>可以比较</h3><ul class="bullet-list"><li>国产 AI 加速卡/智算系统供应商</li><li>高研发强度的 Fabless 算力芯片公司</li></ul></div>
+      <div class="subcard"><h3>不宜直接比较</h3><ul class="bullet-list"><li>拥有全球训练生态和高端训练卡定价权的海外龙头</li></ul></div>
+    </div>
+    <p class="lead">燧原处在国产推理卡和定制智算系统放量阶段，收入结构、客户集中度和软件生态深度都与全球龙头不同。</p>
+
+      </section>
+      <section id="valuation" class="section panel">
+        <h2>5. 估值语言</h2>
+
+    <div class="grid two-col">
+      <div class="subcard">
+        <h3>估值锚</h3>
+        <p>先看收入兑现 × 毛利率修复 × 客户分散三件事，再讨论 PS 或平台溢价是否成立。</p>
+      </div>
+      <div class="subcard">
+        <h3>当前不能下结论的变量</h3>
+        <ul class="bullet-list"><li>发行价/发行市值</li><li>非腾讯客户放量节奏</li><li>第五/第六代产品毛利曲线</li></ul>
+        <p><strong>是否给目标价：</strong>否</p>
+      </div>
+    </div>
+
+      </section>
+      <section id="tracking" class="section panel">
+        <h2>6. 后续跟踪清单</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>对象</th><th>当前命题</th><th>下一验证节点</th><th>反证信号</th></tr></thead>
+            <tbody><tr><td>命题 1</td><td>如果 2026H2 非腾讯客户占比上升且 AI 加速卡毛利率修复，燧原才算开始从“有出货”迈向“有定价权”。</td><td>发行前更新文件、上市公告书或 2026 年中期实际经营披露</td><td>2026 年后续披露中第一大客户占比仍维持高位；AI 加速卡毛利率继续下滑或无法修复</td></tr><tr><td>命题 2</td><td>2026 年接近平衡的前提不是收入单独冲高，而是收入达成率和中毛利率同时成立。</td><td>2026H1/2026 年三季报口径更新或发行前最新财务数据</td><td>收入兑现但亏损不收敛；经营现金流继续显著恶化</td></tr><tr><td>命题 3</td><td>在训练产品和软件生态没有更强证据前，燧原更应按“国产推理算力硬件”而不是“平台型 AI 基础设施”理解。</td><td>新版招股书、发行公告或上市后首份定期报告</td><td>后续正式披露训练产品大规模交付；软件/系统收入占比显著提升并带动毛利改善</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="sources" class="section panel">
+        <h2>7. 来源表</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table><thead><tr><th>标签</th><th>来源</th><th>链接</th><th>说明</th></tr></thead><tbody><tr><td><span class='tag tag-official'>官方</span></td><td>上交所发行上市审核项目动态接口 SH_XM_LB</td><td><a href='https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2175' target='_blank' rel='noreferrer'>上交所发行上市审核项目动态接口 SH_XM_LB</a></td><td>核对公司全称、科创板、行业、注册生效、申报时间、保荐机构、披露文件目录和文件大小 | 打开 | 官方事实；当前环境无法直连 listing.sse.com.cn 页面正文，但 query.sse.com.cn 接口可访问</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>招股书/披露目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260618_55YX.pdf' target='_blank' rel='noreferrer'>招股书：上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）（公告/更新日期 2026-06-18）；问询回复：8-1 发行人及中介机构关于审核中心意见落实函的回复（公告/更新日期 2026-06-08）</a></td><td>旧看板记录的核心披露入口。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>问询回复目录</td><td><a href='https://query.sse.com.cn/commonSoaQuery.do?jsonCallBack=jsonpCallback&amp;isPagination=false&amp;sqlId=GP_GPZCZ_SHXXPL&amp;stockAuditNum=2175&amp;issueMarketType=1 | filePath=/disclosure/announcement/c/202606/002175_20260608_XL17.pdf' target='_blank' rel='noreferrer'>问询回复</a></td><td>用于补监管关注点和可比口径。</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606181823668427_1.pdf' target='_blank' rel='noreferrer'>上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）</a></td><td>主营业务、行业定位、收入、利润、毛利率、现金流、客户集中度、募投、风险因素 | 打开 | 上交所披露目录确认的注册稿；正文由东方财富公告 PDF 镜像取得，文件大小 6,954,402 字节，与上交所目录一致 | external_only | 2026-06-18</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>毕马威华振会计师事务所关于上海燧原科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606081823360435_1.pdf' target='_blank' rel='noreferrer'>毕马威华振会计师事务所关于上海燧原科技股份有限公司首次公开发行股票并在科创板上市的财务报告及审计报告（上会稿）</a></td><td>交叉核对 2023-2025 年审计收入、收入确认关键审计事项、存货跌价事项 | 打开 | 东方财富未收录 2026-06-18 审计报告镜像；本文件为 2026-06-08 上会稿审计报告。上交所目录显示 2026-06-18 审计报告文件大小与该上会稿相同，仍按需复核正式下载件 | external_only | 2026-06-08</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>8-1 发行人及中介机构关于审核中心意见落实函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606081823360421_1.pdf' target='_blank' rel='noreferrer'>8-1 发行人及中介机构关于审核中心意见落实函的回复</a></td><td>后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF | external_only | 2026-06-08</td></tr><tr><td><span class='tag tag-company'>公司披露</span></td><td>8-1 发行人及中介机构关于第二轮审核问询函的回复</td><td><a href='https://pdf.dfcfw.com/pdf/H2_AN202606021823162336_1.pdf' target='_blank' rel='noreferrer'>8-1 发行人及中介机构关于第二轮审核问询函的回复</a></td><td>后续复核监管问询关注点；本版不把回复中的定量数据作为主表来源 | 打开 | 已下载真 PDF | external_only | 2026-06-02</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>燧原科技官网产品与公司介绍</td><td><a href='https://www.enflame-tech.com/' target='_blank' rel='noreferrer'>燧原科技官网产品与公司介绍</a></td><td>辅助核对产品命名、S60、云燧智算集群、驭算 TopsRider 等产品描述 | 打开 | 公司自述，关键商业与财务判断以招股书为准 | external_only | 2026-07-09</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版概览报告</td><td>companies/燧原科技/reports/2026-07-10-overview-v8.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-research'>研究口径</span></td><td>旧版详尽报告</td><td>companies/燧原科技/reports/2026-07-10-research-v8.html</td><td>旧版 HTML，包含当前可复核的图表和来源表。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿-eastmoney-mirror.pdf</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿-eastmoney-mirror.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿.blocked.html.gz</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿.blocked.html.gz</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-06-18-招股说明书注册稿.pdf</td><td>companies/燧原科技/sources/2026-06-18-招股说明书注册稿.pdf</td><td>项目内缓存文件，仅作为复核入口。</td></tr><tr><td><span class='tag tag-local'>本地文件</span></td><td>本地源文件：2026-07-09-注册批复-eastmoney-mirror.not-pdf.html</td><td>companies/燧原科技/sources/2026-07-09-注册批复-eastmoney-mirror.not-pdf.html</td><td>项目内缓存文件，仅作为复核入口。</td></tr></tbody></table></div>
+      </section>
+      <section id="terms" class="section panel">
+        <h2>8. 术语与使用限制</h2>
+        <div class="table-scroll" role="region" aria-label="可横向滚动的数据表" tabindex="0">
+          <table>
+            <thead><tr><th>术语</th><th>解释</th><th>使用限制</th></tr></thead>
+            <tbody>
+              <tr><td>可证伪命题</td><td>允许被未来证据推翻的研究判断。</td><td>若没有明确反证信号，就不算合格命题。</td></tr>
+              <tr><td>利润机制</td><td>把收入驱动、成本驱动和周期驱动放在一起看利润。</td><td>不能只凭单季收入或单一毛利率下结论。</td></tr>
+              <tr><td>待验证</td><td>当前证据可支持提出命题，但不能写成确定事实。</td><td>必须保留来源、反证和下一验证节点。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
