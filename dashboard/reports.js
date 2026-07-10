@@ -6,7 +6,7 @@ window.IPO_COMPANY_REPORTS = {
     "assetUrl": "../companies/燧原科技/assets/2026-07-09-ai-accelerator-hero.png",
     "generatedBy": "a-share-company-html-research",
     "imageGeneratedBy": "GPT img2",
-    "sourceBoundary": "已重新生成 v2：读取注册稿招股书、审计报告和问询回复 PDF；来源表标注公告日期、文件名和页码"
+    "sourceBoundary": "已重新生成专用数据版：读取注册稿招股书、审计报告和问询回复 PDF；来源表标注公告日期、文件名和页码"
   },
   "天博智能科技（山东）股份有限公司": {
     "status": "结构化数据版已接入",
