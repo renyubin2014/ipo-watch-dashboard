@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>长鑫科技 IPO 概览 | 2026-07-09</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #607080;
+      --line: #dbe3ea;
+      --bg: #f5f7fa;
+      --panel: #ffffff;
+      --teal: #0b7f86;
+      --blue: #2456a6;
+      --green: #1d8a5a;
+      --amber: #bb7a10;
+      --red: #b54b45;
+      --graphite: #26323d;
+      --shadow: 0 12px 30px rgba(25, 38, 52, .10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; }
+
+    .hero {
+      min-height: 76vh;
+      display: grid;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background:
+        linear-gradient(90deg, rgba(12, 22, 33, .92), rgba(12, 22, 33, .62) 42%, rgba(12, 22, 33, .10)),
+        url("../assets/cxmt-dram-hero-2026-07-09.png") center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 110px;
+      background: linear-gradient(0deg, var(--bg), rgba(245, 247, 250, 0));
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 34px 0 104px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .34);
+      background: rgba(255, 255, 255, .08);
+      color: #d9eef1;
+      font-size: 13px;
+      border-radius: 999px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      margin: 18px 0 14px;
+      font-size: clamp(42px, 7vw, 86px);
+      line-height: .98;
+      max-width: 780px;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      font-size: clamp(17px, 2.1vw, 24px);
+      color: #e8f1f4;
+      margin: 0 0 26px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.34);
+      text-decoration: none;
+      font-weight: 650;
+      background: rgba(255,255,255,.12);
+      color: #fff;
+    }
+
+    .button.primary {
+      background: #ffffff;
+      color: #18232d;
+      border-color: #ffffff;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 42px 0;
+    }
+
+    .section h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.16;
+      margin: 0 0 10px;
+      letter-spacing: 0;
+    }
+
+    .section-intro {
+      max-width: 840px;
+      color: var(--muted);
+      margin: 0 0 22px;
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .metrics {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      margin-top: -64px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .metric, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .metric {
+      min-height: 136px;
+      padding: 16px;
+      display: grid;
+      align-content: space-between;
+    }
+
+    .metric .label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .metric .value {
+      font-size: clamp(26px, 3vw, 39px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .metric .note {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      border: 1px solid;
+      white-space: nowrap;
+    }
+
+    .tag.official { color: var(--green); border-color: rgba(29,138,90,.34); background: rgba(29,138,90,.08); }
+    .tag.media { color: var(--amber); border-color: rgba(187,122,16,.34); background: rgba(187,122,16,.10); }
+    .tag.risk { color: var(--red); border-color: rgba(181,75,69,.35); background: rgba(181,75,69,.08); }
+
+    .thesis {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .card {
+      padding: 20px;
+    }
+
+    .big-callout {
+      background: #122431;
+      color: #fff;
+      border-color: #122431;
+      box-shadow: none;
+    }
+
+    .big-callout p {
+      color: #d9e7ec;
+      font-size: 18px;
+      margin: 12px 0 0;
+    }
+
+    .three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .mini-title {
+      font-weight: 800;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .mini-copy {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .chart-panel {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 92px 1fr 46px;
+      gap: 10px;
+      align-items: center;
+      margin: 13px 0;
+      font-size: 14px;
+    }
+
+    .bar-track {
+      height: 16px;
+      border-radius: 999px;
+      background: #e8edf2;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      border-radius: inherit;
+      width: 0;
+      transition: width 900ms ease;
+    }
+
+    .bar.samsung { background: var(--blue); }
+    .bar.hynix { background: var(--teal); }
+    .bar.micron { background: var(--amber); }
+    .bar.cxmt { background: var(--green); }
+    .bar.other { background: #7c8791; }
+
+    .position-box {
+      border-left: 4px solid var(--teal);
+      padding: 14px 16px;
+      background: #f0f6f7;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .visual-grid {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 16px;
+    }
+
+    .mini-chart {
+      background: #fbfdfe;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .donut-wrap {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .donut {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      background: conic-gradient(var(--blue) 0 38%, var(--teal) 38% 67%, var(--amber) 67% 89%, var(--green) 89% 97%, #8b97a1 97% 100%);
+      position: relative;
+    }
+
+    .donut::after {
+      content: "DRAM";
+      position: absolute;
+      inset: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--graphite);
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .legend {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .legend span::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 8px;
+      background: var(--c);
+    }
+
+    .gap-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .gap-tile {
+      padding: 14px;
+      border-radius: 8px;
+      background: #f3f7fa;
+      border: 1px solid #e0e8ee;
+    }
+
+    .gap-tile strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      margin: 6px 0;
+    }
+
+    .simulator {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .slider-row {
+      display: grid;
+      grid-template-columns: 92px 1fr 58px;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #edf2f5;
+    }
+
+    .slider-row:last-child { border-bottom: 0; }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--teal);
+    }
+
+    .sim-output {
+      display: grid;
+      align-content: center;
+      border-radius: 8px;
+      background: #132534;
+      color: #fff;
+      padding: 22px;
+      min-height: 210px;
+    }
+
+    .sim-output .score {
+      font-size: clamp(46px, 7vw, 76px);
+      line-height: .95;
+      font-weight: 900;
+    }
+
+    .sim-output p {
+      color: #d8e7ed;
+      margin: 10px 0 0;
+    }
+
+    .pipeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .pipeline::before {
+      content: "";
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      top: 50%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--blue), var(--teal), var(--amber));
+      opacity: .28;
+      border-radius: 99px;
+    }
+
+    .pulse {
+      position: absolute;
+      top: calc(50% - 5px);
+      width: 10px;
+      height: 10px;
+      background: var(--teal);
+      border-radius: 50%;
+      box-shadow: 0 0 0 8px rgba(11,127,134,.12);
+      animation: flow 4s linear infinite;
+    }
+
+    .pulse:nth-child(2) { animation-delay: 1.3s; background: var(--blue); }
+    .pulse:nth-child(3) { animation-delay: 2.6s; background: var(--amber); }
+
+    @keyframes flow {
+      0% { left: 7%; opacity: 0; }
+      8% { opacity: 1; }
+      92% { opacity: 1; }
+      100% { left: 92%; opacity: 0; }
+    }
+
+    .pipe-node {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,.92);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      min-height: 172px;
+    }
+
+    .pipe-node ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .ladder {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 150px 1fr 96px;
+      gap: 12px;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #eef2f5;
+    }
+
+    .step:last-child { border-bottom: 0; }
+
+    .step-track {
+      height: 12px;
+      border-radius: 999px;
+      background: #e7edf1;
+      overflow: hidden;
+    }
+
+    .step-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--green), var(--teal));
+      width: var(--w);
+      border-radius: inherit;
+    }
+
+    .signal-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .signal {
+      padding-left: 18px;
+      border-left: 5px solid;
+    }
+
+    .signal.green { border-color: var(--green); }
+    .signal.amber { border-color: var(--amber); }
+    .signal.red { border-color: var(--red); }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-top: 7px;
+      background: var(--teal);
+      flex: 0 0 auto;
+    }
+
+    footer {
+      padding: 28px 0 44px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 920px) {
+      .metrics, .three, .signal-grid, .checklist { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .thesis, .chart-panel, .visual-grid, .simulator { grid-template-columns: 1fr; }
+      .pipeline { grid-template-columns: 1fr; }
+      .pipeline::before, .pulse { display: none; }
+      .hero { min-height: 68vh; }
+    }
+
+    @media (max-width: 620px) {
+      .wrap, .hero-inner { width: min(100% - 28px, 1180px); }
+      .metrics, .three, .signal-grid, .checklist { grid-template-columns: 1fr; }
+      .metric { min-height: 116px; }
+      .step { grid-template-columns: 1fr; gap: 6px; }
+      .bar-row { grid-template-columns: 78px 1fr 40px; }
+      .donut-wrap, .gap-compare { grid-template-columns: 1fr; }
+      .slider-row { grid-template-columns: 1fr; gap: 4px; }
+      .hero h1 { font-size: 40px; }
+      .lead { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">长鑫科技 IPO 概览 · 2026-07-09 · 北京时间</span>
+      <h1>全球 DRAM 牌桌上的第四根水管</h1>
+      <p class="lead">这家公司最值得看的不是“国产替代”标签，而是它能否把中国从 DRAM 的大买家，推进到全球供给曲线里的定价变量。</p>
+    </div>
+  </header>
+
+  <main><section class="panel conclusion-first"><h2>先说结论</h2><div class="grid two"><div class="box advantage"><h3>最大优势 1</h3><p>国内少数实现 DRAM 大规模量产的平台型企业，产能、工艺迭代和客户验证构成高进入壁垒。</p></div></div><div class="grid two"><div class="box risk high"><h3>最大风险 1</h3><p>DRAM 价格周期、巨额资本开支和先进设备限制会共同放大盈利波动。</p></div></div><p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section>
+    <div class="wrap grid metrics" aria-label="关键指标">
+      <div class="metric">
+        <span class="tag official">官方</span>
+        <div class="value">发行中</div>
+        <div class="note">巨潮 2026-07-09 发行安排；2026-07-16 申购</div>
+      </div>
+      <div class="metric">
+        <span class="tag official">官方</span>
+        <div class="value"><span data-count="295">0</span>亿</div>
+        <div class="note">拟募资，最终以发行公告为准</div>
+      </div>
+      <div class="metric">
+        <span class="tag media">待复核</span>
+        <div class="value"><span data-count="330">0</span>亿</div>
+        <div class="note">FT 转述招股书：2026Q1 净利润；未见 H1 官方披露</div>
+      </div>
+      <div class="metric">
+        <span class="tag media">研究口径</span>
+        <div class="value"><span data-count="8">0</span>%</div>
+        <div class="note">Counterpoint/FT：Q1 2026 DRAM 市占</div>
+      </div>
+      <div class="metric">
+        <span class="tag media">研究口径</span>
+        <div class="value"><span data-count="11">0</span>%</div>
+        <div class="note">SemiAnalysis/FT：DRAM 晶圆产能份额</div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap thesis">
+        <div class="card big-callout">
+          <h2>核心判断</h2>
+          <p>长鑫不是“便宜替代”的线性故事，而是供给安全、AI 内存短缺和全球寡头格局松动叠加出来的产业变量。真正要看的是每片 wafer 的价值能不能持续升高。</p>
+        </div>
+        <div class="grid three">
+          <div class="card">
+            <div class="mini-title">产业安全</div>
+            <p class="mini-copy">国产 DRAM 的意义不是只降成本，而是在关键内存环节形成可持续供给。</p>
+          </div>
+          <div class="card">
+            <div class="mini-title">AI 挤压</div>
+            <p class="mini-copy">HBM 和服务器内存占用先进产能，传统 DRAM 供应被重新定价。</p>
+          </div>
+          <div class="card">
+            <div class="mini-title">寡头破局</div>
+            <p class="mini-copy">三星、SK 海力士、美光之外的第四供应商，会改变下游谈判心理。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>行业位置：它已经上桌，但还要证明单价</h2>
+        <p class="section-intro">DRAM 是高度集中的“高科技大宗品”。长鑫的产能份额看起来高于收入/市场份额，说明量已经出来，产品结构、客户层级和高端良率仍是后半程。</p>
+        <div class="card chart-panel">
+          <div>
+            <div class="bar-row"><span>三星</span><div class="bar-track"><div class="bar samsung" data-width="38"></div></div><strong>38%</strong></div>
+            <div class="bar-row"><span>SK 海力士</span><div class="bar-track"><div class="bar hynix" data-width="29"></div></div><strong>29%</strong></div>
+            <div class="bar-row"><span>美光</span><div class="bar-track"><div class="bar micron" data-width="22"></div></div><strong>22%</strong></div>
+            <div class="bar-row"><span>CXMT</span><div class="bar-track"><div class="bar cxmt" data-width="8"></div></div><strong>8%</strong></div>
+            <div class="bar-row"><span>其他</span><div class="bar-track"><div class="bar other" data-width="3"></div></div><strong>3%</strong></div>
+          </div>
+          <div class="position-box">
+            <h3>独到观察：产能份额高于收入份额</h3>
+            <p>如果收入份额约 5%-8%，晶圆产能份额约 11%，差距不是坏事本身，而是提示研究重点应从“有没有产能”转向“产能能卖成什么价格”。</p>
+            <p><strong>关键验证：</strong>DDR5 服务器客户、LPDDR5X 高端客户、HBM 是否有官方披露或客户侧证据。</p>
+          </div>
+        </div>
+        <div class="grid visual-grid">
+          <div class="mini-chart">
+            <div class="mini-title">寡头结构一眼看懂</div>
+            <div class="donut-wrap">
+              <div class="donut" aria-label="DRAM 市场份额环形图"></div>
+              <div class="legend">
+                <span style="--c: var(--blue)">三星 38%</span>
+                <span style="--c: var(--teal)">SK 海力士 29%</span>
+                <span style="--c: var(--amber)">美光 22%</span>
+                <span style="--c: var(--green)">CXMT 8%</span>
+                <span style="--c: #8b97a1">南亚/其他 3%</span>
+              </div>
+            </div>
+          </div>
+          <div class="mini-chart">
+            <div class="mini-title">长鑫的“量价错位”</div>
+            <div class="gap-compare">
+              <div class="gap-tile"><span class="tag research">收入/市占</span><strong>5%-8%</strong><span class="mini-copy">已进入牌桌</span></div>
+              <div class="gap-tile"><span class="tag research">晶圆产能</span><strong>11%+</strong><span class="mini-copy">产能更靠前</span></div>
+            </div>
+            <p class="mini-copy" style="margin-top:12px;">如果产能份额高于收入份额，研究重点就不是“有没有产能”，而是“这些产能能否卖成高端价格”。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>上下游：长鑫是半导体集群的重力中心</h2>
+        <p class="section-intro">上游卡设备、材料、IP 和先进封装；中游拼良率和成本；下游看客户验证。任何一环不稳，利润都会被周期放大。</p>
+        <div class="pipeline" aria-label="产业链流动图">
+          <span class="pulse"></span>
+          <span class="pulse"></span>
+          <span class="pulse"></span>
+          <div class="pipe-node">
+            <div class="mini-title">上游</div>
+            <ul>
+              <li>DUV 光刻、刻蚀、沉积、检测</li>
+              <li>硅片、气体、光刻胶、CMP</li>
+              <li>DRAM IP、EDA、专利授权</li>
+            </ul>
+          </div>
+          <div class="pipe-node">
+            <div class="mini-title">中游：长鑫</div>
+            <ul>
+              <li>DRAM 设计 + 制造 + 测试</li>
+              <li>核心变量：良率、bit density、折旧</li>
+              <li>关键矛盾：扩产还是升级</li>
+            </ul>
+          </div>
+          <div class="pipe-node">
+            <div class="mini-title">下游</div>
+            <ul>
+              <li>手机、PC、平板、服务器</li>
+              <li>AI 数据中心与高带宽内存</li>
+              <li>客户验证就是第二张招股书</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap grid signal-grid">
+        <div class="card signal green">
+          <div class="mini-title">看多信号</div>
+          <p class="mini-copy">发行中、2026-07-16 申购、295 亿拟募资、LPDDR5X 量产、DDR5 产品公开展示，说明公司进入高强度资本化阶段；上市日仍待上市公告书。</p>
+        </div>
+        <div class="card signal amber">
+          <div class="mini-title">关键不确定</div>
+          <p class="mini-copy">330 亿季度利润、股权和补贴等财务数据目前为媒体转述招股书，仍需官方 PDF 原文复核。</p>
+        </div>
+        <div class="card signal red">
+          <div class="mini-title">主要风险</div>
+          <p class="mini-copy">DRAM 周期、折旧压力、HBM 良率、EUV 限制、知识产权与美国监管，都会放大估值波动。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>产品阶梯：价值中枢在往服务器和 AI 走</h2>
+        <div class="card ladder">
+          <div class="step"><strong>DDR4 / LPDDR4X</strong><div class="step-track"><div class="step-fill" style="--w: 96%"></div></div><span>基础盘</span></div>
+          <div class="step"><strong>LPDDR5</strong><div class="step-track"><div class="step-fill" style="--w: 78%"></div></div><span>已验证</span></div>
+          <div class="step"><strong>LPDDR5X</strong><div class="step-track"><div class="step-fill" style="--w: 70%"></div></div><span>量产/送样</span></div>
+          <div class="step"><strong>DDR5 / RDIMM</strong><div class="step-track"><div class="step-fill" style="--w: 54%"></div></div><span>待客户</span></div>
+          <div class="step"><strong>HBM</strong><div class="step-track"><div class="step-fill" style="--w: 22%"></div></div><span>期权项</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>动态演示：DRAM 利润为什么会被周期放大</h2>
+        <p class="section-intro">下面不是预测模型，而是理解工具。DRAM IDM 的利润像水坝闸门：价格、良率、稼动率一起变化，利润指数会非线性跳动；反过来，周期下行也会被放大。</p>
+        <div class="card simulator">
+          <div>
+            <div class="slider-row"><strong>ASP 价格</strong><input id="aspSlider" type="range" min="70" max="140" value="112"><span id="aspVal">112</span></div>
+            <div class="slider-row"><strong>良率</strong><input id="yieldSlider" type="range" min="70" max="98" value="88"><span id="yieldVal">88%</span></div>
+            <div class="slider-row"><strong>稼动率</strong><input id="utilSlider" type="range" min="55" max="100" value="90"><span id="utilVal">90%</span></div>
+            <p class="mini-copy" style="margin-top:12px;">基准为 100。指数越高，表示“价格 x 良率 x 稼动率”相对基准越强。固定折旧没有在这里单独建模，所以不要把它当盈利预测。</p>
+          </div>
+          <div class="sim-output">
+            <span class="tag media">理解工具</span>
+            <div class="score" id="profitScore">112</div>
+            <p id="profitText">接近正常景气区间，仍要看折旧和产品结构。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>后续只盯五件事</h2>
+        <div class="checklist">
+          <div class="check"><span class="dot"></span><div><strong>官方招股书 PDF</strong><br>复核财务、股权、补贴、募投和风险披露。</div></div>
+          <div class="check"><span class="dot"></span><div><strong>发行公告</strong><br>确认发行价、发行股数、上市日期和最终募资净额。</div></div>
+          <div class="check"><span class="dot"></span><div><strong>产品结构</strong><br>看 DDR5、LPDDR5X、服务器模组收入占比。</div></div>
+          <div class="check"><span class="dot"></span><div><strong>客户验证</strong><br>看高端手机、笔记本、服务器客户是否批量采购。</div></div>
+          <div class="check"><span class="dot"></span><div><strong>HBM 证据</strong><br>没有官方或客户侧证据，就不能把 AI 情景当前置假设。</div></div>
+          <div class="check"><span class="dot"></span><div><strong>监管变化</strong><br>跟踪美国清单、出口管制、IP 诉讼和设备供应。</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">本页为结构化概览，不构成投资建议。星号/待复核数据请以详细版来源表和后续官方 PDF 为准。GPT 图像资产已保存于项目 assets 目录。</div>
+  </footer>
+
+  <script>
+    const ease = t => 1 - Math.pow(1 - t, 3);
+
+    function animateCounters() {
+      document.querySelectorAll("[data-count]").forEach(el => {
+        const target = Number(el.dataset.count);
+        const start = performance.now();
+        const duration = 900;
+        function tick(now) {
+          const p = Math.min(1, (now - start) / duration);
+          el.textContent = Math.round(ease(p) * target);
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+
+    function animateBars() {
+      document.querySelectorAll("[data-width]").forEach(el => {
+        const w = Math.min(100, Number(el.dataset.width));
+        requestAnimationFrame(() => { el.style.width = w + "%"; });
+      });
+    }
+
+    function bindProfitSimulator() {
+      const asp = document.getElementById("aspSlider");
+      const yld = document.getElementById("yieldSlider");
+      const util = document.getElementById("utilSlider");
+      const aspVal = document.getElementById("aspVal");
+      const yldVal = document.getElementById("yieldVal");
+      const utilVal = document.getElementById("utilVal");
+      const score = document.getElementById("profitScore");
+      const text = document.getElementById("profitText");
+      if (!asp || !yld || !util) return;
+
+      function update() {
+        const aspIndex = Number(asp.value) / 100;
+        const yieldIndex = Number(yld.value) / 88;
+        const utilIndex = Number(util.value) / 90;
+        const profitIndex = Math.round(100 * aspIndex * yieldIndex * utilIndex);
+        aspVal.textContent = asp.value;
+        yldVal.textContent = yld.value + "%";
+        utilVal.textContent = util.value + "%";
+        score.textContent = profitIndex;
+        if (profitIndex >= 125) {
+          text.textContent = "价格、良率、稼动率同向上行，利润被经营杠杆明显放大。";
+        } else if (profitIndex >= 90) {
+          text.textContent = "接近正常景气区间，仍要看折旧和产品结构。";
+        } else {
+          text.textContent = "周期或制造变量转弱，重资产折旧会进一步压利润。";
+        }
+      }
+
+      [asp, yld, util].forEach(input => input.addEventListener("input", update));
+      update();
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      animateCounters();
+      animateBars();
+      bindProfitSimulator();
+    });
+  </script>
+</body>
+</html>
