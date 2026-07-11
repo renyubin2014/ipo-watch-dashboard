@@ -159,6 +159,40 @@ class CurrentReportIntegrityTests(unittest.TestCase):
             self.assertIn("公司预计", text, company)
             self.assertIn(expected, text, company)
 
+    def test_overviews_do_not_leave_ambiguous_placeholders(self):
+        for company in self.reports:
+            text = self.report_text(company, "overviewUrl")
+            for placeholder in ("待补充", "待明确", "待确认"):
+                self.assertNotIn(placeholder, text, f"{company}: {placeholder}")
+
+    def test_fundraising_totals_are_filled_from_prospectuses(self):
+        expected = {
+            "上海燧原科技股份有限公司": "600,000万元",
+            "天博智能科技（山东）股份有限公司": "205,663万元",
+            "宇树科技股份有限公司": "420,171万元",
+            "广东中塑新材料股份有限公司": "64,549万元",
+            "苏州绿控传动科技股份有限公司": "158,000万元",
+            "洛阳轴承集团股份有限公司": "180,000万元",
+            "上海频准激光科技股份有限公司": "141,030万元",
+            "深圳嘉立创科技集团股份有限公司": "420,000万元",
+            "江苏展芯半导体技术股份有限公司": "88,950万元",
+            "苏州市贝特利高分子材料股份有限公司": "76,266万元",
+            "成都超纯应用材料股份有限公司": "112,468万元",
+            "福建马坑矿业股份有限公司": "100,000万元",
+            "中电科思仪科技股份有限公司": "150,000万元",
+            "国仪量子技术（合肥）股份有限公司": "116,895万元",
+        }
+        for company, amount in expected.items():
+            text = self.report_text(company, "overviewUrl")
+            self.assertIn(amount, text, company)
+
+    def test_tianbo_uses_disclosed_2026_q1_financials(self):
+        text = self.report_text("天博智能科技（山东）股份有限公司", "overviewUrl")
+        self.assertIn("2026Q1｜40,697万元", text)
+        self.assertIn("2026Q1｜6,928万元", text)
+        self.assertIn("经营现金流", text)
+        self.assertIn("4,803万元", text)
+
 
 if __name__ == "__main__":
     unittest.main()

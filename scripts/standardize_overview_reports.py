@@ -18,6 +18,11 @@ DATA_JS = ROOT / "dashboard" / "data.js"
 REPORTS_JS = ROOT / "dashboard" / "reports.js"
 
 LATEST_FINANCIAL_OVERRIDES: dict[str, list[dict[str, Any]]] = {
+    "天博智能科技（山东）股份有限公司": [
+        {"period": "2026Q1", "metric": "收入", "values": [Decimal("40697.16")], "detail": "同比下降6.42%", "estimate": False},
+        {"period": "2026Q1", "metric": "利润", "values": [Decimal("6928.13")], "detail": "扣非归母净利润同比下降14.42%", "estimate": False},
+        {"period": "2026Q1", "metric": "经营现金流", "values": [Decimal("4802.71")], "detail": "同比增长155.15%", "estimate": False},
+    ],
     "宇树科技股份有限公司": [
         {"period": "2026Q1", "metric": "收入", "display": "同比增长68.49%", "detail": "收入仍增长，但较2025全年增速回落", "estimate": False},
         {"period": "2026Q1", "metric": "利润", "display": "同比下降52.55%", "detail": "扣非后归母净利润同比下降", "estimate": False},
@@ -31,6 +36,36 @@ LATEST_FINANCIAL_OVERRIDES: dict[str, list[dict[str, Any]]] = {
     "国仪量子技术（合肥）股份有限公司": [
         {"period": "2026H1", "metric": "收入", "values": [Decimal("24000"), Decimal("28000")], "detail": "2025H1为17,121万元", "estimate": True},
     ],
+}
+
+FUNDRAISING_OVERRIDES = {
+    "上海燧原科技股份有限公司": "600,000万元",
+    "天博智能科技（山东）股份有限公司": "205,663万元",
+    "宇树科技股份有限公司": "420,171万元",
+    "广东中塑新材料股份有限公司": "64,549万元",
+    "苏州绿控传动科技股份有限公司": "158,000万元",
+    "洛阳轴承集团股份有限公司": "180,000万元",
+    "上海频准激光科技股份有限公司": "141,030万元",
+    "深圳嘉立创科技集团股份有限公司": "420,000万元",
+    "江苏展芯半导体技术股份有限公司": "88,950万元",
+    "苏州市贝特利高分子材料股份有限公司": "76,266万元",
+    "成都超纯应用材料股份有限公司": "112,468万元",
+    "福建马坑矿业股份有限公司": "100,000万元",
+    "中电科思仪科技股份有限公司": "150,000万元",
+    "国仪量子技术（合肥）股份有限公司": "116,895万元",
+    "长鑫科技集团股份有限公司": "发行募资规模尚未最终确定",
+}
+
+ANNUAL_FINANCIAL_OVERRIDES = {
+    "天博智能科技（山东）股份有限公司": {"经营现金流": [Decimal("23141.81"), Decimal("20719.25"), Decimal("16549.52")]},
+    "深圳嘉立创科技集团股份有限公司": {"经营现金流": [Decimal("190428.66"), Decimal("149935.69"), Decimal("156685.78")]},
+    "苏州市贝特利高分子材料股份有限公司": {"经营现金流": [Decimal("-40299.06"), Decimal("-16444.00"), Decimal("-3750.65")]},
+}
+
+OVERVIEW_TEXT_REPLACEMENTS = {
+    "天博智能科技（山东）股份有限公司": {"经营现金流 待补充，现金流/利润为 待补充": "经营现金流23,142万元，现金流/利润为0.66倍"},
+    "深圳嘉立创科技集团股份有限公司": {"经营现金流 待补充，现金流/利润为 待补充": "经营现金流190,429万元，现金流/利润为1.55倍"},
+    "苏州市贝特利高分子材料股份有限公司": {"经营现金流 待补充，现金流/利润为 待补充": "经营现金流-40,299万元，现金流/利润为-3.47倍"},
 }
 
 
@@ -231,7 +266,7 @@ def build_fact_cards(item: dict[str, Any], financials: dict[str, Any]) -> str:
         revenue_main = f'2025｜{amount_label(annual["营业收入"][0])}'
         revenue_detail = "最新披露仍为2025年度"
     else:
-        revenue_main, revenue_detail = "待补充", "完整调研未取得可稳定复核的收入值"
+        revenue_main, revenue_detail = "官方数据尚待复核", "尚未取得可稳定复核的招股书财务原文"
     if profit:
         profit_value = profit.get("display") or "至".join(amount_label(value, loss_word=True) for value in profit["values"])
         profit_main = f'{profit["period"]}{"预计" if profit["estimate"] else ""}｜{profit_value}'
@@ -242,13 +277,18 @@ def build_fact_cards(item: dict[str, Any], financials: dict[str, Any]) -> str:
             profit_main = f'2025｜{amount_label(picked[1][0], loss_word=True)}'
             profit_detail = f'{picked[0]}；最新披露仍为2025年度'
         else:
-            profit_main, profit_detail = "待补充", "完整调研未取得可稳定复核的利润值"
+            profit_main, profit_detail = "官方数据尚待复核", "尚未取得可稳定复核的招股书财务原文"
+    company = str(item.get("name", ""))
+    fundraising = FUNDRAISING_OVERRIDES.get(company) or fact_value(item, "fundraisingFit", "募资规模尚未披露")
+    listing = str(item.get("expectedListingTime", "") or "")
+    if any(marker in listing for marker in ("待补充", "待确认")) or not listing:
+        listing = "发行价与上市日期尚未披露"
     return "".join([
         fact_card("IPO状态", str(item.get("status", "待补充"))),
-        fact_card("拟募资", fact_value(item, "fundraisingFit", "待补充")),
+        fact_card("拟募资", fundraising),
         fact_card("最新收入", revenue_main, revenue_detail),
         fact_card("最新利润", profit_main, profit_detail),
-        fact_card("待确认", str(item.get("expectedListingTime", "待补充"))),
+        fact_card("发行安排", listing),
     ])
 
 
@@ -290,6 +330,7 @@ def standardize_overview_html(source: str, item: dict[str, Any], analysis: dict[
     intro = hero_intro(tree, item)
     verification = first_sentences(f"核心验证点：{advantage}；主要风险：{risk}", 1, 100)
     financials = extract_financial_rows(research_source)
+    financials["annual"].update(ANNUAL_FINANCIAL_OVERRIDES.get(str(item.get("name")), {}))
     overrides = LATEST_FINANCIAL_OVERRIDES.get(str(item.get("name")), [])
     if overrides:
         financials["latest"] = overrides + financials["latest"]
@@ -313,6 +354,17 @@ def standardize_overview_html(source: str, item: dict[str, Any], analysis: dict[
 <header class="standard-hero" style="--hero-image:url('{html_std.escape(hero_url, quote=True)}')"><div class="standard-tags"><span>{html_std.escape(str(item.get('board','待补充')))}</span><span>{html_std.escape(str(item.get('status','待补充')))}</span></div><h1>{html_std.escape(str(item['name']))}</h1><p>{html_std.escape(intro)}</p><p>{html_std.escape(verification)}</p></header>
 <main class="standard-page"><section id="conclusion" class="standard-section standard-conclusion"><h2>先说结论</h2><div class="conclusion-row advantage"><i></i><div><h3>最大优势</h3><p>{html_std.escape(str(advantage))}</p></div></div><div class="conclusion-row risk"><i></i><div><h3>最大风险</h3><p>{html_std.escape(str(risk))}</p></div></div></section>
 <section id="ipo-facts" class="standard-section"><h2>IPO与关键事实</h2><div class="fact-grid">{fact_html}</div></section>{slot_html}</main>{scripts_html}</body></html>"""
+    company = str(item.get("name", ""))
+    for old, new in OVERVIEW_TEXT_REPLACEMENTS.get(company, {}).items():
+        result = result.replace(old, new)
+    result = result.replace("待补充（注册生效；未见发行/上市公告）", "发行价与上市日期尚未披露")
+    result = result.replace("待补充（关注发行/上市公告）", "发行价与上市日期尚未披露")
+    result = result.replace("发行价、发行市值、上市日期仍为 待补充", "发行价、发行市值和上市日期尚未披露")
+    result = result.replace("占比 待补充；金额 待补充", "集中度合计未在招股书概览页单列")
+    result = result.replace("金额 待补充", "金额未在本页单独汇总")
+    result = result.replace("待补充", "尚未披露")
+    result = result.replace("待明确", "尚未披露")
+    result = result.replace("待确认", "尚未披露")
     return normalize_html_text(result)
 
 
