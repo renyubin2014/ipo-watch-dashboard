@@ -19,6 +19,15 @@ REQUIRED_RESEARCH_LABELS = (
     "非共识判断",
     "反证信号",
 )
+REQUIRED_OVERVIEW_HEADINGS = (
+    "先说结论",
+    "IPO与关键事实",
+    "公司与行业位置",
+    "产品或业务阶梯",
+    "上下游关系",
+    "财务读数",
+    "后续重点跟踪",
+)
 
 
 def load_js_object(path: Path) -> dict:
@@ -63,9 +72,14 @@ def validate_publish_contract(root: Path = ROOT) -> list[str]:
                 errors.append(f"{company}: {label}文件不存在 {path}")
             elif key == "overviewUrl":
                 text = path.read_text(encoding="utf-8", errors="ignore")
-                for marker in ("先说结论", "最大优势", "最大风险"):
+                for marker in (*REQUIRED_OVERVIEW_HEADINGS, "最大优势", "最大风险"):
                     if marker not in text:
                         errors.append(f"{company}: 快速看懂缺少 {marker}")
+                positions = [text.find(heading) for heading in REQUIRED_OVERVIEW_HEADINGS]
+                if all(position >= 0 for position in positions) and positions != sorted(positions):
+                    errors.append(f"{company}: 快速看懂章节顺序不符合统一模板")
+                if "来源列表" in text:
+                    errors.append(f"{company}: 快速看懂不应包含来源列表")
             else:
                 errors.extend(validate_research_sources(path, company))
         aliases = []
