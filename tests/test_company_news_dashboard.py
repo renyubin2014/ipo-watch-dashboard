@@ -8,7 +8,8 @@ ROOT = Path(__file__).resolve().parents[1] / "dashboard"
 class CompanyNewsDashboardTests(unittest.TestCase):
     def test_dashboard_loads_news_index_before_app(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
-        self.assertIn('<script src="news-index.js"></script>', html)
+        self.assertIn('<script src="news-index.js?v=', html)
+        self.assertIn('<script src="app.js?v=', html)
         self.assertLess(html.index("news-index.js"), html.index("app.js"))
 
     def test_company_cards_render_news_link_and_unread_contract(self):
@@ -18,6 +19,7 @@ class CompanyNewsDashboardTests(unittest.TestCase):
         self.assertIn("IPO_NEWS_READ_IDS_V1", script)
         self.assertIn("hasUnreadNews", script)
         self.assertIn("news.html?company=", script)
+        self.assertIn("&v=", script)
 
     def test_unread_badge_ignores_explainers_and_refreshes_on_page_restore(self):
         script = (ROOT / "app.js").read_text(encoding="utf-8")

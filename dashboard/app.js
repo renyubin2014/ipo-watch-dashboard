@@ -4,6 +4,7 @@
   const reports = window.IPO_COMPANY_REPORTS || {};
   const newsIndex = window.IPO_NEWS_INDEX || {};
   const READ_IDS_KEY = "IPO_NEWS_READ_IDS_V1";
+  const NEWS_ASSET_VERSION = "20260711-5";
   const els = {
     sourceDate: document.getElementById("sourceDate"),
     companyList: document.getElementById("companyList"),
@@ -156,7 +157,7 @@
     const entry = newsIndex[item.name];
     const link = document.createElement("a");
     link.className = "report-link news-link";
-    link.href = `news.html?company=${encodeURIComponent(entry ? entry.slug : item.name)}`;
+    link.href = `news.html?company=${encodeURIComponent(entry ? entry.slug : item.name)}&v=${NEWS_ASSET_VERSION}`;
     link.textContent = "相关热点新闻";
     link.title = `${item.name} 相关热点新闻`;
     if (hasUnreadNews(entry)) {

@@ -12,7 +12,7 @@ class CompanyNewsPageTests(unittest.TestCase):
         self.assertIn('id="historyToggle"', html)
         self.assertIn('id="explainer"', html)
         self.assertIn('id="newsList"', html)
-        self.assertIn('src="news.js"', html)
+        self.assertIn('src="news.js?v=', html)
         self.assertNotIn("宁缺毋滥", html)
         self.assertNotIn("近 7 日", html)
 
