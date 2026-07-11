@@ -31,7 +31,7 @@ def parse_js_object(path: Path) -> dict[str, object]:
 def reset_publish_dir() -> None:
     PUBLISH_DIR.mkdir(parents=True, exist_ok=True)
     for child in PUBLISH_DIR.iterdir():
-        if child.name in {".git", "docs"}:
+        if child.name in {".git", ".gitignore", "docs"}:
             continue
         if child.is_dir():
             shutil.rmtree(child)
@@ -73,6 +73,7 @@ def copy_quality_tooling() -> None:
         "tests/test_publish_contract.py",
         "tests/test_report_quality_gate.py",
         "tests/test_report_upgrade.py",
+        "tests/test_responsive_contract.py",
     ):
         copy_path(ROOT / relative)
 

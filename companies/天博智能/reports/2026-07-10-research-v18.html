@@ -8,7 +8,26 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:14px;ov
 .landscape{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:stretch}.share-bars{display:grid;gap:12px}.share-row{display:grid;grid-template-columns:132px minmax(0,1fr) 72px;gap:10px;align-items:center}.share-row span{font-size:13px;color:#39506a;font-weight:800}.share-row strong{font-size:13px;text-align:right}.share-track{height:12px;border-radius:999px;background:#e5edf6;overflow:hidden}.share-track i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,#0a84ff,#11a981)}.landscape-note{margin-top:12px;padding:12px 14px;border-radius:12px;background:#f0f7ff;color:#39506a;font-size:13px;line-height:1.6}
 .layout{display:grid;grid-template-columns:220px 1fr;gap:20px}.toc{position:sticky;top:14px;align-self:start}.toc a{display:block;padding:8px 0;color:#5b6e82}.section{scroll-margin-top:24px}.note{color:#75859a;font-size:13px}
 @media(max-width:1000px){.hero{padding:42px 22px 80px}.hero h1{font-size:38px}.facts,.two,.three,.flow,.layout,.landscape{grid-template-columns:1fr}main{padding:24px 18px 60px}.toc{position:static}.score{grid-template-columns:120px 1fr 42px}.share-row{grid-template-columns:98px minmax(0,1fr) 56px}}
-</style></head>
+</style>
+<style id="report-responsive-fix">
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+main,.content,.wrap,.layout,.layout>*,.grid>*,section,.panel,.box,.card,.section{min-width:0;max-width:100%}
+p,h1,h2,h3,h4,td,th,a,.source,.note{overflow-wrap:anywhere;word-break:break-word}
+img,svg,canvas,video,input,select,textarea{max-width:100%}
+table{max-width:100%}
+@media(max-width:620px){
+  .layout{display:block!important;width:100%!important}
+  .layout>*,.content,.wrap,section,.section,.panel{min-width:0!important;max-width:100%!important}
+  .toc{display:flex!important;position:static!important;gap:8px;overflow-x:auto!important;max-width:100%!important;padding:10px!important;scrollbar-width:none}
+  .toc::-webkit-scrollbar{display:none}
+  .toc a{display:inline-flex!important;flex:0 0 auto;white-space:nowrap;padding:7px 10px!important;border-radius:999px;background:#eef5fb}
+  table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .slider-row,.bar-row,.share-row,.score{min-width:0!important;max-width:100%!important}
+  input[type="range"]{width:100%;min-width:0}
+}
+</style>
+</head>
 <body>
 <header class="hero"><div><div class="eyebrow">Detailed Research · 2026-07-10</div><h1>天博智能科技（山东）股份有限公司：上市前数据版调研</h1><p>本版按最新版 skill 重跑，核心数据来自招股书/注册稿表格；不再使用关键词附近数字拼接。缺失或不稳定抽取字段标记为“待补充/待复核”。</p></div></header>
 <main class="layout">

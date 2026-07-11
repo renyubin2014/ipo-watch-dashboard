@@ -19,9 +19,28 @@
   box-sizing: border-box;
 }
 
+.workspace,
+.board-groups,
+.board-section,
+.company-grid,
+.company-card,
+.company-card > *,
+.company-facts dd {
+  min-width: 0;
+}
+
+.company-card h3,
+.company-industry,
+.company-facts dd,
+.expected,
+.report-link {
+  overflow-wrap: anywhere;
+}
+
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   color: var(--ink);
   background:
     linear-gradient(180deg, rgba(249, 251, 254, 0.94), #f5f7fa 30%, #eef3f8 100%),
@@ -463,10 +482,28 @@ h3 {
   .company-card {
     min-height: auto;
   }
+
+  .report-actions {
+    flex-wrap: wrap;
+  }
+
+  .report-link {
+    min-width: 0;
+    white-space: normal;
+    line-height: 1.25;
+  }
 }
 
 @media (min-width: 761px) and (max-width: 1040px) {
+  .hero__image {
+    transform: none;
+  }
+
   .company-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .board-section::before {
+    inset: 0 -18px;
   }
 }

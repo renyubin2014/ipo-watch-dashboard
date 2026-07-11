@@ -14,6 +14,28 @@
   box-sizing: border-box;
 }
 
+main,
+.board-list,
+.board-section,
+.company-card,
+.company-card > *,
+.facts,
+.facts > div,
+.facts strong,
+.facts small,
+.actions {
+  min-width: 0;
+}
+
+.company-card h3,
+.industry,
+.facts strong,
+.facts small,
+.button,
+.reading-note {
+  overflow-wrap: anywhere;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -141,18 +163,27 @@ h1 {
 }
 
 .board-nav {
+  --nav-end-space: 34px;
   position: sticky;
   top: 0;
   z-index: 5;
   display: flex;
   gap: 8px;
   overflow-x: auto;
-  padding: 10px 14px;
+  padding: 10px var(--nav-end-space) 10px 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid var(--line);
   background: rgba(247, 250, 253, 0.86);
   backdrop-filter: blur(20px);
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  background:
+    linear-gradient(90deg, rgba(247, 250, 253, 0) 86%, rgba(220, 231, 243, 0.72) 100%),
+    rgba(247, 250, 253, 0.9);
+}
+
+.board-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .board-nav a {
@@ -164,6 +195,7 @@ h1 {
   color: #173762;
   font-size: 14px;
   font-weight: 850;
+  white-space: nowrap;
 }
 
 main {

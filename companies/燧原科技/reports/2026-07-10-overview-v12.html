@@ -12,6 +12,25 @@ main{max-width:1180px;margin:0 auto;padding:34px 28px 76px}.section{margin:28px 
 table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden}th,td{border-bottom:1px solid #e5edf5;padding:12px 13px;text-align:left;vertical-align:top;font-size:14px;line-height:1.55}th{background:#f2f6fb;color:#475569;font-weight:900}tr:last-child td{border-bottom:0}.bar-row{display:grid;grid-template-columns:132px 1fr 112px;gap:12px;align-items:center;margin:12px 0}.bar{height:12px;border-radius:999px;background:#e6edf6;overflow:hidden}.bar i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--blue),var(--green));animation:grow 1.1s ease-out both}@keyframes grow{from{width:0}to{width:var(--w)}}.flow{display:grid;grid-template-columns:1fr 1.05fr 1fr;gap:14px}.node{border:1px solid #d6e4f5;background:#f9fbff;border-radius:18px;padding:18px}.node h3{margin:0 0 10px}.risk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.risk{background:#fffaf0;border:1px solid #efd7a6;border-radius:18px;padding:18px}.risk b{display:block;color:#7a4b00;margin-bottom:8px}.meter{height:12px;border-radius:999px;background:#e6edf6;overflow:hidden}.meter i{display:block;height:100%;background:linear-gradient(90deg,#ef4444,#f59e0b,#10b981);width:var(--w)}.callout{background:#0f172a;color:#e5edf8;border-radius:24px;padding:24px}.callout p{color:#cbd5e1}.footer{color:#64748b;border-top:1px solid var(--line);margin-top:44px;padding-top:20px;font-size:13px;line-height:1.7}
 @media(max-width:860px){.hero{min-height:auto}.hero-inner{padding:42px 20px;min-height:620px}.hero:after{background:linear-gradient(180deg,rgba(247,249,252,.98),rgba(247,249,252,.82))}h1{font-size:42px}.lead{font-size:18px}.hero-grid,.grid-2,.grid-3,.flow,.risk-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr}.big{font-size:30px}main{padding:26px 18px 58px}}
 </style>
+
+<style id="report-responsive-fix">
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+main,.content,.wrap,.layout,.layout>*,.grid>*,section,.panel,.box,.card,.section{min-width:0;max-width:100%}
+p,h1,h2,h3,h4,td,th,a,.source,.note{overflow-wrap:anywhere;word-break:break-word}
+img,svg,canvas,video,input,select,textarea{max-width:100%}
+table{max-width:100%}
+@media(max-width:620px){
+  .layout{display:block!important;width:100%!important}
+  .layout>*,.content,.wrap,section,.section,.panel{min-width:0!important;max-width:100%!important}
+  .toc{display:flex!important;position:static!important;gap:8px;overflow-x:auto!important;max-width:100%!important;padding:10px!important;scrollbar-width:none}
+  .toc::-webkit-scrollbar{display:none}
+  .toc a{display:inline-flex!important;flex:0 0 auto;white-space:nowrap;padding:7px 10px!important;border-radius:999px;background:#eef5fb}
+  table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .slider-row,.bar-row,.share-row,.score{min-width:0!important;max-width:100%!important}
+  input[type="range"]{width:100%;min-width:0}
+}
+</style>
 </head>
 <body>
 
@@ -32,8 +51,8 @@ table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;ove
     </div>
   </div>
 </section>
-<main><section class="panel conclusion-first"><h2>先说结论</h2><div class="grid two"><div class="box advantage"><h3>最大优势 1</h3><p>已完成国产 AI 训练与推理芯片的产品化，并获得头部客户验证，稀缺性来自芯片、软件栈和量产交付的组合能力。</p></div></div><div class="grid two"><div class="box risk high"><h3>最大风险 1</h3><p>前五大客户高度集中且仍大额亏损；若核心客户缩减采购或新芯片迭代不及预期，收入和现金流会同时承压。</p></div></div><p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section>
-  <section class="section grid grid-2">
+<main><section class="panel conclusion-first"><h2>先说结论</h2><p class="conclusion-lead">优势决定上限，风险决定兑现速度。</p><div class="conclusion-row advantage"><i></i><div><h3>最大优势 1</h3><p>已完成国产 AI 训练与推理芯片的产品化，并获得头部客户验证，稀缺性来自芯片、软件栈和量产交付的组合能力。</p></div></div><div class="conclusion-row risk"><i></i><div><h3>最大风险 1</h3><p>前五大客户高度集中且仍大额亏损；若核心客户缩减采购或新芯片迭代不及预期，收入和现金流会同时承压。</p></div></div><p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section>
+<style>.conclusion-first{display:block}.conclusion-lead{color:#607086}.conclusion-row{display:grid;grid-template-columns:6px minmax(0,1fr);gap:14px;padding:15px 16px;margin:10px 0;border:1px solid #dce6ef;border-radius:14px;background:#fff}.conclusion-row>i{display:block;border-radius:99px;background:#19a56d}.conclusion-row.risk>i{background:#df554d}.conclusion-row h3{margin:0 0 6px;font-size:17px}.conclusion-row p{margin:0;line-height:1.7}@media(max-width:620px){.conclusion-row{gap:10px;padding:12px}}</style><section class="section grid grid-2">
     <div class="good"><b>为什么进入重点跟踪</b><p>注册已生效，且 2026 年上半年收入预计同比增长 258.68%-289.13%，业务从“技术产品闭环”开始向“商业价值闭环”过渡。<span class='source-tag'>上交所披露目录确认，东方财富 PDF 镜像下载；公告日期 2026-06-18，文件《上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）》，招股书第 1-1-43 至 1-1-44 页；上交所状态接口 2026-07-09</span></p></div>
     <div class="warn"><b>为什么不能直接下结论</b><p>2025 年仍亏损 11.64 亿元、经营现金流净流出 9.65 亿元，前五大客户占比 96.89%，腾讯科技（深圳）直接销售占营业收入 74.90%。<span class='source-tag'>上交所披露目录确认，东方财富 PDF 镜像下载；公告日期 2026-06-18，文件《上海燧原科技股份有限公司科创板首次公开发行股票招股说明书（注册稿）》，招股书第 1-1-42、1-1-173 至 1-1-174、1-1-252 页</span></p></div>
   </section>

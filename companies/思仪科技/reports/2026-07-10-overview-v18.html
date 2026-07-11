@@ -8,11 +8,31 @@ table{width:100%;border-collapse:collapse;background:white;border-radius:14px;ov
 .landscape{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:stretch}.share-bars{display:grid;gap:12px}.share-row{display:grid;grid-template-columns:132px minmax(0,1fr) 72px;gap:10px;align-items:center}.share-row span{font-size:13px;color:#39506a;font-weight:800}.share-row strong{font-size:13px;text-align:right}.share-track{height:12px;border-radius:999px;background:#e5edf6;overflow:hidden}.share-track i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,#0a84ff,#11a981)}.landscape-note{margin-top:12px;padding:12px 14px;border-radius:12px;background:#f0f7ff;color:#39506a;font-size:13px;line-height:1.6}
 .layout{display:grid;grid-template-columns:220px 1fr;gap:20px}.toc{position:sticky;top:14px;align-self:start}.toc a{display:block;padding:8px 0;color:#5b6e82}.section{scroll-margin-top:24px}.note{color:#75859a;font-size:13px}
 @media(max-width:1000px){.hero{padding:42px 22px 80px}.hero h1{font-size:38px}.facts,.two,.three,.flow,.layout,.landscape{grid-template-columns:1fr}main{padding:24px 18px 60px}.toc{position:static}.score{grid-template-columns:120px 1fr 42px}.share-row{grid-template-columns:98px minmax(0,1fr) 56px}}
-</style></head>
+</style>
+<style id="report-responsive-fix">
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+main,.content,.wrap,.layout,.layout>*,.grid>*,section,.panel,.box,.card,.section{min-width:0;max-width:100%}
+p,h1,h2,h3,h4,td,th,a,.source,.note{overflow-wrap:anywhere;word-break:break-word}
+img,svg,canvas,video,input,select,textarea{max-width:100%}
+table{max-width:100%}
+@media(max-width:620px){
+  .layout{display:block!important;width:100%!important}
+  .layout>*,.content,.wrap,section,.section,.panel{min-width:0!important;max-width:100%!important}
+  .toc{display:flex!important;position:static!important;gap:8px;overflow-x:auto!important;max-width:100%!important;padding:10px!important;scrollbar-width:none}
+  .toc::-webkit-scrollbar{display:none}
+  .toc a{display:inline-flex!important;flex:0 0 auto;white-space:nowrap;padding:7px 10px!important;border-radius:999px;background:#eef5fb}
+  table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .slider-row,.bar-row,.share-row,.score{min-width:0!important;max-width:100%!important}
+  input[type="range"]{width:100%;min-width:0}
+}
+</style>
+</head>
 <body>
 <header class="hero"><div><div class="eyebrow">Overview · 2026-07-10 · a-share-company-html-research</div><h1>中电科思仪科技股份有限公司</h1><p>中电科思仪科技股份有限公司当前处于创业板注册生效阶段，所属行业为仪器仪表制造业。2025 年收入 239,837.17 万元，三年复合增速 5.55%；2025 年扣非归母净利润 33,133.01 万元；经营现金流 50,499.83 万元。本版把它放进上市前研究池，核心不是给结论，而是把业务、财务、现金流和客户集中度四件事摆清楚。 这份概览只使用可追溯到招股书/官方项目状态的数据，无法稳定抽取的项目保留“待补充”。</p><span class="tag">创业板</span><span class="tag">注册生效</span><span class="tag">一般观察</span></div></header>
 <main>
-  <section class="panel conclusion-first"><h2>先说结论</h2><div class="grid two"><div class="box advantage"><h3>最大优势 1</h3><p>背靠电子测量长期技术积累，产品覆盖高端仪器、测试系统和关键整部件，国产替代验证壁垒较高。</p></div></div><div class="grid two"><div class="box risk high"><h3>最大风险 1</h3><p>高端仪器研发周期长，政府及科研客户预算和项目验收节奏会影响收入确认。</p></div></div><p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section><section class="grid facts"><div class='card'><span>IPO 状态</span><strong>注册生效</strong><small>注册生效；项目更新日期 2026-06-15</small></div><div class='card'><span>2025 收入</span><strong>239,837.17 万元</strong><small>来源：思仪科技-1-1-招股说明书.pdf，公告日期 2026-04-29，第 31 页</small></div><div class='card'><span>2025 扣非归母净利润</span><strong>33,133.01 万元</strong><small>来源：思仪科技-1-1-招股说明书.pdf，公告日期 2026-04-29，第 33 页</small></div><div class='card'><span>毛利率</span><strong>待补充</strong><small>来源：待补充</small></div><div class='card'><span>经营现金流</span><strong>50,499.83 万元</strong><small>来源：思仪科技-1-1-招股说明书.pdf，公告日期 2026-04-29，第 33 页</small></div></section>
+  <section class="panel conclusion-first"><h2>先说结论</h2><p class="conclusion-lead">优势决定上限，风险决定兑现速度。</p><div class="conclusion-row advantage"><i></i><div><h3>最大优势 1</h3><p>背靠电子测量长期技术积累，产品覆盖高端仪器、测试系统和关键整部件，国产替代验证壁垒较高。</p></div></div><div class="conclusion-row risk"><i></i><div><h3>最大风险 1</h3><p>高端仪器研发周期长，政府及科研客户预算和项目验收节奏会影响收入确认。</p></div></div><p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section>
+<style>.conclusion-first{display:block}.conclusion-lead{color:#607086}.conclusion-row{display:grid;grid-template-columns:6px minmax(0,1fr);gap:14px;padding:15px 16px;margin:10px 0;border:1px solid #dce6ef;border-radius:14px;background:#fff}.conclusion-row>i{display:block;border-radius:99px;background:#19a56d}.conclusion-row.risk>i{background:#df554d}.conclusion-row h3{margin:0 0 6px;font-size:17px}.conclusion-row p{margin:0;line-height:1.7}@media(max-width:620px){.conclusion-row{gap:10px;padding:12px}}</style><section class="grid facts"><div class='card'><span>IPO 状态</span><strong>注册生效</strong><small>注册生效；项目更新日期 2026-06-15</small></div><div class='card'><span>2025 收入</span><strong>239,837.17 万元</strong><small>来源：思仪科技-1-1-招股说明书.pdf，公告日期 2026-04-29，第 31 页</small></div><div class='card'><span>2025 扣非归母净利润</span><strong>33,133.01 万元</strong><small>来源：思仪科技-1-1-招股说明书.pdf，公告日期 2026-04-29，第 33 页</small></div><div class='card'><span>毛利率</span><strong>待补充</strong><small>来源：待补充</small></div><div class='card'><span>经营现金流</span><strong>50,499.83 万元</strong><small>来源：思仪科技-1-1-招股说明书.pdf，公告日期 2026-04-29，第 33 页</small></div></section>
   <section class="panel dark"><h2>核心判断</h2><p><span class="tag">公司披露</span>专业从事电子测量仪器研发、制造和销售，主要产品包括整机、测试系统、整部件等。</p><p><span class="tag">本报告推断</span>研究重点不是“是否已经注册生效”，而是收入增长、利润质量、现金流和客户/供应商集中度能否相互印证。当前更适合作为上市前研究排队标的，不构成投资建议。</p></section>
   <section class="panel"><h2>行业位置</h2>
 

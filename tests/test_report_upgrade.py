@@ -30,6 +30,9 @@ class ReportUpgradeTests(unittest.TestCase):
         self.assertIn("优势证据", upgraded)
         self.assertIn("最大风险", upgraded)
         self.assertIn("风险机制", upgraded)
+        self.assertIn('class="conclusion-row advantage"', upgraded)
+        self.assertIn('class="conclusion-row risk"', upgraded)
+        self.assertNotIn('class="grid two"><div class="box advantage"', upgraded)
 
     def test_research_adds_judgement_sections_and_source_quality_mapping(self):
         html = '<section id="risk"></section><section id="sources"><h2>10. 来源列表</h2></section>'
@@ -48,6 +51,7 @@ class ReportUpgradeTests(unittest.TestCase):
         self.assertIn("状态核验日期", upgraded)
         self.assertIn("单位与期间", upgraded)
         self.assertIn("页码与报告章节", upgraded)
+        self.assertIn("report-responsive-fix", upgraded)
 
 
 if __name__ == "__main__":

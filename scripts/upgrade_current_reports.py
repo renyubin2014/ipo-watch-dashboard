@@ -38,6 +38,36 @@ def esc(value: Any) -> str:
     return html.escape(str(value), quote=True)
 
 
+def responsive_css() -> str:
+    return """
+<style id="report-responsive-fix">
+html,body{max-width:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+main,.content,.wrap,.layout,.layout>*,.grid>*,section,.panel,.box,.card,.section{min-width:0;max-width:100%}
+p,h1,h2,h3,h4,td,th,a,.source,.note{overflow-wrap:anywhere;word-break:break-word}
+img,svg,canvas,video,input,select,textarea{max-width:100%}
+table{max-width:100%}
+@media(max-width:620px){
+  .layout{display:block!important;width:100%!important}
+  .layout>*,.content,.wrap,section,.section,.panel{min-width:0!important;max-width:100%!important}
+  .toc{display:flex!important;position:static!important;gap:8px;overflow-x:auto!important;max-width:100%!important;padding:10px!important;scrollbar-width:none}
+  .toc::-webkit-scrollbar{display:none}
+  .toc a{display:inline-flex!important;flex:0 0 auto;white-space:nowrap;padding:7px 10px!important;border-radius:999px;background:#eef5fb}
+  table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .slider-row,.bar-row,.share-row,.score{min-width:0!important;max-width:100%!important}
+  input[type="range"]{width:100%;min-width:0}
+}
+</style>
+"""
+
+
+def inject_responsive_css(source: str) -> str:
+    if "report-responsive-fix" in source:
+        return re.sub(r'<style id="report-responsive-fix">.*?</style>', responsive_css().strip(), source, count=1, flags=re.S)
+    marker = "</head>"
+    return source.replace(marker, responsive_css() + marker, 1) if marker in source else responsive_css() + source
+
+
 def parse_js(path: Path) -> dict[str, Any]:
     match = re.search(r"=\s*(\{.*\})\s*;", path.read_text(encoding="utf-8"), re.S)
     if not match:
@@ -51,18 +81,26 @@ def bullet_cards(title: str, values: list[str], kind: str) -> str:
 
 
 def upgrade_overview(source: str, company: str, analysis: dict[str, Any]) -> str:
-    if "先说结论" in source and "最大优势" in source and "最大风险" in source:
-        return source
-    section = (
-        '<section class="panel conclusion-first"><h2>先说结论</h2>'
-        + bullet_cards("最大优势", analysis["advantages"], "advantage")
-        + bullet_cards("最大风险", analysis["risks"], "risk high")
-        + '<p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section>'
+    advantages = "".join(
+        f'<div class="conclusion-row advantage"><i></i><div><h3>最大优势 {index}</h3><p>{esc(value)}</p></div></div>'
+        for index, value in enumerate(analysis["advantages"], 1)
     )
+    risks = "".join(
+        f'<div class="conclusion-row risk"><i></i><div><h3>最大风险 {index}</h3><p>{esc(value)}</p></div></div>'
+        for index, value in enumerate(analysis["risks"], 1)
+    )
+    section = f"""<section class="panel conclusion-first"><h2>先说结论</h2><p class="conclusion-lead">优势决定上限，风险决定兑现速度。</p>{advantages}{risks}<p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section>
+<style>.conclusion-first{{display:block}}.conclusion-lead{{color:#607086}}.conclusion-row{{display:grid;grid-template-columns:6px minmax(0,1fr);gap:14px;padding:15px 16px;margin:10px 0;border:1px solid #dce6ef;border-radius:14px;background:#fff}}.conclusion-row>i{{display:block;border-radius:99px;background:#19a56d}}.conclusion-row.risk>i{{background:#df554d}}.conclusion-row h3{{margin:0 0 6px;font-size:17px}}.conclusion-row p{{margin:0;line-height:1.7}}@media(max-width:620px){{.conclusion-row{{gap:10px;padding:12px}}}}</style>"""
+    existing = re.search(r'<section class="panel conclusion-first">.*?</section>\s*(?:<style>.*?</style>)?', source, re.S)
+    if existing:
+        source = source[: existing.start()] + section + source[existing.end() :]
+        return inject_responsive_css(source)
     marker = '<section class="grid facts">'
     if marker in source:
-        return source.replace(marker, section + marker, 1)
-    return source.replace("<main>", "<main>" + section, 1)
+        source = source.replace(marker, section + marker, 1)
+    else:
+        source = source.replace("<main>", "<main>" + section, 1)
+    return inject_responsive_css(source)
 
 
 def upgrade_research(source: str, company: str, analysis: dict[str, Any], evidence: dict[str, str]) -> str:
@@ -98,7 +136,7 @@ def upgrade_research(source: str, company: str, analysis: dict[str, Any], eviden
             heading = re.search(r'(<h2>[^<]*来源列表</h2>)', source)
             if heading:
                 source = source[: heading.end()] + quality + source[heading.end() :]
-    return source
+    return inject_responsive_css(source)
 
 
 def next_path(path: Path) -> Path:

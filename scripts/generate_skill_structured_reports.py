@@ -943,6 +943,18 @@ def risk_profile(data: ReportData) -> list[tuple[str, str, str]]:
     return risks[:4]
 
 
+def responsive_patch_html() -> str:
+    return """<style id="report-responsive-fix">html,body{max-width:100%;overflow-x:hidden}*,*::before,*::after{box-sizing:border-box}main,.content,.wrap,.layout,.layout>*,.grid>*,section,.panel,.box,.card,.section{min-width:0;max-width:100%}p,h1,h2,h3,h4,td,th,a,.source,.note{overflow-wrap:anywhere;word-break:break-word}img,svg,canvas,video,input,select,textarea{max-width:100%}table{max-width:100%}@media(max-width:620px){.layout{display:block!important;width:100%!important}.layout>*,.content,.wrap,section,.section,.panel{min-width:0!important;max-width:100%!important}.toc{display:flex!important;position:static!important;gap:8px;overflow-x:auto!important;max-width:100%!important;padding:10px!important;scrollbar-width:none}.toc::-webkit-scrollbar{display:none}.toc a{display:inline-flex!important;flex:0 0 auto;white-space:nowrap;padding:7px 10px!important;border-radius:999px;background:#eef5fb}table{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}.slider-row,.bar-row,.share-row,.score{min-width:0!important;max-width:100%!important}input[type=range]{width:100%;min-width:0}}</style>"""
+
+
+def conclusion_summary_html(data: ReportData) -> str:
+    landscape = INDUSTRY_LANDSCAPES.get(data.company, {})
+    advantage = landscape.get("observation") or data.business.get("text") or "核心业务能力仍需结合招股书与客户验证继续复核。"
+    risks = risk_profile(data)
+    risk = risks[0][1] if risks else "关键经营数据仍不完整，暂不把研究判断写成确定事实。"
+    return f"""<section class="panel conclusion-first"><h2>先说结论</h2><p class="conclusion-lead">优势决定上限，风险决定兑现速度。</p><div class="conclusion-row advantage"><i></i><div><h3>最大优势 1</h3><p>{esc(advantage)}</p></div></div><div class="conclusion-row risk"><i></i><div><h3>最大风险 1</h3><p>{esc(risk)}</p></div></div><p class="note">判断来自完整调研中的事实与推断；关键数据以完整调研来源列表为准。</p></section><style>.conclusion-first{{display:block}}.conclusion-lead{{color:#607086}}.conclusion-row{{display:grid;grid-template-columns:6px minmax(0,1fr);gap:14px;padding:15px 16px;margin:10px 0;border:1px solid #dce6ef;border-radius:14px;background:#fff}}.conclusion-row>i{{display:block;border-radius:99px;background:#19a56d}}.conclusion-row.risk>i{{background:#df554d}}.conclusion-row h3{{margin:0 0 6px;font-size:17px}}.conclusion-row p{{margin:0;line-height:1.7}}@media(max-width:620px){{.conclusion-row{{gap:10px;padding:12px}}}}</style>"""
+
+
 def classification_sentence(data: ReportData) -> str:
     rev = data.metrics.get("营业收入")
     profit_label, profit = preferred_profit_metric(data)
@@ -1281,10 +1293,11 @@ def overview_html(data: ReportData) -> str:
     business = data.business.get("text", "待补充")
     css = CSS.replace("__HERO__", SHARED_HERO)
     return f"""<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(data.company)} 概览</title><style>{css}</style></head>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(data.company)} 概览</title><style>{css}</style>{responsive_patch_html()}</head>
 <body>
 <header class="hero"><div><div class="eyebrow">Overview · {REPORT_DATE} · a-share-company-html-research</div><h1>{esc(data.company)}</h1><p>{esc(thesis_text(data))} 这份概览只使用可追溯到招股书/官方项目状态的数据，无法稳定抽取的项目保留“待补充”。</p><span class="tag">{esc(data.item.get('board'))}</span><span class="tag">{esc(data.item.get('status'))}</span><span class="tag">{esc(data.item.get('classification'))}</span></div></header>
 <main>
+  {conclusion_summary_html(data)}
   <section class="grid facts">{facts(data)}</section>
   <section class="panel dark"><h2>核心判断</h2><p><span class="tag">公司披露</span>{esc(business)}</p><p><span class="tag">本报告推断</span>研究重点不是“是否已经注册生效”，而是收入增长、利润质量、现金流和客户/供应商集中度能否相互印证。当前更适合作为上市前研究排队标的，不构成投资建议。</p></section>
   <section class="panel"><h2>行业位置</h2>{industry_position_html(data)}</section>
@@ -1308,7 +1321,7 @@ def research_html(data: ReportData) -> str:
     )
     css = CSS.replace("__HERO__", SHARED_HERO)
     return f"""<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(data.company)} 详细调研</title><style>{css}</style></head>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(data.company)} 详细调研</title><style>{css}</style>{responsive_patch_html()}</head>
 <body>
 <header class="hero"><div><div class="eyebrow">Detailed Research · {REPORT_DATE}</div><h1>{esc(data.company)}：上市前数据版调研</h1><p>本版按最新版 skill 重跑，核心数据来自招股书/注册稿表格；不再使用关键词附近数字拼接。缺失或不稳定抽取字段标记为“待补充/待复核”。</p></div></header>
 <main class="layout">
