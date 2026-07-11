@@ -16,8 +16,9 @@ class CompanyNewsDashboardTests(unittest.TestCase):
         script = (ROOT / "app.js").read_text(encoding="utf-8")
         self.assertIn("相关热点新闻", script)
         self.assertIn("window.IPO_NEWS_INDEX", script)
-        self.assertIn("IPO_NEWS_READ_IDS_V1", script)
+        self.assertIn("IPO_NEWS_SEEN_IDS_V1", script)
         self.assertIn("hasUnreadNews", script)
+        self.assertIn("markNewsEntrySeen", script)
         self.assertIn("news.html?company=", script)
         self.assertIn("&v=", script)
 
@@ -25,7 +26,17 @@ class CompanyNewsDashboardTests(unittest.TestCase):
         script = (ROOT / "app.js").read_text(encoding="utf-8")
         unread_body = script.split("function hasUnreadNews(entry)", 1)[1].split("function createNewsLink", 1)[0]
         self.assertNotIn("explainer", unread_body)
+        self.assertIn("SEEN_IDS_KEY", unread_body)
+        self.assertNotIn("READ_IDS_KEY", unread_body)
         self.assertIn('window.addEventListener("pageshow", renderPool)', script)
+
+    def test_clicking_news_button_clears_badge_without_marking_articles_read(self):
+        script = (ROOT / "app.js").read_text(encoding="utf-8")
+        seen_body = script.split("function markNewsEntrySeen(entry)", 1)[1].split("function createNewsLink", 1)[0]
+        self.assertIn("activeItemIds", seen_body)
+        self.assertIn("SEEN_IDS_KEY", seen_body)
+        self.assertNotIn("READ_IDS_KEY", seen_body)
+        self.assertIn('link.addEventListener("click", () => markNewsEntrySeen(entry))', script)
 
     def test_mobile_actions_stay_on_one_row_with_small_italic_badge(self):
         styles = (ROOT / "styles.css").read_text(encoding="utf-8")

@@ -3,8 +3,8 @@
   const companies = payload.items || [];
   const reports = window.IPO_COMPANY_REPORTS || {};
   const newsIndex = window.IPO_NEWS_INDEX || {};
-  const READ_IDS_KEY = "IPO_NEWS_READ_IDS_V1";
-  const NEWS_ASSET_VERSION = "20260711-5";
+  const SEEN_IDS_KEY = "IPO_NEWS_SEEN_IDS_V1";
+  const NEWS_ASSET_VERSION = "20260711-6";
   const els = {
     sourceDate: document.getElementById("sourceDate"),
     companyList: document.getElementById("companyList"),
@@ -147,10 +147,21 @@
     }
   }
 
+  function writeLocalSet(key, values) {
+    localStorage.setItem(key, JSON.stringify(Array.from(values)));
+  }
+
   function hasUnreadNews(entry) {
     if (!entry) return false;
-    const readIds = readLocalSet(READ_IDS_KEY);
-    return (entry.activeItemIds || []).some((id) => !readIds.has(id));
+    const seenIds = readLocalSet(SEEN_IDS_KEY);
+    return (entry.activeItemIds || []).some((id) => !seenIds.has(id));
+  }
+
+  function markNewsEntrySeen(entry) {
+    if (!entry) return;
+    const seenIds = readLocalSet(SEEN_IDS_KEY);
+    (entry.activeItemIds || []).forEach((id) => seenIds.add(id));
+    writeLocalSet(SEEN_IDS_KEY, seenIds);
   }
 
   function createNewsLink(item) {
@@ -160,6 +171,7 @@
     link.href = `news.html?company=${encodeURIComponent(entry ? entry.slug : item.name)}&v=${NEWS_ASSET_VERSION}`;
     link.textContent = "相关热点新闻";
     link.title = `${item.name} 相关热点新闻`;
+    link.addEventListener("click", () => markNewsEntrySeen(entry));
     if (hasUnreadNews(entry)) {
       const badge = document.createElement("span");
       badge.className = "news-unread";
