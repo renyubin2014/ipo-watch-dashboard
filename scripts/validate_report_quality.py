@@ -7,6 +7,8 @@ import json
 import re
 from pathlib import Path
 
+from lxml import html
+
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_RESEARCH_LABELS = (
@@ -51,6 +53,28 @@ def validate_research_sources(html_path: Path, company: str) -> list[str]:
     return [f"{company}: 完整调研来源列表缺少 {label}" for label in REQUIRED_RESEARCH_LABELS if label not in text]
 
 
+def validate_overview_readability(html_path: Path, company: str) -> list[str]:
+    if not html_path.exists():
+        return [f"{company}: 快速看懂不存在 {html_path}"]
+    text = html_path.read_text(encoding="utf-8", errors="ignore")
+    tree = html.fromstring(text)
+    errors: list[str] = []
+    finance = tree.xpath("//*[@id='finance-overview']")
+    position = tree.xpath("//*[@id='company-position']")
+    if not finance:
+        return [f"{company}: 快速看懂缺少财务读数模块"]
+    finance_text = " ".join(finance[0].text_content().split())
+    if "单位：万元；百分比除外" not in finance_text:
+        errors.append(f"{company}: 快速看懂财务单位不明确")
+    if re.search(r"\d+\.\d+\s*万元", finance_text):
+        errors.append(f"{company}: 快速看懂金额仍有小数")
+    if "预计" in finance_text and "公司预计" not in finance_text:
+        errors.append(f"{company}: 快速看懂预计数据缺少公司预计标签")
+    if position and position[0].xpath(".//table"):
+        errors.append(f"{company}: 快速看懂行业位置仍含重复表格")
+    return errors
+
+
 def validate_publish_contract(root: Path = ROOT) -> list[str]:
     data = load_js_object(root / "dashboard" / "data.js")
     reports = load_js_object(root / "dashboard" / "reports.js")
@@ -80,6 +104,7 @@ def validate_publish_contract(root: Path = ROOT) -> list[str]:
                     errors.append(f"{company}: 快速看懂章节顺序不符合统一模板")
                 if "来源列表" in text:
                     errors.append(f"{company}: 快速看懂不应包含来源列表")
+                errors.extend(validate_overview_readability(path, company))
             else:
                 errors.extend(validate_research_sources(path, company))
         aliases = []

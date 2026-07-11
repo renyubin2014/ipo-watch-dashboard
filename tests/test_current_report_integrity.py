@@ -138,6 +138,27 @@ class CurrentReportIntegrityTests(unittest.TestCase):
             self.assertIn("燧原科技", text)
             self.assertIn("1.70%", text)
 
+    def test_overviews_surface_verified_2026_financial_periods(self):
+        suiyuan = self.report_text("上海燧原科技股份有限公司", "overviewUrl")
+        self.assertIn("2026Q1｜28,699万元", suiyuan)
+        self.assertIn("2026Q1｜亏损44,434万元", suiyuan)
+        self.assertIn("2026H1", suiyuan)
+        self.assertIn("公司预计", suiyuan)
+
+        yushu = self.report_text("宇树科技股份有限公司", "overviewUrl")
+        self.assertIn("2026Q1｜同比增长68.49%", yushu)
+        self.assertIn("2026Q1｜同比下降52.55%", yushu)
+
+        for company, expected in {
+            "洛阳轴承集团股份有限公司": "320,000万元至335,000万元",
+            "上海频准激光科技股份有限公司": "23,000万元至26,000万元",
+            "国仪量子技术（合肥）股份有限公司": "24,000万元至28,000万元",
+        }.items():
+            text = self.report_text(company, "overviewUrl")
+            self.assertIn("2026H1", text, company)
+            self.assertIn("公司预计", text, company)
+            self.assertIn(expected, text, company)
+
 
 if __name__ == "__main__":
     unittest.main()

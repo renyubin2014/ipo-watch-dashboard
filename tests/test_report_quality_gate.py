@@ -34,6 +34,21 @@ class ReportQualityGateTests(unittest.TestCase):
             fake.write_text("<html>blocked</html>", encoding="utf-8")
             self.assertFalse(self.module.is_valid_pdf(fake))
 
+    def test_overview_readability_gate_rejects_bad_financial_contract(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            report = Path(tmp) / "overview.html"
+            report.write_text("""<html><body>
+            <section id='company-position'><div class='chart'>图</div><table><tr><td>重复表</td></tr></table></section>
+            <section id='finance-overview'><h2>财务读数</h2><strong>99,016.00万元</strong><p>2026H1收入预计100,000万元</p></section>
+            </body></html>""", encoding="utf-8")
+
+            errors = self.module.validate_overview_readability(report, "样本公司")
+
+        self.assertTrue(any("财务单位" in error for error in errors))
+        self.assertTrue(any("金额仍有小数" in error for error in errors))
+        self.assertTrue(any("行业位置仍含重复表格" in error for error in errors))
+        self.assertTrue(any("预计数据缺少公司预计标签" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()
