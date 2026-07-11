@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "slug": "suiyuan",
+  "company": "上海燧原科技股份有限公司",
+  "industry": "软件和信息技术服务业",
+  "updatedAt": "2026-07-11T12:00:00+08:00",
+  "explainer": null,
+  "items": [
+    {
+      "id": "ai-chip-20260708-h200-limited-purchases",
+      "type": "industry",
+      "title": "中国拟允许头部AI企业限量购买英伟达H200芯片",
+      "publishedAt": "2026-07-08T19:05:00+08:00",
+      "selectedAt": "2026-07-11",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://www.investing.com/news/stock-market-news/china-plans-to-let-top-ai-firms-buy-limited-amount-of-nvidia-h200-chips-the-information-reports-4782000",
+      "summary": "路透社转述The Information消息称，中国计划允许部分头部AI企业在说明数量和用途后限量购买英伟达H200。政策和实际交付仍存在不确定性，需要等待更明确的官方和供应链信息。",
+      "whyImportant": "先进海外GPU的可获得性会直接影响国产AI芯片的替代节奏、客户采购优先级和价格空间。",
+      "companyRelevance": "对燧原而言，H200供应增加可能提高高端训练市场竞争压力，但限量和审批机制也意味着国产算力仍有本地供给价值。",
+      "watchNext": "关注H200实际交付规模、国内客户采购结构，以及燧原新一代产品的客户验证和复购。",
+      "evidenceLevel": "reliable_secondary",
+      "tags": ["AI芯片", "H200", "国产替代", "算力"]
+    }
+  ]
+}

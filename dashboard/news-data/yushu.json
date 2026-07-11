@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "slug": "yushu",
+  "company": "宇树科技股份有限公司",
+  "industry": "通用设备制造业",
+  "updatedAt": "2026-07-11T12:00:00+08:00",
+  "explainer": null,
+  "items": [
+    {
+      "id": "humanoid-20260707-output-100k",
+      "type": "industry",
+      "title": "工信部口径：2026年我国人形机器人整机产量有望突破10万台",
+      "publishedAt": "2026-07-07T15:00:00+08:00",
+      "selectedAt": "2026-07-11",
+      "sourceName": "新华社",
+      "sourceUrl": "https://www.news.cn/20260707/a2287f0e6d424640b126479e06b697da/c.html",
+      "summary": "新华社报道，工信部科技司相关负责人在2026世界人工智能大会新闻发布会上表示，今年我国人形机器人整机产量有望突破10万台。该数字是行业展望，仍需用真实交付、订单和应用场景复购验证。",
+      "whyImportant": "行业开始从样机展示转向规模制造，供应链、成本、可靠性和售后能力的重要性会明显上升。",
+      "companyRelevance": "宇树已具备机器人本体产品和规模化制造基础，但行业总产量增长不等于公司订单同步增长。",
+      "watchNext": "观察宇树的人形机器人实际交付、客户结构、复购、单价和毛利率，而不是只看行业产量目标。",
+      "evidenceLevel": "official_media",
+      "tags": ["人形机器人", "具身智能", "量产"]
+    }
+  ]
+}

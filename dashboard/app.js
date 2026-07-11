@@ -2,6 +2,9 @@
   const payload = window.IPO_DASHBOARD_DATA || { items: [] };
   const companies = payload.items || [];
   const reports = window.IPO_COMPANY_REPORTS || {};
+  const newsIndex = window.IPO_NEWS_INDEX || {};
+  const READ_IDS_KEY = "IPO_NEWS_READ_IDS_V1";
+  const READ_EXPLAINERS_KEY = "IPO_NEWS_READ_EXPLAINERS_V1";
   const els = {
     sourceDate: document.getElementById("sourceDate"),
     companyList: document.getElementById("companyList"),
@@ -100,6 +103,7 @@
     const report = reports[item.id] || reports[item.name] || {};
     actions.append(createReportLink("快速看懂", report.overviewUrl, `${item.name} 概览报告`));
     actions.append(createReportLink("完整调研", report.researchUrl, `${item.name} 详细调研报告`));
+    actions.append(createNewsLink(item));
 
     card.append(top, title, industry, facts, actions);
     return card;
@@ -131,6 +135,40 @@
     link.rel = "noreferrer";
     link.textContent = label;
     link.title = title;
+    return link;
+  }
+
+  function readLocalSet(key) {
+    try {
+      const value = JSON.parse(localStorage.getItem(key) || "[]");
+      return new Set(Array.isArray(value) ? value : []);
+    } catch (_error) {
+      return new Set();
+    }
+  }
+
+  function hasUnreadNews(entry) {
+    if (!entry) return false;
+    const readIds = readLocalSet(READ_IDS_KEY);
+    if ((entry.activeItemIds || []).some((id) => !readIds.has(id))) return true;
+    if (!entry.explainerId || !entry.explainerVersion) return false;
+    const readExplainers = readLocalSet(READ_EXPLAINERS_KEY);
+    return !readExplainers.has(`${entry.explainerId}@${entry.explainerVersion}`);
+  }
+
+  function createNewsLink(item) {
+    const entry = newsIndex[item.name];
+    const link = document.createElement("a");
+    link.className = "report-link news-link";
+    link.href = `news.html?company=${encodeURIComponent(entry ? entry.slug : item.name)}`;
+    link.textContent = "相关热点新闻";
+    link.title = `${item.name} 相关热点新闻`;
+    if (hasUnreadNews(entry)) {
+      const badge = document.createElement("span");
+      badge.className = "news-unread";
+      badge.textContent = "有新资讯";
+      link.appendChild(badge);
+    }
     return link;
   }
 

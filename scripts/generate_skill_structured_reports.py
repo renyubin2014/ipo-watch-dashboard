@@ -238,6 +238,28 @@ MANUAL_CORRECTIONS: dict[str, dict[str, Any]] = {
             "text": "电子产业基础设施综合服务，覆盖 EDA/CAM、PCB 制造、电子元器件购销、PCBA/电子装联等。",
             "page": "103-104",
         },
+        "supplier": {
+            "ratio": "15.72%",
+            "amount": "88,290.52",
+            "page": 159,
+            "snippet": "2025 年度前五大供应商采购金额合计 88,290.52 万元，占当期采购总额比例 15.72%。",
+        },
+    },
+    "天博智能科技（山东）股份有限公司": {
+        "supplier": {
+            "ratio": "19.59%",
+            "amount": "22,832.44",
+            "page": "121-122",
+            "snippet": "2025 年度前五大供应商采购金额合计 22,832.44 万元，占原材料采购总额比例 19.59%。",
+        },
+    },
+    "江苏展芯半导体技术股份有限公司": {
+        "supplier": {
+            "ratio": "73.03%",
+            "amount": "6,214.66",
+            "page": "170-171",
+            "snippet": "2025 年度前五大供应商采购金额合计 6,214.66 万元，占当期采购总额比例 73.03%。",
+        },
     },
     "苏州绿控传动科技股份有限公司": {
         "metrics": {
@@ -279,9 +301,9 @@ MANUAL_CORRECTIONS: dict[str, dict[str, Any]] = {
     "苏州市贝特利高分子材料股份有限公司": {
         "customer": {
             "ratio": "68.86%",
-            "amount": "待补充",
-            "page": 58,
-            "snippet": "前五名客户销售额占销售总额的比例分别为 72.25%、68.32%和 68.86%。",
+            "amount": "251,076.97",
+            "page": 194,
+            "snippet": "2025 年度前五大客户销售金额合计 251,076.97 万元，占营业收入比例 68.86%。",
         },
     },
 }
@@ -1176,7 +1198,6 @@ def industry_landscape_html(data: ReportData) -> str:
 def industry_position_html(data: ReportData) -> str:
     industry = data.item.get("industry", "待补充")
     board = data.item.get("board", "待补充")
-    score_note = data.item.get("scoreNote", "待补充")
     progress = data.item.get("latestProgress", "待补充")
     return f"""
 {industry_landscape_html(data)}
@@ -1185,7 +1206,7 @@ def industry_position_html(data: ReportData) -> str:
   <div class="box"><h3>板块匹配</h3><p>{esc(board)}。先按监管披露板块判断属性，后续再结合产品结构和可比公司复核估值口径。</p></div>
   <div class="box"><h3>上市进度</h3><p>{esc(progress)}。发行价、发行市值和上市日期没有公告前，不做交易结论。</p></div>
 </div>
-<p class="note">行业初判：{esc(score_note)} 本区优先列官方文件披露的市占、排名或可计算占比；文件未披露精确市占时明确标注，不用估算数冒充市场份额。</p>
+<p class="note">本区优先列官方文件披露的市占、排名或可计算占比；文件未披露精确市占时明确标注，不用估算数冒充市场份额。</p>
 """
 
 
@@ -1323,7 +1344,7 @@ def research_html(data: ReportData) -> str:
     return f"""<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(data.company)} 详细调研</title><style>{css}</style>{responsive_patch_html()}</head>
 <body>
-<header class="hero"><div><div class="eyebrow">Detailed Research · {REPORT_DATE}</div><h1>{esc(data.company)}：上市前数据版调研</h1><p>本版按最新版 skill 重跑，核心数据来自招股书/注册稿表格；不再使用关键词附近数字拼接。缺失或不稳定抽取字段标记为“待补充/待复核”。</p></div></header>
+<header class="hero"><div><div class="eyebrow">Detailed Research · {REPORT_DATE}</div><h1>{esc(data.company)}：上市前数据版调研</h1></div></header>
 <main class="layout">
   <nav class="toc panel"><a href="#scope">0. 口径</a><a href="#facts">1. 事实表</a><a href="#business">2. 公司画像</a><a href="#position">3. 行业位置</a><a href="#ipo">4. IPO 与募投</a><a href="#ladder">5. 业务阶梯</a><a href="#finance">6. 财务</a><a href="#chain">7. 上下游</a><a href="#risk">8. 风险</a><a href="#sources">9. 来源</a><a href="#terms">10. 术语</a></nav>
   <div>
@@ -1443,7 +1464,7 @@ def update_dashboard(data_obj: dict[str, Any], reports_obj: dict[str, Any], gene
             "tradingRisk": "注册生效但发行价、流通盘和上市公告书待披露",
         }
         item["scoreCompleteness"] = f"{sum(1 for m in METRICS if m in metrics)}/7"
-        item["scoreNote"] = "已按最新版 skill 生成结构化数据版；关键财务指标来自招股书表格，缺失项不硬填。"
+        item["scoreNote"] = "优先依据官方文件披露的行业位置、排名或可计算占比判断。"
         reports_obj[name] = {
             "status": "结构化数据版已接入",
             "overviewUrl": "../" + str(result["overview"].relative_to(ROOT)),
@@ -1451,7 +1472,7 @@ def update_dashboard(data_obj: dict[str, Any], reports_obj: dict[str, Any], gene
             "assetUrl": "../dashboard/assets/ipo-hero.png",
             "generatedBy": "a-share-company-html-research",
             "imageGeneratedBy": "GPT img2",
-            "sourceBoundary": "已按最新版 skill 重跑：结构化抽取招股书财务表、客户/供应商集中度和募投字段；不再使用关键词数字拼接",
+            "sourceBoundary": "财务、客户、供应商和募投数据来自招股书及其他官方披露文件。",
         }
     write_js_object(DASHBOARD_DATA, "window.IPO_DASHBOARD_DATA", data_obj)
     write_js_object(REPORTS_JS, "window.IPO_COMPANY_REPORTS", reports_obj)

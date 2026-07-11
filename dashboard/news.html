@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>相关热点新闻</title>
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <main class="news-shell">
+      <a class="back-link" href="index.html">← 返回企业池</a>
+      <header class="news-hero">
+        <p class="eyebrow">IPO WATCH · 精选资讯</p>
+        <h1 id="companyName">相关热点新闻</h1>
+        <p id="companyIndustry" class="industry"></p>
+        <p id="updatedAt" class="updated"></p>
+      </header>
+
+      <section id="explainer" class="explainer" hidden></section>
+
+      <section class="news-section" aria-labelledby="newsHeading">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">宁缺毋滥 · 近 7 日回看</p>
+            <h2 id="newsHeading">最新精选</h2>
+          </div>
+          <button id="historyToggle" class="history-toggle" type="button">历史新闻</button>
+        </div>
+        <p id="queueNote" class="queue-note" hidden></p>
+        <div id="newsList" class="news-list"></div>
+      </section>
+    </main>
+    <script src="news.js"></script>
+  </body>
+</html>

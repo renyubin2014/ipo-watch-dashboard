@@ -37,6 +37,18 @@ class CurrentReportIntegrityTests(unittest.TestCase):
                 path = self.report_path(item["name"], key)
                 self.assertTrue(path.exists(), f"{item['name']} {key} missing: {path}")
 
+    def test_research_pages_do_not_expose_generation_changelog_copy(self):
+        forbidden = (
+            "本版按最新版 skill 重跑",
+            "已按最新版 skill 生成",
+            "已按最新版 skill 重跑",
+            "不再使用关键词附近数字拼接",
+        )
+        for company in self.reports:
+            text = self.report_text(company, "researchUrl")
+            for phrase in forbidden:
+                self.assertNotIn(phrase, text, f"{company}: {phrase}")
+
     def test_no_known_h1_estimate_sequences_are_used_as_annual_tables(self):
         combined = "\n".join(
             self.report_text(name, key)
@@ -96,6 +108,21 @@ class CurrentReportIntegrityTests(unittest.TestCase):
         makeng = self.report_text("福建马坑矿业股份有限公司")
         self.assertIn("82.53%", makeng)
         self.assertIn("58.41%", makeng)
+
+    def test_confirmed_customer_supplier_totals_are_visible(self):
+        expected = {
+            "天博智能科技（山东）股份有限公司": ("22,832万元", "22,832.44 万元", "19.59%"),
+            "深圳嘉立创科技集团股份有限公司": ("88,291万元", "88,290.52 万元", "15.72%"),
+            "江苏展芯半导体技术股份有限公司": ("6,215万元", "6,214.66 万元", "73.03%"),
+            "苏州市贝特利高分子材料股份有限公司": ("251,077万元", "251,076.97 万元", "68.86%"),
+        }
+        for company, (overview_amount, research_amount, ratio) in expected.items():
+            overview = self.report_text(company, "overviewUrl")
+            research = self.report_text(company, "researchUrl")
+            self.assertIn(overview_amount, overview, company)
+            self.assertIn(research_amount, research, company)
+            self.assertIn(ratio, overview, company)
+            self.assertIn(ratio, research, company)
 
     def test_changxin_status_and_review_boundary(self):
         changxin = self.report_text("长鑫科技集团股份有限公司")
