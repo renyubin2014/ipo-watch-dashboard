@@ -27,6 +27,8 @@ class CompanyNewsPageTests(unittest.TestCase):
 
     def test_explainer_renders_all_seven_sections(self):
         script = (ROOT / "news.js").read_text(encoding="utf-8")
+        self.assertIn('"科普"', script)
+        self.assertNotIn("置顶科普 · 最多一篇", script)
         for key in (
             "basics", "profitMechanism", "industryNow", "companyImpact",
             "watchMetrics", "misconceptions", "sourcesAndCutoff",

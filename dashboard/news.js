@@ -73,7 +73,7 @@
       return;
     }
     els.explainer.hidden = false;
-    els.explainer.appendChild(element("div", "explainer-label", "置顶科普 · 最多一篇"));
+    els.explainer.appendChild(element("div", "explainer-label", "科普"));
     const details = document.createElement("details");
     details.appendChild(element("summary", "", explainer.title));
     explainerSections.forEach(([key, title]) => appendTextBlock(details, title, explainer.sections[key]));
