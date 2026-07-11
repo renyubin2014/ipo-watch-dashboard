@@ -78,6 +78,14 @@ def validate_company_payload(payload: dict) -> list[str]:
             sections = explainer.get("sections", {})
             if not isinstance(sections, dict) or not EXPLAINER_SECTIONS.issubset(sections):
                 errors.append("explainer 必须包含七个科普板块")
+            else:
+                empty_sections = sorted(key for key in EXPLAINER_SECTIONS if not sections.get(key))
+                if empty_sections:
+                    errors.append(f"explainer 板块不能为空：{', '.join(empty_sections)}")
+                sources = sections.get("sourcesAndCutoff", [])
+                source_text = " ".join(sources if isinstance(sources, list) else [str(sources)])
+                if source_text.count("http") < 2:
+                    errors.append("explainer 来源板块至少需要 2 个完整 URL")
     return errors
 
 

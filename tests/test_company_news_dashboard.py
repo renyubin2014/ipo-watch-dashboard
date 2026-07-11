@@ -19,6 +19,12 @@ class CompanyNewsDashboardTests(unittest.TestCase):
         self.assertIn("hasUnreadNews", script)
         self.assertIn("news.html?company=", script)
 
+    def test_unread_badge_ignores_explainers_and_refreshes_on_page_restore(self):
+        script = (ROOT / "app.js").read_text(encoding="utf-8")
+        unread_body = script.split("function hasUnreadNews(entry)", 1)[1].split("function createNewsLink", 1)[0]
+        self.assertNotIn("explainer", unread_body)
+        self.assertIn('window.addEventListener("pageshow", renderPool)', script)
+
     def test_mobile_actions_stay_on_one_row_with_small_italic_badge(self):
         styles = (ROOT / "styles.css").read_text(encoding="utf-8")
         self.assertIn("grid-template-columns: repeat(3, minmax(0, 1fr))", styles)

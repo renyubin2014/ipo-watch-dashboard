@@ -4,7 +4,6 @@
   const reports = window.IPO_COMPANY_REPORTS || {};
   const newsIndex = window.IPO_NEWS_INDEX || {};
   const READ_IDS_KEY = "IPO_NEWS_READ_IDS_V1";
-  const READ_EXPLAINERS_KEY = "IPO_NEWS_READ_EXPLAINERS_V1";
   const els = {
     sourceDate: document.getElementById("sourceDate"),
     companyList: document.getElementById("companyList"),
@@ -150,10 +149,7 @@
   function hasUnreadNews(entry) {
     if (!entry) return false;
     const readIds = readLocalSet(READ_IDS_KEY);
-    if ((entry.activeItemIds || []).some((id) => !readIds.has(id))) return true;
-    if (!entry.explainerId || !entry.explainerVersion) return false;
-    const readExplainers = readLocalSet(READ_EXPLAINERS_KEY);
-    return !readExplainers.has(`${entry.explainerId}@${entry.explainerVersion}`);
+    return (entry.activeItemIds || []).some((id) => !readIds.has(id));
   }
 
   function createNewsLink(item) {
@@ -182,4 +178,5 @@
   }
 
   init();
+  window.addEventListener("pageshow", renderPool);
 })();

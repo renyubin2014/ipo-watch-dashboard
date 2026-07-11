@@ -13,14 +13,17 @@ class CompanyNewsPageTests(unittest.TestCase):
         self.assertIn('id="explainer"', html)
         self.assertIn('id="newsList"', html)
         self.assertIn('src="news.js"', html)
+        self.assertNotIn("宁缺毋滥", html)
+        self.assertNotIn("近 7 日", html)
 
-    def test_script_marks_read_only_on_article_or_explainer_interaction(self):
+    def test_script_marks_only_news_items_read(self):
         script = (ROOT / "news.js").read_text(encoding="utf-8")
         self.assertIn("markItemRead", script)
-        self.assertIn("markExplainerRead", script)
+        self.assertNotIn("markExplainerRead", script)
         self.assertIn("historyToggle", script)
         self.assertNotIn("markAllRead", script)
         self.assertIn('rel = "noopener noreferrer"', script)
+        self.assertNotIn("近 7 日", script)
 
     def test_explainer_renders_all_seven_sections(self):
         script = (ROOT / "news.js").read_text(encoding="utf-8")

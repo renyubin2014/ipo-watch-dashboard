@@ -17,6 +17,19 @@ def load_updater():
 
 
 class CompanyNewsDataTests(unittest.TestCase):
+    def test_all_companies_have_a_complete_evergreen_explainer(self):
+        updater = load_updater()
+        for path in sorted(DATA_DIR.glob("*.json")):
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            explainer = payload.get("explainer")
+            self.assertIsInstance(explainer, dict, path.name)
+            sections = explainer.get("sections", {})
+            for key in updater.EXPLAINER_SECTIONS:
+                self.assertTrue(sections.get(key), f"{path.name}: {key}")
+            source_lines = sections.get("sourcesAndCutoff", [])
+            source_text = " ".join(source_lines if isinstance(source_lines, list) else [source_lines])
+            self.assertGreaterEqual(source_text.count("http"), 2, f"{path.name}: sourcesAndCutoff")
+
     def test_fifteen_company_payloads_pass_contract(self):
         updater = load_updater()
         files = sorted(DATA_DIR.glob("*.json"))
@@ -75,13 +88,13 @@ class CompanyNewsDataTests(unittest.TestCase):
         self.assertEqual({item["type"] for item in payload["items"]}, {"company", "industry"})
         self.assertTrue(all(item["sourceUrl"].startswith("https://") for item in payload["items"]))
 
-    def test_seed_content_is_sparse_but_has_robot_and_ai_chip_signals(self):
+    def test_seed_content_keeps_robot_and_ai_chip_industry_signals(self):
         yushu = json.loads((DATA_DIR / "yushu.json").read_text(encoding="utf-8"))
         suiyuan = json.loads((DATA_DIR / "suiyuan.json").read_text(encoding="utf-8"))
-        self.assertEqual(yushu["items"][0]["type"], "industry")
-        self.assertIn("人形机器人", yushu["items"][0]["title"])
-        self.assertEqual(suiyuan["items"][0]["type"], "industry")
-        self.assertIn("H200", suiyuan["items"][0]["title"])
+        yushu_industry = next(item for item in yushu["items"] if item["type"] == "industry")
+        suiyuan_industry = next(item for item in suiyuan["items"] if item["type"] == "industry")
+        self.assertIn("人形机器人", yushu_industry["title"])
+        self.assertIn("H200", suiyuan_industry["title"])
 
 
 if __name__ == "__main__":

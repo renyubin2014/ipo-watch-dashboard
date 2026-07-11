@@ -3,12 +3,12 @@
   "slug": "changxin",
   "company": "长鑫科技集团股份有限公司",
   "industry": "计算机、通信和其他电子设备制造业",
-  "updatedAt": "2026-07-11T12:00:00+08:00",
+  "updatedAt": "2026-07-11T18:00:00+08:00",
   "explainer": {
     "id": "changxin-dram-primer",
-    "version": "2026-07-11-v1",
+    "version": "2026-07-11-v2",
     "title": "DRAM如何影响长鑫：从基础概念到阶段性供不应求",
-    "updatedAt": "2026-07-11T12:00:00+08:00",
+    "updatedAt": "2026-07-11T18:00:00+08:00",
     "asOf": "2026-07-11",
     "sections": {
       "basics": [
@@ -32,8 +32,7 @@
         "国际设备、材料和技术限制仍可能影响工艺迭代速度，这也是长鑫相较全球头部厂商需要持续验证的约束。"
       ],
       "watchMetrics": [
-        "DRAM合约价与现货价是否同步上涨，以及涨价持续时间。",
-        "三星、SK海力士、美光的HBM与普通DRAM资本开支和产能分配。",
+        "DRAM合约价与现货价、涨价持续时间，以及三星、SK海力士、美光的HBM与普通DRAM产能分配。",
         "长鑫的DDR5、LPDDR5X等产品认证、良率、稼动率和高价值产品占比。",
         "经营现金流能否覆盖部分资本开支，新增折旧是否快于毛利增长。"
       ],
@@ -43,9 +42,9 @@
         "国产替代提供进入机会，但客户仍会考察性能、可靠性、成本和稳定供货。"
       ],
       "sourcesAndCutoff": [
-        "行业现状截止2026-07-11。供需判断主要参考路透社2026-07-10对SK海力士管理层及行业机构的报道。",
-        "基础概念参考JEDEC内存标准体系；资本开支与供需线索同时参考美光投资者关系披露。",
-        "涉及长鑫的影响部分为基于行业机制的研究推断，不代表公司已经披露相应盈利结果。"
+        "事实资料截止2026-07-11。长鑫产品信息：https://www.cxmt.com/product.html；美光2026财年第三季度披露：https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter。",
+        "行业供需判断参考路透社2026-07-10报道完整链接：https://www.investing.com/news/stock-market-news/sk-hynix-ceo-sees-worstever-memory-supply-shortage-in-2027-says-demand-to-outstrip-supply-beyond-2030-4786660。",
+        "产品规格和公司披露为事实；行业紧张对长鑫售价、客户导入和利润的影响属于研究推断，不代表公司已披露相应盈利结果。"
       ]
     }
   },
@@ -56,13 +55,13 @@
       "title": "长鑫科技进入发行阶段，7月16日进行网上和网下申购",
       "publishedAt": "2026-07-09T18:00:00+08:00",
       "selectedAt": "2026-07-11",
-      "sourceName": "巨潮资讯",
-      "sourceUrl": "https://www.cninfo.com.cn/new/disclosure",
-      "summary": "巨潮资讯披露长鑫科技首次公开发行股票并在科创板上市的发行安排及初步询价公告。公告确认网上、网下申购日为2026年7月16日，上市交易日仍需等待后续上市公告书。",
+      "sourceName": "发行公告镜像",
+      "sourceUrl": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12437279&stockid=",
+      "summary": "长鑫科技首次公开发行股票并在科创板上市的发行安排及初步询价公告确认，网上、网下申购日为2026年7月16日；当前链接为可访问的官方公告全文镜像，上市交易日仍需等待后续上市公告书。",
       "whyImportant": "公司已从注册生效进一步进入实际发行阶段，发行价、最终募资和流通盘将成为下一组关键事实。",
       "companyRelevance": "这是直接改变长鑫IPO进度和上市前估值信息边界的官方披露。",
       "watchNext": "关注发行价、发行结果公告、最终募集资金净额和上市日期。",
-      "evidenceLevel": "official",
+      "evidenceLevel": "official_mirror",
       "tags": ["IPO", "发行安排", "科创板"]
     },
     {

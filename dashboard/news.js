@@ -1,6 +1,5 @@
 (function () {
   const READ_IDS_KEY = "IPO_NEWS_READ_IDS_V1";
-  const READ_EXPLAINERS_KEY = "IPO_NEWS_READ_EXPLAINERS_V1";
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("company") || "";
   let payload = null;
@@ -46,12 +45,6 @@
     writeSet(READ_IDS_KEY, values);
   }
 
-  function markExplainerRead(explainer) {
-    const values = readSet(READ_EXPLAINERS_KEY);
-    values.add(`${explainer.id}@${explainer.version}`);
-    writeSet(READ_EXPLAINERS_KEY, values);
-  }
-
   function element(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -84,9 +77,6 @@
     const details = document.createElement("details");
     details.appendChild(element("summary", "", explainer.title));
     explainerSections.forEach(([key, title]) => appendTextBlock(details, title, explainer.sections[key]));
-    details.addEventListener("toggle", () => {
-      if (details.open) markExplainerRead(explainer);
-    });
     els.explainer.appendChild(details);
   }
 
@@ -164,7 +154,7 @@
       els.queueNote.hidden = true;
     }
     if (!visible.length) {
-      els.newsList.appendChild(element("p", "empty-state", historyMode ? "还没有读过的历史新闻。" : "近 7 日暂无新的精选资讯，可进入历史新闻查看此前内容。"));
+      els.newsList.appendChild(element("p", "empty-state", historyMode ? "还没有读过的历史新闻。" : "暂无新的精选资讯，可进入历史新闻查看此前内容。"));
       return;
     }
     visible.forEach((item) => els.newsList.appendChild(renderCard(item)));
